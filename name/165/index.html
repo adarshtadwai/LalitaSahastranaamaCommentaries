@@ -344,16 +344,13 @@
                 const tabs = [];
                 const panels = [];
 
-                // 1. Meaning tab (shows English and Telugu meanings)
-                if (nameData.datta_commentary.meaning || nameData.meaning_telugu) {
+                // 1. Meaning tab (shows English meaning)
+                if (nameData.datta_commentary.meaning) {
                     tabs.push({id: 'meaning', label: 'Meaning'});
 
                     let meaningHTML = '';
                     if (nameData.datta_commentary.meaning) {
                         meaningHTML += `<h3>English</h3><div class="meaning-box">${formatText(nameData.datta_commentary.meaning)}</div>`;
-                    }
-                    if (nameData.meaning_telugu) {
-                        meaningHTML += `<h3>తెలుగు (Telugu)</h3><div class="meaning-box">${formatText(nameData.meaning_telugu)}</div>`;
                     }
 
                     panels.push({
@@ -436,16 +433,36 @@
                     // Show corresponding panel
                     const tabName = button.dataset.tab;
                     document.getElementById(`${tabName}-panel`).classList.add('active');
+
+                    // Update URL hash to remember active tab
+                    window.location.hash = tabName;
                 });
             });
+
+            // Restore active tab from URL hash if present
+            const hash = window.location.hash.slice(1); // Remove the '#'
+            if (hash) {
+                const targetButton = document.querySelector(`[data-tab="${hash}"]`);
+                if (targetButton) {
+                    targetButton.click();
+                }
+            }
         }
 
         // Navigate between names
         function navigate(direction) {
             const newNumber = currentNumber + direction;
             if (newNumber >= 1 && newNumber <= totalNames) {
-                // Navigate to the new URL
-                window.location.href = "../" + newNumber + "/";
+                // Get currently active tab
+                const activeTab = document.querySelector('.tab-button.active');
+                const activeTabName = activeTab ? activeTab.dataset.tab : '';
+
+                // Navigate to the new URL with the active tab hash
+                if (activeTabName) {
+                    window.location.href = "../" + newNumber + "/#" + activeTabName;
+                } else {
+                    window.location.href = "../" + newNumber + "/";
+                }
             }
         }
 

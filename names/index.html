@@ -249,6 +249,28 @@
             display: none;
         }
 
+        /* Filters Section */
+        .filters-section {
+            background: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 1200px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            animation: slideDown 0.3s ease;
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
         /* Loading */
         .loading {
             text-align: center;
@@ -286,8 +308,8 @@
 
     <div class="nav-tabs">
         <div class="nav-tabs-container">
-            <button class="nav-tab" onclick="window.location.href='../viewer.html'">Interactive Viewer</button>
-            <button class="nav-tab" onclick="window.location.href='../home/'">Home</button>
+            <button class="nav-tab" id="filterToggleBtn" onclick="toggleFilters()">🔍 Show Filters</button>
+            <button class="nav-tab" onclick="window.location.href='../home/'">🏠 Home</button>
         </div>
     </div>
 
@@ -301,8 +323,8 @@
         />
     </div>
 
+    <div id="filtersSection" class="filters-section hidden">
     <div class="filter-container" id="filterContainer">
-        <span class="filter-label">Filter by Letter:</span>
         <button class="filter-btn active" data-letter="all">
             <span class="filter-letter">All</span>
             <span class="filter-count" id="count-all">1000</span>
@@ -318,6 +340,7 @@
         <button class="filter-btn active" id="sortCountBtn" onclick="setLetterSortOrder('count')">
             <span class="filter-letter">By Count</span>
         </button>
+    </div>
     </div>
 
     <div class="stats">
@@ -340,7 +363,7 @@
         const resultCount = document.getElementById('resultCount');
         const noResults = document.getElementById('noResults');
         const filterContainer = document.getElementById('filterContainer');
-        let currentFilter = 'all';
+        let selectedLetters = new Set(); // Empty set means show all (All button active)
         let letterCounts = {};
         let letterSortOrder = 'count'; // default to sort by count (most frequent first)
 
@@ -423,9 +446,23 @@
                     <span class="filter-count">${count}</span>
                 `;
                 btn.addEventListener('click', () => {
-                    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-                    btn.classList.add('active');
-                    currentFilter = letter;
+                    // Toggle this letter's selection
+                    if (selectedLetters.has(letter)) {
+                        selectedLetters.delete(letter);
+                        btn.classList.remove('active');
+                    } else {
+                        selectedLetters.add(letter);
+                        btn.classList.add('active');
+                    }
+
+                    // Update All button state
+                    const allButton = document.querySelector('[data-letter="all"]');
+                    if (selectedLetters.size === 0) {
+                        allButton.classList.add('active');
+                    } else {
+                        allButton.classList.remove('active');
+                    }
+
                     applyFilters();
                 });
                 filterContainer.appendChild(btn);
@@ -450,11 +487,11 @@
             const query = searchBox.value.toLowerCase().trim();
             let filtered = [...names];
 
-            // Apply letter filter
-            if (currentFilter !== 'all') {
+            // Apply letter filter (multi-select)
+            if (selectedLetters.size > 0) {
                 filtered = filtered.filter(item => {
                     const firstLetter = getFirstLetter(item.name);
-                    return firstLetter === currentFilter;
+                    return selectedLetters.has(firstLetter);
                 });
             }
 
@@ -495,6 +532,20 @@
             resultCount.textContent = `Showing ${count} of ${total} names`;
         }
 
+        // Toggle filters visibility
+        function toggleFilters() {
+            const filtersSection = document.getElementById('filtersSection');
+            const toggleBtn = document.getElementById('filterToggleBtn');
+
+            if (filtersSection.classList.contains('hidden')) {
+                filtersSection.classList.remove('hidden');
+                toggleBtn.textContent = '❌ Hide Filters';
+            } else {
+                filtersSection.classList.add('hidden');
+                toggleBtn.textContent = '🔍 Show Filters';
+            }
+        }
+
         // Set letter sort order and recreate filter buttons
         function setLetterSortOrder(order) {
             letterSortOrder = order;
@@ -506,7 +557,6 @@
             // Clear existing letter filter buttons (keep only the "All" button)
             const allButton = filterContainer.querySelector('[data-letter="all"]');
             filterContainer.innerHTML = '';
-            filterContainer.appendChild(document.createTextNode('Filter by Letter: '));
             filterContainer.appendChild(allButton);
 
             // Recreate alphabet filters with new sort order
@@ -518,9 +568,17 @@
 
         // "All" filter button click handler
         document.querySelector('.filter-btn[data-letter="all"]').addEventListener('click', () => {
-            document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+            // Clear all letter selections
+            selectedLetters.clear();
+
+            // Deactivate all letter buttons
+            document.querySelectorAll('.filter-btn[data-letter]:not([data-letter="all"])').forEach(b => {
+                b.classList.remove('active');
+            });
+
+            // Activate All button
             document.querySelector('.filter-btn[data-letter="all"]').classList.add('active');
-            currentFilter = 'all';
+
             applyFilters();
         });
 

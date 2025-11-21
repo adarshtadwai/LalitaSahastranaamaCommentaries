@@ -4,11 +4,9 @@
 
 ## About
 
-This repository contains comprehensive commentaries on the Lalita Sahasranama (Thousand Names of Goddess Lalita), featuring multiple sources and languages:
+This project aims to bring together comprehensive commentaries on the Lalita Sahasranama (Thousand Names of Goddess Lalita), a sacred text from the Brahmanda Purana containing 1000 names of the Divine Mother in Her aspect as Lalita Tripurasundari.
 
-- **सौभाग्यभास्कर (Soubhagya Bhaskara)** - Traditional Sanskrit commentary by Bhāskarārāya
-- **English Commentary** - DattaPeeta Foundation commentary (names 112+)
-- **Multilingual Meanings** - English (all 1000 names) and Telugu (208 names)
+We are working to compile traditional Sanskrit commentaries by renowned scholars **Bhāskarārāya** (Soubhagya Bhaskara) and **Bhaṭṭa Nārāyaṇa**, along with simple English meanings for all 1000 names to make this sacred text accessible to devotees worldwide.
 
 ## Contents
 
@@ -47,10 +45,10 @@ This repository contains comprehensive commentaries on the Lalita Sahasranama (T
 
 ## ✨ Features
 
-### Multilingual Support
-- **Sanskrit (सौभाग्यभास्कर)** - Traditional commentary by Bhāskarārāya
-- **English** - Meanings for all 1000 names + detailed commentary for 112+ names
-- **Telugu (తెలుగు)** - Meanings for 208 names
+### Commentary & Meanings
+- **Traditional Sanskrit Commentaries** - Bhāskarārāya (Soubhagya Bhaskara) and Bhaṭṭa Nārāyaṇa
+- **English Meanings** - Simple English meanings for all 1000 names
+- **Detailed Commentary** - In-depth English commentary for 112+ names
 
 ### Smart Navigation
 - 🔍 **Search & Filter** - Find names by Devanagari text or number
@@ -68,22 +66,6 @@ This repository contains comprehensive commentaries on the Lalita Sahasranama (T
 - **List View** - Compact alphabetical listing
 - **Sequential Navigation** - Previous/Next buttons with keyboard support
 
-## Structure
-
-Each commentary file contains:
-- Sanskrit name in YAML front matter
-- Main heading with the name
-- Commentary sections (to be added)
-
-## Commentary Format
-
-The commentaries follow a structured markdown format with:
-- Etymology (व्युत्पत्तिः)
-- Original Commentary (भाष्यम्)
-- Scriptural References (शास्त्रप्रमाणानि)
-- Interpretations (व्याख्यानम्)
-- Practical Application (साधनाप्रयोगः)
-
 ## 🙏 Acknowledgments & Sources
 
 This website combines multiple sources to provide comprehensive information:
@@ -91,7 +73,6 @@ This website combines multiple sources to provide comprehensive information:
 - **सौभाग्यभास्कर Commentary** - Traditional commentary by Bhāskarārāya
 - **English Commentary** - [Dattavani.org](https://www.dattavani.org/chaturmasya-pravachanam/chaturmasyam-2006/lalitha-sahasranama/) (DattaPeeta Foundation)
 - **English Meanings** - [Sanskrit Documents](https://sanskritdocuments.org/doc_devii/lalita1000.html)
-- **Telugu Meanings** - [Telugu Wikipedia](https://te.wikipedia.org/wiki/లలితా_సహస్ర_నామములు)
 
 We are deeply grateful to these authors and organizations for making their work available for devotees worldwide.
 
