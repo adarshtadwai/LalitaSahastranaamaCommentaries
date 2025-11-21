@@ -257,34 +257,6 @@
             color: #8B4513;
         }
 
-        /* Quick Links */
-        .quick-links {
-            max-width: 1200px;
-            margin: 30px auto;
-            padding: 0 20px;
-            display: flex;
-            gap: 15px;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .quick-link {
-            padding: 10px 20px;
-            background: linear-gradient(135deg, #8B4513, #A0522D);
-            color: white;
-            text-decoration: none;
-            border-radius: 8px;
-            font-size: 1em;
-            transition: all 0.3s;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-        }
-
-        .quick-link:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-            background: linear-gradient(135deg, #8B0000, #8B4513);
-        }
-
         /* Responsive */
         @media (max-width: 768px) {
             .header h1 {
@@ -317,10 +289,6 @@
             <button class="nav-tab" onclick="window.location.href='viewer.html'">Interactive Viewer</button>
             <button class="nav-tab" onclick="window.location.href='index.html'">Home</button>
         </div>
-    </div>
-
-    <div class="quick-links" id="quickLinks">
-        <!-- Quick links will be populated by JavaScript based on available letters -->
     </div>
 
     <div class="search-container">
@@ -442,30 +410,6 @@
                     applyFilters();
                 });
                 filterContainer.appendChild(btn);
-            });
-
-            // Create quick links for major letters
-            createQuickLinks(letters);
-        }
-
-        // Create quick jump links for popular letters
-        function createQuickLinks(letters) {
-            const quickLinksContainer = document.getElementById('quickLinks');
-
-            // Take every few letters for quick navigation (show first 10-12 major letters)
-            const step = Math.max(1, Math.floor(letters.length / 10));
-            const quickLetters = letters.filter((_, index) => index % step === 0).slice(0, 12);
-
-            quickLetters.forEach(letter => {
-                const link = document.createElement('a');
-                link.href = '#';
-                link.className = 'quick-link';
-                link.textContent = `${letter} (${letterCounts[letter]})`;
-                link.onclick = (e) => {
-                    e.preventDefault();
-                    filterByLetter(letter);
-                };
-                quickLinksContainer.appendChild(link);
             });
         }
 
