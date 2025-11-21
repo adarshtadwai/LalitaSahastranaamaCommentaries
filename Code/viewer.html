@@ -52,10 +52,11 @@
         .sort-container {
             padding: 10px 0 15px 0;
             display: flex;
-            justify-content: flex-start;
+            justify-content: space-between;
+            align-items: center;
         }
 
-        .sort-button {
+        .sort-button, .home-button {
             background: rgba(255, 255, 255, 0.3);
             color: white;
             border: 2px solid rgba(255, 255, 255, 0.5);
@@ -65,9 +66,11 @@
             font-size: 0.95em;
             font-family: 'Annapurna SIL', sans-serif;
             transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
         }
 
-        .sort-button:hover {
+        .sort-button:hover, .home-button:hover {
             background: rgba(255, 255, 255, 0.4);
             transform: translateY(-2px);
             box-shadow: 0 4px 8px rgba(0,0,0,0.3);
@@ -202,6 +205,7 @@
 
         <div class="sort-container">
             <button class="sort-button" id="sortButton" onclick="toggleSort()">अ↓ Sort</button>
+            <a href="index.html" class="home-button">🏠 Home</a>
         </div>
 
         <div class="search-container">
