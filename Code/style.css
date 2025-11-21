@@ -1,0 +1,215 @@
+/* Custom CSS for Lalita Sahasranama Commentary */
+
+/* Font Face Declarations */
+@font-face {
+    font-family: 'AnnapurnaSIL';
+    src: local('Annapurna SIL'), local('AnnapurnaSIL-Regular');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AnnapurnaSIL';
+    src: local('Annapurna SIL Bold'), local('AnnapurnaSIL-Bold');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Overall Page Styling */
+body {
+    font-family: 'AnnapurnaSIL', 'Annapurna SIL', sans-serif !important;
+    line-height: 1.8;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background: linear-gradient(to bottom, #fdfbf7, #fff);
+    color: #333;
+}
+
+/* Apply Annapurna to all text elements */
+p, div, span, li, td, th, blockquote, pre {
+    font-family: 'AnnapurnaSIL', 'Annapurna SIL', sans-serif !important;
+}
+
+/* Main Title */
+h1 {
+    color: #8B0000;
+    border-bottom: 4px double #DAA520;
+    padding-bottom: 15px;
+    font-size: 2.8em;
+    text-align: center;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+/* Major Section Headings */
+h2 {
+    color: #8B4513;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border-left: 5px solid #DAA520;
+    padding-left: 20px;
+    font-size: 1.8em;
+    background: linear-gradient(to right, #fff8dc, transparent);
+    padding: 10px 20px;
+    border-radius: 5px 0 0 5px;
+}
+
+/* Subsection Headings */
+h3 {
+    color: #CD853F;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-size: 1.4em;
+    border-bottom: 1px solid #DEB887;
+    padding-bottom: 5px;
+}
+
+/* Sub-subsection Headings */
+h4 {
+    color: #A0522D;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+/* Sanskrit Quotes/Shlokas */
+blockquote {
+    background: linear-gradient(135deg, #fff8dc 0%, #fef5e7 100%);
+    border-left: 6px solid #DAA520;
+    border-radius: 0 8px 8px 0;
+    padding: 20px 25px;
+    margin: 25px 0;
+    font-size: 1.15em;
+    line-height: 1.9;
+    color: #8B0000;
+    font-weight: 500;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.08);
+    position: relative;
+}
+
+blockquote::before {
+    content: '॥';
+    position: absolute;
+    left: -3px;
+    top: 10px;
+    font-size: 2em;
+    color: #DAA520;
+    opacity: 0.3;
+}
+
+/* Horizontal Rules */
+hr {
+    border: none;
+    border-top: 2px solid #DAA520;
+    margin: 40px 0;
+    background: linear-gradient(to right, transparent, #DAA520, transparent);
+    height: 2px;
+}
+
+/* Strong/Bold Text */
+strong {
+    color: #8B4513;
+    font-weight: 600;
+}
+
+/* Emphasis/Italic Text */
+em {
+    color: #A0522D;
+    font-style: italic;
+}
+
+/* Code/Mantra Formatting */
+code {
+    background: #fff8dc;
+    padding: 3px 8px;
+    border-radius: 3px;
+    color: #8B0000;
+    font-family: 'Annapurna SIL', 'AnnapurnaSIL-Regular', 'Noto Sans Devanagari', monospace;
+    font-size: 1.05em;
+}
+
+/* Lists */
+ul, ol {
+    margin: 15px 0;
+    padding-left: 40px;
+}
+
+li {
+    margin: 8px 0;
+    line-height: 1.6;
+}
+
+/* Links */
+a {
+    color: #B8860B;
+    text-decoration: none;
+    border-bottom: 1px dotted #DAA520;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: #8B0000;
+    border-bottom: 1px solid #8B0000;
+}
+
+/* Tables (if used for references) */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px 0;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+}
+
+th {
+    background: #8B4513;
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+
+td {
+    padding: 10px 12px;
+    border-bottom: 1px solid #DEB887;
+}
+
+tr:hover {
+    background: #fff8dc;
+}
+
+/* Print Styles */
+@media print {
+    body {
+        background: white;
+        max-width: 100%;
+    }
+
+    h1, h2, h3 {
+        page-break-after: avoid;
+    }
+
+    blockquote {
+        page-break-inside: avoid;
+    }
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    body {
+        padding: 20px 15px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    blockquote {
+        padding: 15px 20px;
+        font-size: 1em;
+    }
+}
