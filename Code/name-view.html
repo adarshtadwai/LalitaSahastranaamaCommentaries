@@ -153,6 +153,8 @@
         /* Content Area */
         .content {
             padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
         }
 
         .loading {
@@ -160,6 +162,69 @@
             padding: 50px;
             font-size: 1.5em;
             color: #8B4513;
+        }
+
+        /* Commentary Sections */
+        .commentary-section {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+
+        .commentary-section h2 {
+            color: #8B0000;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #DAA520;
+        }
+
+        .commentary-section h3 {
+            color: #8B4513;
+            font-size: 1.4em;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+
+        .meaning-box {
+            background: #fff8dc;
+            padding: 20px;
+            border-left: 4px solid #DAA520;
+            border-radius: 6px;
+            font-size: 1.15em;
+            line-height: 1.8;
+            color: #555;
+            margin: 20px 0;
+        }
+
+        .commentary-text {
+            line-height: 1.9;
+            color: #444;
+            font-size: 1.1em;
+        }
+
+        .commentary-text p {
+            margin-bottom: 20px;
+        }
+
+        .sanskrit-quote {
+            background: #f9f4ef;
+            border-left: 4px solid #8B4513;
+            padding: 15px 20px;
+            margin: 20px 0;
+            font-size: 1.2em;
+            color: #8B0000;
+            border-radius: 4px;
+        }
+
+        .no-commentary {
+            text-align: center;
+            padding: 40px 20px;
+            color: #8B4513;
+            font-size: 1.1em;
+            font-style: italic;
         }
 
         /* Responsive */
@@ -206,6 +271,7 @@
         let currentNumber = 1;
         const totalNames = 1000;
         let allNames = [];
+        let allNamesData = null;
 
         // Convert Arabic numerals to Devanagari numerals
         function toDevanagariNumber(num) {
@@ -301,31 +367,33 @@
             return (number >= 1 && number <= totalNames) ? number : 1;
         }
 
+        // Load all names data once
+        async function loadAllNamesData() {
+            if (allNamesData) return allNamesData;
+
+            try {
+                const response = await fetch('all-names.json');
+                const data = await response.json();
+                allNamesData = data.names;
+                return allNamesData;
+            } catch (error) {
+                console.error('Error loading names data:', error);
+                return null;
+            }
+        }
+
         // Load all names for search functionality
         async function loadAllNames() {
             if (allNames.length > 0) return; // Already loaded
 
-            const promises = [];
-            for (let i = 1; i <= totalNames; i++) {
-                const filename = i.toString().padStart(4, '0') + '.md';
-                promises.push(
-                    fetch('../SoubhagyaBhaskara/' + filename)
-                        .then(response => response.text())
-                        .then(content => {
-                            const match = content.match(/^#\s+(.+)$/m);
-                            if (match) {
-                                return {
-                                    number: i,
-                                    name: match[1].trim()
-                                };
-                            }
-                            return { number: i, name: `Name ${i}` };
-                        })
-                        .catch(() => ({ number: i, name: `Name ${i}` }))
-                );
-            }
+            await loadAllNamesData();
 
-            allNames = await Promise.all(promises);
+            if (allNamesData) {
+                allNames = allNamesData.map(item => ({
+                    number: item.number,
+                    name: item.name
+                }));
+            }
         }
 
         // Search functionality
@@ -380,26 +448,90 @@
             searchResults.innerHTML = '';
         }
 
+        // Format text with paragraph breaks and Sanskrit highlighting
+        function formatText(text) {
+            if (!text) return '';
+
+            const paragraphs = text.split('\n\n');
+
+            return paragraphs.map(para => {
+                para = para.trim();
+                if (!para) return '';
+
+                // Check if paragraph is Sanskrit (contains Devanagari)
+                if (/[\u0900-\u097F]/.test(para) && para.length < 200) {
+                    return `<div class="sanskrit-quote">${para}</div>`;
+                }
+
+                return `<p>${para}</p>`;
+            }).join('');
+        }
+
+        // Render DattaPeeta commentary
+        function renderDattaPeeta(dattaCommentary) {
+            if (!dattaCommentary || (!dattaCommentary.meaning && !dattaCommentary.commentary)) {
+                return '<div class="no-commentary">- Commentary not available -</div>';
+            }
+
+            let html = '';
+
+            // Add transliterated name if available
+            if (dattaCommentary.name_transliterated) {
+                html += `<h3>${dattaCommentary.name_transliterated}</h3>`;
+            }
+
+            if (dattaCommentary.meaning) {
+                html += `
+                    <h3>Meaning</h3>
+                    <div class="meaning-box">${formatText(dattaCommentary.meaning)}</div>
+                `;
+            }
+
+            if (dattaCommentary.commentary) {
+                html += `
+                    <h3>Commentary</h3>
+                    <div class="commentary-text">${formatText(dattaCommentary.commentary)}</div>
+                `;
+            }
+
+            return html || '<div class="no-commentary">- Commentary not available -</div>';
+        }
+
         // Load markdown file and convert to HTML
         async function loadName(number) {
             if (!number) number = currentNumber;
             currentNumber = parseInt(number);
 
-            const filename = `../SoubhagyaBhaskara/${currentNumber.toString().padStart(4, '0')}.md`;
-
             try {
-                const response = await fetch(filename);
-                if (!response.ok) throw new Error('File not found');
+                // Load all names data if not already loaded
+                await loadAllNamesData();
 
-                let markdown = await response.text();
+                if (!allNamesData || currentNumber < 1 || currentNumber > totalNames) {
+                    throw new Error('Invalid name number');
+                }
 
-                // Remove YAML front matter if present
-                markdown = markdown.replace(/^---[\s\S]*?---\n/, '');
+                // Get the data for this specific name (array is 0-indexed)
+                const nameData = allNamesData[currentNumber - 1];
 
-                // Convert markdown to HTML
-                const html = marked.parse(markdown);
+                // Parse SoubhagyaBhaskara commentary (already in markdown)
+                const soubhagyaHTML = marked.parse(nameData.soubhagya_commentary || '');
 
-                document.getElementById('content').innerHTML = html;
+                // Render DattaPeeta commentary
+                const dattaPeetaHTML = renderDattaPeeta(nameData.datta_commentary);
+
+                // Combine both commentaries
+                const combinedHTML = `
+                    <div class="commentary-section">
+                        <h2>सौभाग्यभास्कर</h2>
+                        ${soubhagyaHTML}
+                    </div>
+                    <div class="commentary-section">
+                        <h2>DattaPeeta</h2>
+                        ${dattaPeetaHTML}
+                    </div>
+                `;
+
+                document.getElementById('content').innerHTML = combinedHTML;
 
                 // Update URL without reloading
                 const newURL = `${window.location.pathname}?number=${currentNumber}`;
@@ -409,11 +541,8 @@
                 document.getElementById('prevBtn').disabled = (currentNumber === 1);
                 document.getElementById('nextBtn').disabled = (currentNumber === totalNames);
 
-                // Update page title
-                const h1 = document.querySelector('h1');
-                if (h1) {
-                    document.title = h1.textContent + ' - Lalita Sahasranama';
-                }
+                // Update page title with the name
+                document.title = `${nameData.name} - Lalita Sahasranama`;
 
             } catch (error) {
                 document.getElementById('content').innerHTML =
@@ -442,9 +571,9 @@
             }
         });
 
-        // Initialize
+        // Initialize - redirect to hash-based URL
         currentNumber = getNumberFromURL();
-        loadName(currentNumber);
+        window.location.href = `/Code/name/index.html#${currentNumber}`;
     </script>
 </body>
 </html>
