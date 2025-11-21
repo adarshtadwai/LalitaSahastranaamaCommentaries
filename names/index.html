@@ -31,6 +31,32 @@
             z-index: 100;
         }
 
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .home-button {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 1.1em;
+            transition: all 0.3s;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .home-button:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+
         .header h1 {
             font-size: 2.5em;
             margin-bottom: 10px;
@@ -47,46 +73,36 @@
             opacity: 0.95;
         }
 
-        /* Navigation Tabs */
-        .nav-tabs {
-            background: white;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            position: sticky;
-            top: 140px;
-            z-index: 90;
-        }
-
-        .nav-tabs-container {
+        /* Filter Toggle Button */
+        .filter-toggle-container {
             max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            gap: 5px;
+            margin: 20px auto;
             padding: 0 20px;
-            overflow-x: auto;
+            text-align: center;
         }
 
-        .nav-tab {
-            padding: 15px 25px;
-            background: transparent;
+        .filter-toggle-btn {
+            background: linear-gradient(135deg, #8B0000, #8B4513);
+            color: white;
+            padding: 15px 40px;
             border: none;
-            border-bottom: 3px solid transparent;
+            border-radius: 10px;
+            font-size: 1.2em;
+            font-weight: bold;
             cursor: pointer;
             font-family: 'Annapurna SIL', sans-serif;
-            font-size: 1em;
-            color: #666;
-            white-space: nowrap;
+            box-shadow: 0 4px 15px rgba(139, 0, 0, 0.3);
             transition: all 0.3s;
         }
 
-        .nav-tab:hover {
-            color: #8B0000;
-            background: #f5f5f5;
+        .filter-toggle-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(139, 0, 0, 0.4);
+            background: linear-gradient(135deg, #A0522D, #8B0000);
         }
 
-        .nav-tab.active {
-            color: #8B0000;
-            border-bottom-color: #8B0000;
-            font-weight: bold;
+        .filter-toggle-btn.active {
+            background: linear-gradient(135deg, #DAA520, #B8860B);
         }
 
         /* Search Container */
@@ -250,26 +266,76 @@
             display: none;
         }
 
-        /* Filters Section */
-        .filters-section {
-            background: #fff;
-            border-radius: 10px;
-            padding: 20px;
-            margin: 20px auto;
-            max-width: 1200px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            animation: slideDown 0.3s ease;
+        /* Filters Sidebar */
+        .filters-sidebar {
+            position: fixed;
+            left: -360px;
+            top: 0;
+            width: 340px;
+            height: 100vh;
+            background: linear-gradient(to bottom, #fdfbf7, #fff);
+            box-shadow: 4px 0 20px rgba(0,0,0,0.2);
+            overflow-y: auto;
+            padding: 0;
+            transition: left 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            z-index: 101;
         }
 
-        @keyframes slideDown {
-            from {
-                opacity: 0;
-                transform: translateY(-20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+        .filters-sidebar.active {
+            left: 0;
+        }
+
+        .filters-sidebar-header {
+            position: sticky;
+            top: 0;
+            background: linear-gradient(135deg, #8B0000, #8B4513);
+            color: white;
+            padding: 20px;
+            z-index: 102;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .filters-sidebar-header h2 {
+            margin: 0;
+            font-size: 1.4em;
+        }
+
+        .filters-sidebar-content {
+            padding: 20px;
+            padding-bottom: 40px;
+        }
+
+        /* Main Content Area */
+        .main-content {
+            transition: margin-left 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .main-content.shifted {
+            margin-left: 340px;
+        }
+
+        /* Filters Section */
+        .filters-section {
+            background: transparent;
+        }
+
+        /* Overlay for mobile */
+        .sidebar-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 94;
+        }
+
+        .sidebar-overlay.active {
+            opacity: 1;
+            visibility: visible;
         }
 
         /* Loading */
@@ -284,6 +350,17 @@
         @media (max-width: 768px) {
             .header h1 {
                 font-size: 1.8em;
+                padding-right: 90px;
+            }
+
+            .home-button {
+                font-size: 0.9em;
+                padding: 8px 15px;
+            }
+
+            .filter-toggle-btn {
+                font-size: 1em;
+                padding: 12px 30px;
             }
 
             .search-box {
@@ -294,85 +371,124 @@
                 font-size: 1.1em;
             }
 
-            .nav-tabs-container {
-                justify-content: flex-start;
+            /* On mobile, don't shift content - sidebar overlays */
+            .main-content.shifted {
+                margin-left: 0;
+            }
+
+            .filters-sidebar {
+                width: 85%;
+                left: -85%;
+            }
+
+            .filters-sidebar.active {
+                left: 0;
             }
         }
     </style>
 </head>
 <body>
     <div class="header">
-        <h1>श्रीललितासहस्रनामस्तोत्रम्</h1>
-        <div class="subtitle">शिवे मातर्मह्यं त्वयि वितर भक्तिं निरुपमाम्</div>
-        <div class="mantra">ॐ श्रीमात्रे नमः</div>
-    </div>
-
-    <div class="nav-tabs">
-        <div class="nav-tabs-container">
-            <button class="nav-tab" id="filterToggleBtn" onclick="toggleFilters()">🔍 Show Filters</button>
-            <button class="nav-tab" onclick="window.location.href='../home/'">🏠 Home</button>
+        <div class="header-content">
+            <a href="../home/" class="home-button">🏠 Home</a>
+            <h1>श्रीललितासहस्रनामस्तोत्रम्</h1>
+            <div class="subtitle">शिवे मातर्मह्यं त्वयि वितर भक्तिं निरुपमाम्</div>
+            <div class="mantra">ॐ श्रीमात्रे नमः</div>
         </div>
     </div>
 
-    <div class="search-container">
-        <input
-            type="text"
-            id="searchBox"
-            class="search-box"
-            placeholder="Search by name or number... (e.g., श्रीमाता or 1)"
-            autocomplete="off"
-        />
-    </div>
+    <!-- Sidebar Overlay -->
+    <div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleFilters()"></div>
 
-    <div id="filtersSection" class="filters-section hidden">
-    <div class="filter-container" id="filterContainer">
-        <button class="filter-btn active" data-letter="all">
-            <span class="filter-letter">All</span>
-            <span class="filter-count" id="count-all">१०००</span>
-        </button>
-        <!-- Alphabet filters will be populated by JavaScript -->
-    </div>
-
-    <div class="filter-container" style="margin-top: 15px;">
-        <span class="filter-label">Sort Letters:</span>
-        <button class="filter-btn" id="sortAlphaBtn" onclick="setLetterSortOrder('alpha')">
-            <span class="filter-letter">अ→ह</span>
-        </button>
-        <button class="filter-btn active" id="sortCountBtn" onclick="setLetterSortOrder('count')">
-            <span class="filter-letter">By Count</span>
-        </button>
-    </div>
-
-    <div class="filter-container" style="margin-top: 15px;">
-        <span class="filter-label">Script:</span>
-        <button class="filter-btn active" id="scriptSanskritBtn" onclick="setScript('sanskrit')">
-            <span class="filter-letter">संस्कृत</span>
-        </button>
-        <button class="filter-btn" id="scriptEnglishBtn" onclick="setScript('english')">
-            <span class="filter-letter">English</span>
-        </button>
-        <button class="filter-btn" id="scriptTeluguBtn" onclick="setScript('telugu')">
-            <span class="filter-letter">తెలుగు</span>
-        </button>
-        <button class="filter-btn" id="scriptTamilBtn" onclick="setScript('tamil')">
-            <span class="filter-letter">தமிழ்</span>
-        </button>
-        <button class="filter-btn" id="scriptKannadaBtn" onclick="setScript('kannada')">
-            <span class="filter-letter">ಕನ್ನಡ</span>
-        </button>
-    </div>
-    </div>
-
-    <div class="stats">
-        <span id="resultCount">Loading names...</span>
-    </div>
-
-    <div class="names-container">
-        <div id="namesList" class="names-list">
-            <div class="loading">Loading 1000 names...</div>
+    <!-- Filters Sidebar -->
+    <div class="filters-sidebar" id="filtersSidebar">
+        <div class="filters-sidebar-header">
+            <h2>⚙️ Filters & Options</h2>
         </div>
-        <div id="noResults" class="no-results hidden">
-            No names found matching your search.
+        <div class="filters-sidebar-content">
+            <div id="filtersSection" class="filters-section">
+                <!-- 1. Language Dropdown -->
+                <div style="margin-bottom: 20px;">
+                    <label for="languageSelect" style="display: block; font-size: 1.1em; color: #8B0000; font-weight: bold; margin-bottom: 8px;">Language:</label>
+                    <select id="languageSelect" onchange="setScriptFromDropdown(this.value)" style="width: 100%; padding: 10px; font-size: 1em; font-family: 'Annapurna SIL', sans-serif; border: 2px solid #DAA520; border-radius: 5px; background: white; cursor: pointer;">
+                        <option value="sanskrit" selected>संस्कृत (Sanskrit)</option>
+                        <option value="english">English (IAST)</option>
+                        <option value="telugu">తెలుగు (Telugu)</option>
+                        <option value="tamil">தமிழ் (Tamil)</option>
+                        <option value="kannada">ಕನ್ನಡ (Kannada)</option>
+                    </select>
+                </div>
+
+                <!-- Divider -->
+                <div style="border-top: 2px solid #DAA520; margin: 20px 0;"></div>
+
+                <!-- 2. Sort Names -->
+                <div style="margin-bottom: 20px; display: flex; align-items: center; justify-content: space-between;">
+                    <span style="font-size: 1.1em; color: #8B0000; font-weight: bold;">Sort Names:</span>
+                    <button id="sortBtnSidebar" onclick="toggleNamesSortOrder()" title="Sort names by number" style="padding: 10px 20px; background: linear-gradient(135deg, #8B0000, #8B4513); color: white; border: none; border-radius: 5px; font-size: 1.2em; cursor: pointer; transition: all 0.3s;">
+                        अ↓
+                    </button>
+                </div>
+
+                <!-- Divider -->
+                <div style="border-top: 2px solid #DAA520; margin: 20px 0;"></div>
+
+                <!-- 3. Sort Filter Letters -->
+                <div style="margin-bottom: 20px; display: flex; align-items: center; justify-content: space-between;">
+                    <span style="font-size: 1.1em; color: #8B0000; font-weight: bold;">Sort Letters:</span>
+                    <button id="sortLettersBtnSidebar" onclick="toggleLettersSortOrder()" title="Sort letters by frequency" style="padding: 10px 20px; background: linear-gradient(135deg, #8B0000, #8B4513); color: white; border: none; border-radius: 5px; font-size: 1.2em; cursor: pointer; transition: all 0.3s;">
+                        📊
+                    </button>
+                </div>
+
+                <!-- Divider -->
+                <div style="border-top: 2px solid #DAA520; margin: 20px 0;"></div>
+
+                <!-- 4. Letter Filters -->
+                <div style="margin-bottom: 15px;">
+                    <span style="font-size: 1.1em; color: #8B0000; font-weight: bold; display: block; margin-bottom: 10px;">Filter by Letter:</span>
+                </div>
+
+                <div class="filter-container" id="filterContainer">
+                    <button class="filter-btn active" data-letter="all">
+                        <span class="filter-letter">All</span>
+                        <span class="filter-count" id="count-all">१०००</span>
+                    </button>
+                    <!-- Alphabet filters will be populated by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content" id="mainContent">
+        <div class="filter-toggle-container">
+            <button class="filter-toggle-btn" id="filterToggleBtn" onclick="toggleFilters()">
+                ⚙️ Filters
+            </button>
+        </div>
+
+        <div class="search-container">
+            <input
+                type="text"
+                id="searchBox"
+                class="search-box"
+                placeholder="Search by name or number... (e.g., श्रीमाता or 1)"
+                autocomplete="off"
+            />
+        </div>
+
+        <div class="stats">
+            <span id="resultCount">Loading names...</span>
+        </div>
+
+        <div class="names-container">
+            <div id="namesList" class="names-list">
+                <div class="loading">Loading 1000 names...</div>
+            </div>
+            <div id="noResults" class="no-results hidden">
+                No names found matching your search.
+            </div>
         </div>
     </div>
 
@@ -388,6 +504,7 @@
         let letterSortOrder = 'count'; // default to sort by count (most frequent first)
         let numberScript = 'devanagari'; // default to Devanagari numerals
         let nameLanguage = 'sanskrit'; // default to Sanskrit/Devanagari names
+        let namesSortOrder = 'number'; // 'number' or 'alphabetical'
 
         // Fetch all names data from consolidated JSON
         async function loadNames() {
@@ -580,7 +697,16 @@
             namesList.classList.remove('hidden');
             noResults.classList.add('hidden');
 
-            namesList.innerHTML = namesToRender.map(item => `
+            // Sort names based on current sort order
+            const sortedNames = [...namesToRender];
+            if (namesSortOrder === 'alphabetical') {
+                sortedNames.sort((a, b) => a.name.localeCompare(b.name, 'sa'));
+            } else {
+                // Sort by number (default)
+                sortedNames.sort((a, b) => a.number - b.number);
+            }
+
+            namesList.innerHTML = sortedNames.map(item => `
                 <div class="name-item" data-number="${item.number}">
                     <a href="../name/${item.number}/">
                         <span class="name-number">${toDevanagariNumber(item.number)}</span>
@@ -595,27 +721,99 @@
             resultCount.textContent = `Showing ${toDevanagariNumber(count)} of ${toDevanagariNumber(total)} names`;
         }
 
-        // Toggle filters visibility
+        // Toggle filters sidebar
         function toggleFilters() {
-            const filtersSection = document.getElementById('filtersSection');
+            const sidebar = document.getElementById('filtersSidebar');
+            const overlay = document.getElementById('sidebarOverlay');
+            const mainContent = document.getElementById('mainContent');
             const toggleBtn = document.getElementById('filterToggleBtn');
 
-            if (filtersSection.classList.contains('hidden')) {
-                filtersSection.classList.remove('hidden');
-                toggleBtn.textContent = '❌ Hide Filters';
+            const isActive = sidebar.classList.contains('active');
+
+            if (isActive) {
+                // Close sidebar
+                sidebar.classList.remove('active');
+                overlay.classList.remove('active');
+                mainContent.classList.remove('shifted');
+                toggleBtn.textContent = '⚙️ Filters';
+                toggleBtn.classList.remove('active');
             } else {
-                filtersSection.classList.add('hidden');
-                toggleBtn.textContent = '🔍 Show Filters';
+                // Open sidebar
+                sidebar.classList.add('active');
+                overlay.classList.add('active');
+                // Only shift content on desktop
+                if (window.innerWidth > 768) {
+                    mainContent.classList.add('shifted');
+                }
+                toggleBtn.textContent = '✕ Hide Filters';
+                toggleBtn.classList.add('active');
             }
         }
 
-        // Set letter sort order and recreate filter buttons
+        // Toggle sort order for NAMES list
+        function toggleNamesSortOrder() {
+            const toggleBtn = document.getElementById('sortBtnSidebar');
+
+            if (namesSortOrder === 'number') {
+                namesSortOrder = 'alphabetical';
+                const icon = '#';
+                const tooltip = 'Names sorted alphabetically - click to sort by number';
+
+                if (toggleBtn) {
+                    toggleBtn.textContent = icon;
+                    toggleBtn.title = tooltip;
+                }
+            } else {
+                namesSortOrder = 'number';
+                const icon = 'अ↓';
+                const tooltip = 'Names sorted by number - click to sort alphabetically';
+
+                if (toggleBtn) {
+                    toggleBtn.textContent = icon;
+                    toggleBtn.title = tooltip;
+                }
+            }
+
+            // Re-render the current filtered names with new sort order
+            applyFilters();
+        }
+
+        // Toggle sort order for FILTER LETTERS
+        function toggleLettersSortOrder() {
+            const toggleBtn = document.getElementById('sortLettersBtnSidebar');
+
+            if (letterSortOrder === 'count') {
+                letterSortOrder = 'alpha';
+                const icon = 'अ↓';
+                const tooltip = 'Letters sorted alphabetically - click to sort by frequency';
+
+                if (toggleBtn) {
+                    toggleBtn.textContent = icon;
+                    toggleBtn.title = tooltip;
+                }
+            } else {
+                letterSortOrder = 'count';
+                const icon = '📊';
+                const tooltip = 'Letters sorted by frequency - click to sort alphabetically';
+
+                if (toggleBtn) {
+                    toggleBtn.textContent = icon;
+                    toggleBtn.title = tooltip;
+                }
+            }
+
+            // Recreate filter buttons with new sort order
+            const allButton = filterContainer.querySelector('[data-letter="all"]');
+            filterContainer.innerHTML = '';
+            filterContainer.appendChild(allButton);
+            createAlphabetFilters();
+        }
+
+        // Set letter sort order and recreate filter buttons (legacy function)
         function setLetterSortOrder(order) {
             letterSortOrder = order;
-
-            // Update button states
-            document.getElementById('sortAlphaBtn').classList.toggle('active', order === 'alpha');
-            document.getElementById('sortCountBtn').classList.toggle('active', order === 'count');
+            const toggleBtn = document.getElementById('sortToggleBtn');
+            toggleBtn.textContent = order === 'alpha' ? 'अ↓' : '📊';
 
             // Clear existing letter filter buttons (keep only the "All" button)
             const allButton = filterContainer.querySelector('[data-letter="all"]');
@@ -626,8 +824,8 @@
             createAlphabetFilters();
         }
 
-        // Set script (changes both number script and name language)
-        function setScript(script) {
+        // Set script from dropdown (changes both number script and name language)
+        function setScriptFromDropdown(script) {
             // Update both numberScript and nameLanguage
             if (script === 'telugu') {
                 numberScript = 'telugu';
@@ -646,13 +844,6 @@
                 nameLanguage = 'sanskrit';
             }
 
-            // Update button states
-            document.getElementById('scriptSanskritBtn').classList.toggle('active', script === 'sanskrit');
-            document.getElementById('scriptEnglishBtn').classList.toggle('active', script === 'english');
-            document.getElementById('scriptTeluguBtn').classList.toggle('active', script === 'telugu');
-            document.getElementById('scriptTamilBtn').classList.toggle('active', script === 'tamil');
-            document.getElementById('scriptKannadaBtn').classList.toggle('active', script === 'kannada');
-
             // Update All button count
             document.getElementById('count-all').textContent = toScriptNumber(1000);
 
@@ -664,6 +855,13 @@
             filterContainer.innerHTML = '';
             filterContainer.appendChild(allButton);
             createAlphabetFilters();
+        }
+
+        // Legacy setScript function (kept for compatibility)
+        function setScript(script) {
+            setScriptFromDropdown(script);
+            // Update dropdown to match
+            document.getElementById('languageSelect').value = script;
         }
 
         // Search functionality
