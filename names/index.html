@@ -230,14 +230,6 @@
             opacity: 1;
         }
 
-        /* Stats */
-        .stats {
-            text-align: center;
-            margin: 20px 0;
-            color: #8B4513;
-            font-size: 1.1em;
-        }
-
         /* Names Container */
         .names-container {
             max-width: 1200px;
@@ -547,9 +539,6 @@
             />
         </div>
 
-        <div class="stats">
-            <span id="resultCount">Loading names...</span>
-        </div>
 
         <div class="names-container">
             <div id="namesList" class="names-list">
@@ -565,7 +554,6 @@
         const names = [];
         const namesList = document.getElementById('namesList');
         const searchBox = document.getElementById('searchBox');
-        const resultCount = document.getElementById('resultCount');
         const noResults = document.getElementById('noResults');
         const filterContainer = document.getElementById('filterContainer');
         let selectedLetters = new Set(); // Empty set means show all (All button active)
@@ -587,7 +575,6 @@
                 createAlphabetFilters();
 
                 renderNames(names);
-                updateStats(names.length);
             } catch (error) {
                 console.error('Error loading names:', error);
                 namesList.innerHTML = '<div class="loading">Error loading names. Please refresh.</div>';
@@ -740,7 +727,6 @@
             }
 
             renderNames(filtered);
-            updateStats(filtered.length);
         }
 
         function getNameInLanguage(item) {
@@ -783,11 +769,6 @@
                     </a>
                 </div>
             `).join('');
-        }
-
-        function updateStats(count) {
-            const total = 1000;
-            resultCount.textContent = `Showing ${toDevanagariNumber(count)} of ${toDevanagariNumber(total)} names`;
         }
 
         // Toggle filters sidebar
