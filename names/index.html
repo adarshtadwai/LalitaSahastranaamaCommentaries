@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>श्रीललितासहस्रनामस्तोत्रम् - All Names Index</title>
     <link href="https://fonts.googleapis.com/css2?family=Annapurna+SIL:wght@400;700&display=swap" rel="stylesheet">
+    <script src="../sanscript.js"></script>
     <style>
         * {
             margin: 0;
@@ -327,7 +328,7 @@
     <div class="filter-container" id="filterContainer">
         <button class="filter-btn active" data-letter="all">
             <span class="filter-letter">All</span>
-            <span class="filter-count" id="count-all">1000</span>
+            <span class="filter-count" id="count-all">१०००</span>
         </button>
         <!-- Alphabet filters will be populated by JavaScript -->
     </div>
@@ -339,6 +340,25 @@
         </button>
         <button class="filter-btn active" id="sortCountBtn" onclick="setLetterSortOrder('count')">
             <span class="filter-letter">By Count</span>
+        </button>
+    </div>
+
+    <div class="filter-container" style="margin-top: 15px;">
+        <span class="filter-label">Script:</span>
+        <button class="filter-btn active" id="scriptSanskritBtn" onclick="setScript('sanskrit')">
+            <span class="filter-letter">संस्कृत</span>
+        </button>
+        <button class="filter-btn" id="scriptEnglishBtn" onclick="setScript('english')">
+            <span class="filter-letter">English</span>
+        </button>
+        <button class="filter-btn" id="scriptTeluguBtn" onclick="setScript('telugu')">
+            <span class="filter-letter">తెలుగు</span>
+        </button>
+        <button class="filter-btn" id="scriptTamilBtn" onclick="setScript('tamil')">
+            <span class="filter-letter">தமிழ்</span>
+        </button>
+        <button class="filter-btn" id="scriptKannadaBtn" onclick="setScript('kannada')">
+            <span class="filter-letter">ಕನ್ನಡ</span>
         </button>
     </div>
     </div>
@@ -366,33 +386,15 @@
         let selectedLetters = new Set(); // Empty set means show all (All button active)
         let letterCounts = {};
         let letterSortOrder = 'count'; // default to sort by count (most frequent first)
+        let numberScript = 'devanagari'; // default to Devanagari numerals
+        let nameLanguage = 'sanskrit'; // default to Sanskrit/Devanagari names
 
-        // Fetch all markdown files and extract names
+        // Fetch all names data from consolidated JSON
         async function loadNames() {
             try {
-                const promises = [];
-                for (let i = 1; i <= 1000; i++) {
-                    const filename = i.toString().padStart(4, '0') + '.md';
-                    promises.push(
-                        fetch('../SoubhagyaBhaskara/' + filename)
-                            .then(response => response.text())
-                            .then(content => {
-                                const match = content.match(/^#\s+(.+)$/m);
-                                if (match) {
-                                    return {
-                                        number: i,
-                                        name: match[1].trim(),
-                                        filename: filename
-                                    };
-                                }
-                                return null;
-                            })
-                            .catch(() => null)
-                    );
-                }
-
-                const results = await Promise.all(promises);
-                names.push(...results.filter(item => item !== null));
+                const response = await fetch('../all-names.json');
+                const data = await response.json();
+                names.push(...data.names);
 
                 // Calculate letter counts
                 calculateLetterCounts();
@@ -403,6 +405,46 @@
             } catch (error) {
                 console.error('Error loading names:', error);
                 namesList.innerHTML = '<div class="loading">Error loading names. Please refresh.</div>';
+            }
+        }
+
+        // Convert number to specified script numerals
+        function toScriptNumber(num) {
+            const devanagariDigits = ['०', '१', '२', '३', '४', '५', '६', '७', '८', '९'];
+            const teluguDigits = ['౦', '౧', '౨', '౩', '౪', '౫', '౬', '౭', '౮', '౯'];
+            const tamilDigits = ['௦', '௧', '௨', '௩', '௪', '௫', '௬', '௭', '௮', '௯'];
+            const kannadaDigits = ['೦', '೧', '೨', '೩', '೪', '೫', '೬', '೭', '೮', '೯'];
+
+            // For English, return plain numbers
+            if (numberScript === 'english') {
+                return num.toString();
+            }
+
+            let digits = devanagariDigits;
+            if (numberScript === 'telugu') digits = teluguDigits;
+            else if (numberScript === 'tamil') digits = tamilDigits;
+            else if (numberScript === 'kannada') digits = kannadaDigits;
+
+            return num.toString().split('').map(digit => digits[parseInt(digit)]).join('');
+        }
+
+        // Backward compatibility
+        function toDevanagariNumber(num) {
+            return toScriptNumber(num);
+        }
+
+        // Convert Devanagari to target script using Sanscript library
+        function convertScript(devanagari, targetScript) {
+            if (typeof Sanscript === 'undefined') {
+                console.warn('Sanscript library not loaded!');
+                return devanagari;
+            }
+
+            try {
+                return Sanscript.t(devanagari, 'devanagari', targetScript);
+            } catch (e) {
+                console.error('Transliteration error:', e);
+                return devanagari;
             }
         }
 
@@ -441,9 +483,17 @@
                 const btn = document.createElement('button');
                 btn.className = 'filter-btn';
                 btn.setAttribute('data-letter', letter);
+
+                // Convert letter to selected script
+                let displayLetter = letter;
+                if (nameLanguage !== 'sanskrit') {
+                    const targetScript = nameLanguage === 'english' ? 'iast' : nameLanguage;
+                    displayLetter = convertScript(letter, targetScript);
+                }
+
                 btn.innerHTML = `
-                    <span class="filter-letter">${letter}</span>
-                    <span class="filter-count">${count}</span>
+                    <span class="filter-letter">${displayLetter}</span>
+                    <span class="filter-count">${toScriptNumber(count)}</span>
                 `;
                 btn.addEventListener('click', () => {
                     // Toggle this letter's selection
@@ -507,6 +557,19 @@
             updateStats(filtered.length);
         }
 
+        function getNameInLanguage(item) {
+            if (nameLanguage === 'english') {
+                return convertScript(item.name, 'iast');
+            } else if (nameLanguage === 'telugu') {
+                return convertScript(item.name, 'telugu');
+            } else if (nameLanguage === 'tamil') {
+                return convertScript(item.name, 'tamil');
+            } else if (nameLanguage === 'kannada') {
+                return convertScript(item.name, 'kannada');
+            }
+            return item.name; // Sanskrit/Devanagari (default)
+        }
+
         function renderNames(namesToRender) {
             if (namesToRender.length === 0) {
                 namesList.classList.add('hidden');
@@ -520,8 +583,8 @@
             namesList.innerHTML = namesToRender.map(item => `
                 <div class="name-item" data-number="${item.number}">
                     <a href="../name/${item.number}/">
-                        <span class="name-number">${item.number}</span>
-                        <span class="name-text">${item.name}</span>
+                        <span class="name-number">${toDevanagariNumber(item.number)}</span>
+                        <span class="name-text">${getNameInLanguage(item)}</span>
                     </a>
                 </div>
             `).join('');
@@ -529,7 +592,7 @@
 
         function updateStats(count) {
             const total = 1000;
-            resultCount.textContent = `Showing ${count} of ${total} names`;
+            resultCount.textContent = `Showing ${toDevanagariNumber(count)} of ${toDevanagariNumber(total)} names`;
         }
 
         // Toggle filters visibility
@@ -560,6 +623,46 @@
             filterContainer.appendChild(allButton);
 
             // Recreate alphabet filters with new sort order
+            createAlphabetFilters();
+        }
+
+        // Set script (changes both number script and name language)
+        function setScript(script) {
+            // Update both numberScript and nameLanguage
+            if (script === 'telugu') {
+                numberScript = 'telugu';
+                nameLanguage = 'telugu';
+            } else if (script === 'tamil') {
+                numberScript = 'tamil';
+                nameLanguage = 'tamil';
+            } else if (script === 'kannada') {
+                numberScript = 'kannada';
+                nameLanguage = 'kannada';
+            } else if (script === 'english') {
+                numberScript = 'english';
+                nameLanguage = 'english';
+            } else { // sanskrit
+                numberScript = 'devanagari';
+                nameLanguage = 'sanskrit';
+            }
+
+            // Update button states
+            document.getElementById('scriptSanskritBtn').classList.toggle('active', script === 'sanskrit');
+            document.getElementById('scriptEnglishBtn').classList.toggle('active', script === 'english');
+            document.getElementById('scriptTeluguBtn').classList.toggle('active', script === 'telugu');
+            document.getElementById('scriptTamilBtn').classList.toggle('active', script === 'tamil');
+            document.getElementById('scriptKannadaBtn').classList.toggle('active', script === 'kannada');
+
+            // Update All button count
+            document.getElementById('count-all').textContent = toScriptNumber(1000);
+
+            // Refresh the current view
+            applyFilters();
+
+            // Recreate alphabet filters to update counts
+            const allButton = filterContainer.querySelector('[data-letter="all"]');
+            filterContainer.innerHTML = '';
+            filterContainer.appendChild(allButton);
             createAlphabetFilters();
         }
 
