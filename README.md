@@ -4,32 +4,69 @@
 
 ## About
 
-This repository contains commentaries on the Lalita Sahasranama (Thousand Names of Goddess Lalita), specifically focusing on the Soubhagya Bhaskara commentary by Bhāskarārāya.
+This repository contains comprehensive commentaries on the Lalita Sahasranama (Thousand Names of Goddess Lalita), featuring multiple sources and languages:
+
+- **सौभाग्यभास्कर (Soubhagya Bhaskara)** - Traditional Sanskrit commentary by Bhāskarārāya
+- **English Commentary** - DattaPeeta Foundation commentary (names 112+)
+- **Multilingual Meanings** - English (all 1000 names) and Telugu (208 names)
 
 ## Contents
 
-- **[Naamavali](Naamavali/)** - The 1000 names in individual text files
+- **[Naamavali](Naamavali/)** - The 1000 names in Devanagari (individual text files)
 - **[SoubhagyaBhaskara](SoubhagyaBhaskara/)** - Markdown files for each name's commentary
-- **[Code](Code/)** - Styling and viewer resources
+- **[DattaCommentary](DattaCommentary/)** - English commentary from DattaPeeta (JSON files)
+- **[Code](Code/)** - Web viewer with multilingual support
 
 ## How to View
 
-### Online Viewer (GitHub Pages)
-Visit: [Main Site](https://adarshtadwai.github.io/LalitaSahastranaamaCommentaries/Code/)
+### 🌐 Online Viewer (GitHub Pages)
 
-**Available Views:**
-- **[Browse All Names](https://adarshtadwai.github.io/LalitaSahastranaamaCommentaries/Code/names-index.html)** - Searchable index with grid/list views and filters
-- **[Interactive Viewer](https://adarshtadwai.github.io/LalitaSahastranaamaCommentaries/Code/viewer.html)** - Navigate one name at a time with previous/next
+**Main Website:** [https://adarshtadwai.github.io/LalitaSahastranaamaCommentaries/](https://adarshtadwai.github.io/LalitaSahastranaamaCommentaries/)
 
-### Local Viewing
-1. Clone this repository
-2. Open `Code/index.html` in your browser
-3. Choose your preferred viewing method:
-   - Browse All Names - for searching and filtering
-   - Interactive Viewer - for sequential navigation
+**Quick Access:**
+- 🏠 [Home Page](https://adarshtadwai.github.io/LalitaSahastranaamaCommentaries/home/) - Start here
+- 📋 [Browse All Names](https://adarshtadwai.github.io/LalitaSahastranaamaCommentaries/names/) - Searchable grid/list view with filters and sort options
+- 📖 [Interactive Viewer](https://adarshtadwai.github.io/LalitaSahastranaamaCommentaries/viewer.html) - Navigate sequentially with ← → arrow keys
+- 🔍 [Individual Name View](https://adarshtadwai.github.io/LalitaSahastranaamaCommentaries/name/1/) - Direct access to any name (e.g., `/name/1/`, `/name/118/`)
 
-### VS Code Preview
-Open any markdown file from `SoubhagyaBhaskara/` folder in VS Code for preview.
+### 💻 Local Viewing
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/adarshtadwai/LalitaSahastranaamaCommentaries.git
+   cd LalitaSahastranaamaCommentaries
+   ```
+2. Start a local server:
+   ```bash
+   python3 -m http.server 8000
+   ```
+3. Open your browser to `http://localhost:8000/`
+
+### 📝 Direct File Access
+- Browse markdown files in `SoubhagyaBhaskara/` folder
+- Open any `.md` file in VS Code for formatted preview
+
+## ✨ Features
+
+### Multilingual Support
+- **Sanskrit (सौभाग्यभास्कर)** - Traditional commentary by Bhāskarārāya
+- **English** - Meanings for all 1000 names + detailed commentary for 112+ names
+- **Telugu (తెలుగు)** - Meanings for 208 names
+
+### Smart Navigation
+- 🔍 **Search & Filter** - Find names by Devanagari text or number
+- 📱 **Responsive Design** - Works on desktop, tablet, and mobile
+- ⌨️ **Keyboard Shortcuts** - Use arrow keys (← →) to navigate
+- 🏷️ **Clean URLs** - Direct links to any name (e.g., `/name/123/`)
+
+### Dynamic Content
+- **Tab-Based Interface** - Switch between different commentaries
+- **Conditional Display** - Only shows tabs with available content
+- **Single JSON Load** - Fast performance with consolidated data file
+
+### Multiple View Modes
+- **Grid View** - Visual card-based browsing
+- **List View** - Compact alphabetical listing
+- **Sequential Navigation** - Previous/Next buttons with keyboard support
 
 ## Structure
 
@@ -47,11 +84,22 @@ The commentaries follow a structured markdown format with:
 - Interpretations (व्याख्यानम्)
 - Practical Application (साधनाप्रयोगः)
 
-## Contributing
+## 🙏 Acknowledgments & Sources
+
+This website combines multiple sources to provide comprehensive information:
+
+- **सौभाग्यभास्कर Commentary** - Traditional commentary by Bhāskarārāya
+- **English Commentary** - [Dattavani.org](https://www.dattavani.org/chaturmasya-pravachanam/chaturmasyam-2006/lalitha-sahasranama/) (DattaPeeta Foundation)
+- **English Meanings** - [Sanskrit Documents](https://sanskritdocuments.org/doc_devii/lalita1000.html)
+- **Telugu Meanings** - [Telugu Wikipedia](https://te.wikipedia.org/wiki/లలితా_సహస్ర_నామములు)
+
+We are deeply grateful to these authors and organizations for making their work available for devotees worldwide.
+
+## 🤝 Contributing
 
 This is a work in progress. Contributions and corrections are welcome.
 
-## License
+## 📄 License
 
 Traditional Sanskrit texts are in the public domain. Commentary compilation © 2025.
 
