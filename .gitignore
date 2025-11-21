@@ -1,0 +1,17 @@
+# Development files - keep locally only
+Code/
+index.html
+.vscode/
+
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Editor
+*.swp
+*.swo
+*~
