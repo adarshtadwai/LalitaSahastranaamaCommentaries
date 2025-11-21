@@ -188,10 +188,10 @@
             padding: 20px;
         }
 
-        .names-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 15px;
+        .names-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
             margin-top: 20px;
         }
 
@@ -236,18 +236,6 @@
             flex: 1;
         }
 
-        /* List View */
-        .names-list {
-            display: none;
-        }
-
-        .names-list.active {
-            display: block;
-        }
-
-        .names-list .name-item {
-            margin-bottom: 10px;
-        }
 
         /* No Results */
         .no-results {
@@ -303,10 +291,6 @@
                 font-size: 1.8em;
             }
 
-            .names-grid {
-                grid-template-columns: 1fr;
-            }
-
             .search-box {
                 font-size: 1em;
             }
@@ -330,8 +314,6 @@
 
     <div class="nav-tabs">
         <div class="nav-tabs-container">
-            <button class="nav-tab active" data-view="grid">Grid View</button>
-            <button class="nav-tab" data-view="list">List View</button>
             <button class="nav-tab" onclick="window.location.href='viewer.html'">Interactive Viewer</button>
             <button class="nav-tab" onclick="window.location.href='index.html'">Home</button>
         </div>
@@ -365,7 +347,7 @@
     </div>
 
     <div class="names-container">
-        <div id="namesGrid" class="names-grid">
+        <div id="namesList" class="names-list">
             <div class="loading">Loading 1000 names...</div>
         </div>
         <div id="noResults" class="no-results hidden">
@@ -375,12 +357,11 @@
 
     <script>
         const names = [];
-        const namesGrid = document.getElementById('namesGrid');
+        const namesList = document.getElementById('namesList');
         const searchBox = document.getElementById('searchBox');
         const resultCount = document.getElementById('resultCount');
         const noResults = document.getElementById('noResults');
         const filterContainer = document.getElementById('filterContainer');
-        let currentView = 'grid';
         let currentFilter = 'all';
         let letterCounts = {};
 
@@ -419,7 +400,7 @@
                 updateStats(names.length);
             } catch (error) {
                 console.error('Error loading names:', error);
-                namesGrid.innerHTML = '<div class="loading">Error loading names. Please refresh.</div>';
+                namesList.innerHTML = '<div class="loading">Error loading names. Please refresh.</div>';
             }
         }
 
@@ -528,23 +509,17 @@
 
         function renderNames(namesToRender) {
             if (namesToRender.length === 0) {
-                namesGrid.classList.add('hidden');
+                namesList.classList.add('hidden');
                 noResults.classList.remove('hidden');
                 return;
             }
 
-            namesGrid.classList.remove('hidden');
+            namesList.classList.remove('hidden');
             noResults.classList.add('hidden');
 
-            if (currentView === 'list') {
-                namesGrid.className = 'names-list active';
-            } else {
-                namesGrid.className = 'names-grid';
-            }
-
-            namesGrid.innerHTML = namesToRender.map(item => `
+            namesList.innerHTML = namesToRender.map(item => `
                 <div class="name-item" data-number="${item.number}">
-                    <a href="../SoubhagyaBhaskara/${item.filename}">
+                    <a href="name-view.html?number=${item.number}">
                         <span class="name-number">${item.number}</span>
                         <span class="name-text">${item.name}</span>
                     </a>
@@ -559,16 +534,6 @@
 
         // Search functionality
         searchBox.addEventListener('input', applyFilters);
-
-        // View tabs
-        document.querySelectorAll('.nav-tab[data-view]').forEach(tab => {
-            tab.addEventListener('click', () => {
-                document.querySelectorAll('.nav-tab').forEach(t => t.classList.remove('active'));
-                tab.classList.add('active');
-                currentView = tab.dataset.view;
-                applyFilters();
-            });
-        });
 
         // "All" filter button click handler
         document.querySelector('.filter-btn[data-letter="all"]').addEventListener('click', () => {
