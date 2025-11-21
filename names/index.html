@@ -4,7 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>श्रीललितासहस्रनामस्तोत्रम् - All Names Index</title>
+    <!-- Fonts for different scripts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Sanskrit/Devanagari: Keep original Annapurna SIL -->
     <link href="https://fonts.googleapis.com/css2?family=Annapurna+SIL:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Telugu: Ramaraja (traditional, elegant) -->
+    <link href="https://fonts.googleapis.com/css2?family=Ramaraja&display=swap" rel="stylesheet">
+    <!-- Tamil: Noto Sans Tamil (clean, readable) -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Kannada: Tiro Kannada (traditional, elegant) -->
+    <link href="https://fonts.googleapis.com/css2?family=Tiro+Kannada:ital@0;1&display=swap" rel="stylesheet">
+    <!-- English/IAST: Gentium Plus (excellent for diacritics) -->
+    <link href="https://fonts.googleapis.com/css2?family=Gentium+Plus:wght@400;700&display=swap" rel="stylesheet">
+
     <script src="../sanscript.js"></script>
     <style>
         * {
@@ -14,9 +27,36 @@
         }
 
         body {
-            font-family: 'Annapurna SIL', sans-serif;
+            font-family: 'Annapurna SIL', serif;
             background: linear-gradient(to bottom, #fdfbf7, #fff);
             color: #333;
+        }
+
+        /* Language-specific font classes */
+        body.lang-sanskrit,
+        .lang-sanskrit {
+            font-family: 'Annapurna SIL', serif;
+        }
+
+        body.lang-telugu,
+        .lang-telugu {
+            font-family: 'Ramaraja', serif;
+            font-size: 1.15em;
+        }
+
+        body.lang-tamil,
+        .lang-tamil {
+            font-family: 'Noto Sans Tamil', sans-serif;
+        }
+
+        body.lang-kannada,
+        .lang-kannada {
+            font-family: 'Tiro Kannada', serif;
+        }
+
+        body.lang-english,
+        .lang-english {
+            font-family: 'Gentium Plus', 'Times New Roman', serif;
         }
 
         /* Header */
@@ -293,11 +333,37 @@
             padding: 20px;
             z-index: 102;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
         }
 
         .filters-sidebar-header h2 {
             margin: 0;
             font-size: 1.4em;
+        }
+
+        .close-sidebar-btn {
+            background: rgba(255, 255, 255, 0.2);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 8px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8em;
+            font-weight: bold;
+            transition: all 0.3s;
+            padding: 0;
+            line-height: 1;
+        }
+
+        .close-sidebar-btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: scale(1.1);
         }
 
         .filters-sidebar-content {
@@ -391,9 +457,9 @@
     <div class="header">
         <div class="header-content">
             <a href="../home/" class="home-button">🏠 Home</a>
-            <h1>श्रीललितासहस्रनामस्तोत्रम्</h1>
-            <div class="subtitle">शिवे मातर्मह्यं त्वयि वितर भक्तिं निरुपमाम्</div>
-            <div class="mantra">ॐ श्रीमात्रे नमः</div>
+            <h1 id="headerTitle">श्रीललितासहस्रनामस्तोत्रम्</h1>
+            <div class="subtitle" id="headerSubtitle">शिवे मातर्मह्यं त्वयि वितर भक्तिं निरुपमाम्</div>
+            <div class="mantra" id="headerMantra">ॐ श्रीमात्रे नमः</div>
         </div>
     </div>
 
@@ -403,7 +469,10 @@
     <!-- Filters Sidebar -->
     <div class="filters-sidebar" id="filtersSidebar">
         <div class="filters-sidebar-header">
-            <h2>⚙️ Filters & Options</h2>
+            <h2>⚙️ Filter</h2>
+            <button onclick="toggleFilters()" class="close-sidebar-btn" title="Close filters">
+                ‹
+            </button>
         </div>
         <div class="filters-sidebar-content">
             <div id="filtersSection" class="filters-section">
@@ -826,6 +895,9 @@
 
         // Set script from dropdown (changes both number script and name language)
         function setScriptFromDropdown(script) {
+            // Save to localStorage for persistence across pages
+            localStorage.setItem('preferredLanguage', script);
+
             // Update both numberScript and nameLanguage
             if (script === 'telugu') {
                 numberScript = 'telugu';
@@ -844,6 +916,12 @@
                 nameLanguage = 'sanskrit';
             }
 
+            // Update body class for font switching
+            updateBodyLanguageClass(script);
+
+            // Update header texts based on selected language
+            updateHeaderTexts(script);
+
             // Update All button count
             document.getElementById('count-all').textContent = toScriptNumber(1000);
 
@@ -855,6 +933,46 @@
             filterContainer.innerHTML = '';
             filterContainer.appendChild(allButton);
             createAlphabetFilters();
+        }
+
+        // Update body class to change font based on language
+        function updateBodyLanguageClass(script) {
+            // Remove all language classes
+            document.body.classList.remove('lang-sanskrit', 'lang-english', 'lang-telugu', 'lang-tamil', 'lang-kannada');
+            // Add the appropriate language class
+            document.body.classList.add(`lang-${script}`);
+        }
+
+        // Load saved language preference on page load
+        function loadLanguagePreference() {
+            const savedLanguage = localStorage.getItem('preferredLanguage');
+            if (savedLanguage && savedLanguage !== 'sanskrit') {
+                document.getElementById('languageSelect').value = savedLanguage;
+                setScriptFromDropdown(savedLanguage);
+            }
+        }
+
+        // Update header title, subtitle, and mantra based on language
+        function updateHeaderTexts(script) {
+            const titleEl = document.getElementById('headerTitle');
+            const subtitleEl = document.getElementById('headerSubtitle');
+            const mantraEl = document.getElementById('headerMantra');
+
+            // Original texts in Devanagari
+            const originalTitle = 'श्रीललितासहस्रनामस्तोत्रम्';
+            const originalSubtitle = 'शिवे मातर्मह्यं त्वयि वितर भक्तिं निरुपमाम्';
+            const originalMantra = 'ॐ श्रीमात्रे नमः';
+
+            if (script === 'sanskrit') {
+                titleEl.textContent = originalTitle;
+                subtitleEl.textContent = originalSubtitle;
+                mantraEl.textContent = originalMantra;
+            } else {
+                const targetScript = script === 'english' ? 'iast' : script;
+                titleEl.textContent = convertScript(originalTitle, targetScript);
+                subtitleEl.textContent = convertScript(originalSubtitle, targetScript);
+                mantraEl.textContent = convertScript(originalMantra, targetScript);
+            }
         }
 
         // Legacy setScript function (kept for compatibility)
@@ -883,7 +1001,8 @@
             applyFilters();
         });
 
-        // Load names on page load
+        // Load saved language preference and names on page load
+        loadLanguagePreference();
         loadNames();
     </script>
 </body>
