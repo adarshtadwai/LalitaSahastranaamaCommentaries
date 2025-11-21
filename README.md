@@ -15,12 +15,18 @@ This repository contains commentaries on the Lalita Sahasranama (Thousand Names 
 ## How to View
 
 ### Online Viewer (GitHub Pages)
-Visit: [Interactive Viewer](https://adarshtadwai.github.io/LalitaSahastranaamaCommentaries/Code/)
+Visit: [Main Site](https://adarshtadwai.github.io/LalitaSahastranaamaCommentaries/Code/)
+
+**Available Views:**
+- **[Browse All Names](https://adarshtadwai.github.io/LalitaSahastranaamaCommentaries/Code/names-index.html)** - Searchable index with grid/list views and filters
+- **[Interactive Viewer](https://adarshtadwai.github.io/LalitaSahastranaamaCommentaries/Code/viewer.html)** - Navigate one name at a time with previous/next
 
 ### Local Viewing
 1. Clone this repository
 2. Open `Code/index.html` in your browser
-3. Click "Open Interactive Viewer" to navigate through all 1000 names
+3. Choose your preferred viewing method:
+   - Browse All Names - for searching and filtering
+   - Interactive Viewer - for sequential navigation
 
 ### VS Code Preview
 Open any markdown file from `SoubhagyaBhaskara/` folder in VS Code for preview.

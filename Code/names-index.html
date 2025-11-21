@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="sa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>श्रीललितासहस्रनामस्तोत्रम् - All Names Index</title>
+    <link href="https://fonts.googleapis.com/css2?family=Annapurna+SIL:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Annapurna SIL', sans-serif;
+            background: linear-gradient(to bottom, #fdfbf7, #fff);
+            color: #333;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, #8B0000, #8B4513);
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .header .subtitle {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .header .mantra {
+            margin-top: 15px;
+            font-size: 1.1em;
+            opacity: 0.95;
+        }
+
+        /* Navigation Tabs */
+        .nav-tabs {
+            background: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 140px;
+            z-index: 90;
+        }
+
+        .nav-tabs-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            gap: 5px;
+            padding: 0 20px;
+            overflow-x: auto;
+        }
+
+        .nav-tab {
+            padding: 15px 25px;
+            background: transparent;
+            border: none;
+            border-bottom: 3px solid transparent;
+            cursor: pointer;
+            font-family: 'Annapurna SIL', sans-serif;
+            font-size: 1em;
+            color: #666;
+            white-space: nowrap;
+            transition: all 0.3s;
+        }
+
+        .nav-tab:hover {
+            color: #8B0000;
+            background: #f5f5f5;
+        }
+
+        .nav-tab.active {
+            color: #8B0000;
+            border-bottom-color: #8B0000;
+            font-weight: bold;
+        }
+
+        /* Search Container */
+        .search-container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        .search-box {
+            width: 100%;
+            padding: 15px 20px;
+            font-size: 1.2em;
+            font-family: 'Annapurna SIL', sans-serif;
+            border: 3px solid #DAA520;
+            border-radius: 10px;
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: all 0.3s;
+        }
+
+        .search-box:focus {
+            outline: none;
+            border-color: #8B0000;
+            box-shadow: 0 4px 15px rgba(139,0,0,0.2);
+        }
+
+        /* Filter Options */
+        .filter-container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .filter-btn {
+            padding: 8px 16px;
+            background: white;
+            border: 2px solid #DAA520;
+            border-radius: 20px;
+            cursor: pointer;
+            font-family: 'Annapurna SIL', sans-serif;
+            font-size: 0.95em;
+            transition: all 0.3s;
+        }
+
+        .filter-btn:hover {
+            background: #DAA520;
+            color: white;
+        }
+
+        .filter-btn.active {
+            background: #8B0000;
+            border-color: #8B0000;
+            color: white;
+        }
+
+        /* Stats */
+        .stats {
+            text-align: center;
+            margin: 20px 0;
+            color: #8B4513;
+            font-size: 1.1em;
+        }
+
+        /* Names Container */
+        .names-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .names-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .name-item {
+            background: white;
+            padding: 15px 20px;
+            border-radius: 8px;
+            border-left: 4px solid #DAA520;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+
+        .name-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 4px 15px rgba(139,0,0,0.15);
+            border-left-color: #8B0000;
+        }
+
+        .name-item a {
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .name-number {
+            background: #8B4513;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 5px;
+            font-weight: bold;
+            min-width: 50px;
+            text-align: center;
+            font-size: 0.9em;
+        }
+
+        .name-text {
+            font-size: 1.3em;
+            color: #8B0000;
+            flex: 1;
+        }
+
+        /* List View */
+        .names-list {
+            display: none;
+        }
+
+        .names-list.active {
+            display: block;
+        }
+
+        .names-list .name-item {
+            margin-bottom: 10px;
+        }
+
+        /* No Results */
+        .no-results {
+            text-align: center;
+            padding: 60px 20px;
+            color: #8B4513;
+            font-size: 1.3em;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        /* Loading */
+        .loading {
+            text-align: center;
+            padding: 40px;
+            font-size: 1.2em;
+            color: #8B4513;
+        }
+
+        /* Quick Links */
+        .quick-links {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 20px;
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .quick-link {
+            padding: 10px 20px;
+            background: linear-gradient(135deg, #8B4513, #A0522D);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 1em;
+            transition: all 0.3s;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        }
+
+        .quick-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            background: linear-gradient(135deg, #8B0000, #8B4513);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.8em;
+            }
+
+            .names-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .search-box {
+                font-size: 1em;
+            }
+
+            .name-text {
+                font-size: 1.1em;
+            }
+
+            .nav-tabs-container {
+                justify-content: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>श्रीललितासहस्रनामस्तोत्रम्</h1>
+        <div class="subtitle">Lalita Sahasranama - 1000 Names of Divine Mother</div>
+        <div class="mantra">ॐ श्रीमात्रे नमः</div>
+    </div>
+
+    <div class="nav-tabs">
+        <div class="nav-tabs-container">
+            <button class="nav-tab active" data-view="grid">Grid View</button>
+            <button class="nav-tab" data-view="list">List View</button>
+            <button class="nav-tab" onclick="window.location.href='viewer.html'">Interactive Viewer</button>
+            <button class="nav-tab" onclick="window.location.href='index.html'">Home</button>
+        </div>
+    </div>
+
+    <div class="quick-links">
+        <a href="#" class="quick-link" onclick="scrollToNumber(1); return false;">Start (1-100)</a>
+        <a href="#" class="quick-link" onclick="scrollToNumber(101); return false;">101-200</a>
+        <a href="#" class="quick-link" onclick="scrollToNumber(201); return false;">201-300</a>
+        <a href="#" class="quick-link" onclick="scrollToNumber(301); return false;">301-400</a>
+        <a href="#" class="quick-link" onclick="scrollToNumber(401); return false;">401-500</a>
+        <a href="#" class="quick-link" onclick="scrollToNumber(501); return false;">501-600</a>
+        <a href="#" class="quick-link" onclick="scrollToNumber(601); return false;">601-700</a>
+        <a href="#" class="quick-link" onclick="scrollToNumber(701); return false;">701-800</a>
+        <a href="#" class="quick-link" onclick="scrollToNumber(801); return false;">801-900</a>
+        <a href="#" class="quick-link" onclick="scrollToNumber(901); return false;">901-1000</a>
+    </div>
+
+    <div class="search-container">
+        <input
+            type="text"
+            id="searchBox"
+            class="search-box"
+            placeholder="Search by name or number... (e.g., श्रीमाता or 1)"
+            autocomplete="off"
+        />
+    </div>
+
+    <div class="filter-container">
+        <span style="color: #8B4513; font-weight: bold;">Quick Filter:</span>
+        <button class="filter-btn active" data-range="all">All Names</button>
+        <button class="filter-btn" data-range="1-100">1-100</button>
+        <button class="filter-btn" data-range="101-300">101-300</button>
+        <button class="filter-btn" data-range="301-600">301-600</button>
+        <button class="filter-btn" data-range="601-1000">601-1000</button>
+    </div>
+
+    <div class="stats">
+        <span id="resultCount">Loading names...</span>
+    </div>
+
+    <div class="names-container">
+        <div id="namesGrid" class="names-grid">
+            <div class="loading">Loading 1000 names...</div>
+        </div>
+        <div id="noResults" class="no-results hidden">
+            No names found matching your search.
+        </div>
+    </div>
+
+    <script>
+        const names = [];
+        const namesGrid = document.getElementById('namesGrid');
+        const searchBox = document.getElementById('searchBox');
+        const resultCount = document.getElementById('resultCount');
+        const noResults = document.getElementById('noResults');
+        let currentView = 'grid';
+        let currentFilter = 'all';
+
+        // Fetch all markdown files and extract names
+        async function loadNames() {
+            try {
+                const promises = [];
+                for (let i = 1; i <= 1000; i++) {
+                    const filename = i.toString().padStart(4, '0') + '.md';
+                    promises.push(
+                        fetch('../SoubhagyaBhaskara/' + filename)
+                            .then(response => response.text())
+                            .then(content => {
+                                const match = content.match(/^#\s+(.+)$/m);
+                                if (match) {
+                                    return {
+                                        number: i,
+                                        name: match[1].trim(),
+                                        filename: filename
+                                    };
+                                }
+                                return null;
+                            })
+                            .catch(() => null)
+                    );
+                }
+
+                const results = await Promise.all(promises);
+                names.push(...results.filter(item => item !== null));
+
+                renderNames(names);
+                updateStats(names.length);
+            } catch (error) {
+                console.error('Error loading names:', error);
+                namesGrid.innerHTML = '<div class="loading">Error loading names. Please refresh.</div>';
+            }
+        }
+
+        function applyFilters() {
+            const query = searchBox.value.toLowerCase().trim();
+            let filtered = [...names];
+
+            // Apply range filter
+            if (currentFilter !== 'all') {
+                const [start, end] = currentFilter.split('-').map(Number);
+                filtered = filtered.filter(item => item.number >= start && item.number <= end);
+            }
+
+            // Apply search filter
+            if (query) {
+                filtered = filtered.filter(item => {
+                    return item.number.toString().includes(query) ||
+                           item.name.toLowerCase().includes(query);
+                });
+            }
+
+            renderNames(filtered);
+            updateStats(filtered.length);
+        }
+
+        function renderNames(namesToRender) {
+            if (namesToRender.length === 0) {
+                namesGrid.classList.add('hidden');
+                noResults.classList.remove('hidden');
+                return;
+            }
+
+            namesGrid.classList.remove('hidden');
+            noResults.classList.add('hidden');
+
+            if (currentView === 'list') {
+                namesGrid.className = 'names-list active';
+            } else {
+                namesGrid.className = 'names-grid';
+            }
+
+            namesGrid.innerHTML = namesToRender.map(item => `
+                <div class="name-item" data-number="${item.number}">
+                    <a href="../SoubhagyaBhaskara/${item.filename}">
+                        <span class="name-number">${item.number}</span>
+                        <span class="name-text">${item.name}</span>
+                    </a>
+                </div>
+            `).join('');
+        }
+
+        function updateStats(count) {
+            const total = 1000;
+            resultCount.textContent = `Showing ${count} of ${total} names`;
+        }
+
+        function scrollToNumber(num) {
+            const element = document.querySelector(`[data-number="${num}"]`);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                element.style.background = '#fff8dc';
+                setTimeout(() => {
+                    element.style.background = 'white';
+                }, 2000);
+            }
+        }
+
+        // Search functionality
+        searchBox.addEventListener('input', applyFilters);
+
+        // View tabs
+        document.querySelectorAll('.nav-tab[data-view]').forEach(tab => {
+            tab.addEventListener('click', () => {
+                document.querySelectorAll('.nav-tab').forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+                currentView = tab.dataset.view;
+                applyFilters();
+            });
+        });
+
+        // Filter buttons
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                currentFilter = btn.dataset.range;
+                applyFilters();
+            });
+        });
+
+        // Load names on page load
+        loadNames();
+    </script>
+</body>
+</html>
