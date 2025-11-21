@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="sa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lalita Sahasranama - Loading...</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Annapurna+SIL:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navigation Bar */
+        .navigation {
+            position: sticky;
+            top: 0;
+            background: linear-gradient(135deg, #8B0000, #8B4513);
+            padding: 15px 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            z-index: 100;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .nav-button {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            font-family: 'Annapurna SIL', sans-serif;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .nav-button:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+
+        .nav-button:disabled {
+            background: rgba(255, 255, 255, 0.1);
+            cursor: not-allowed;
+            transform: none;
+            opacity: 0.5;
+        }
+
+        .nav-center {
+            flex: 1;
+            text-align: center;
+            color: white;
+            font-size: 1.1em;
+        }
+
+        /* Search Container */
+        .search-container {
+            position: sticky;
+            top: 63px;
+            background: linear-gradient(to bottom, #fdfbf7, #fff);
+            padding: 20px 20px 0 20px;
+            z-index: 99;
+        }
+
+        .search-box {
+            width: 100%;
+            padding: 12px 20px;
+            font-size: 1.1em;
+            font-family: 'Annapurna SIL', sans-serif;
+            border: 2px solid #DAA520;
+            border-radius: 8px;
+            background: white;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: all 0.3s;
+            box-sizing: border-box;
+        }
+
+        .search-box:focus {
+            outline: none;
+            border-color: #8B0000;
+            box-shadow: 0 3px 12px rgba(139,0,0,0.2);
+        }
+
+        /* Search Results Dropdown */
+        .search-results {
+            position: absolute;
+            left: 20px;
+            right: 20px;
+            max-height: 400px;
+            overflow-y: auto;
+            background: white;
+            border: 2px solid #8B0000;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            margin-top: 5px;
+            z-index: 1000;
+            display: none;
+        }
+
+        .search-results.show {
+            display: block;
+        }
+
+        .search-result-item {
+            padding: 12px 20px;
+            border-bottom: 1px solid #f0f0f0;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .search-result-item:hover {
+            background: #fff8dc;
+            border-left: 4px solid #8B0000;
+        }
+
+        .search-result-item:last-child {
+            border-bottom: none;
+        }
+
+        .search-result-number {
+            background: #8B4513;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-weight: bold;
+            min-width: 40px;
+            text-align: center;
+            font-size: 0.9em;
+        }
+
+        .search-result-name {
+            color: #8B0000;
+            font-size: 1.1em;
+        }
+
+        .no-results-message {
+            padding: 20px;
+            text-align: center;
+            color: #8B4513;
+        }
+
+        /* Content Area */
+        .content {
+            padding: 20px;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 50px;
+            font-size: 1.5em;
+            color: #8B4513;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .navigation {
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+
+            .nav-center {
+                width: 100%;
+                order: -1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navigation">
+        <button class="nav-button" id="prevBtn" onclick="navigate(-1)">← Previous</button>
+
+        <div class="nav-center">
+            <a href="viewer.html" class="nav-button">↑ Back to List</a>
+        </div>
+
+        <button class="nav-button" id="nextBtn" onclick="navigate(1)">Next →</button>
+    </div>
+
+    <div class="search-container">
+        <input
+            type="text"
+            id="searchBox"
+            class="search-box"
+            placeholder="Search by name or number... (e.g., श्रीमाता or 1)"
+            autocomplete="off"
+        />
+        <div id="searchResults" class="search-results"></div>
+    </div>
+
+    <div class="content" id="content">
+        <div class="loading">Loading name...</div>
+    </div>
+
+    <script>
+        let currentNumber = 1;
+        const totalNames = 1000;
+        let allNames = [];
+
+        // Convert Arabic numerals to Devanagari numerals
+        function toDevanagariNumber(num) {
+            const devanagariDigits = ['०', '१', '२', '३', '४', '५', '६', '७', '८', '९'];
+            return num.toString().split('').map(digit => devanagariDigits[parseInt(digit)]).join('');
+        }
+
+        // Simple transliteration for English to Devanagari search
+        function transliterateToDevanagari(text) {
+            // Simplified phonetic transliteration (without diacritics)
+            let result = text.toLowerCase();
+
+            // Handle special conjuncts and combinations first
+            result = result.replace(/ksha/g, 'क्ष');
+            result = result.replace(/ksh/g, 'क्ष');
+            result = result.replace(/tra/g, 'त्र');
+            result = result.replace(/jnya/g, 'ज्ञ');
+            result = result.replace(/jna/g, 'ज्ञ');
+            result = result.replace(/shri/g, 'श्री');
+            result = result.replace(/sri/g, 'श्री');
+
+            // Aspirated consonants (two characters)
+            result = result.replace(/chh/g, 'छ');
+            result = result.replace(/kh/g, 'ख');
+            result = result.replace(/gh/g, 'घ');
+            result = result.replace(/ch/g, 'च');
+            result = result.replace(/jh/g, 'झ');
+            result = result.replace(/th/g, 'थ');
+            result = result.replace(/dh/g, 'ध');
+            result = result.replace(/ph/g, 'फ');
+            result = result.replace(/bh/g, 'भ');
+            result = result.replace(/sh/g, 'श');
+            result = result.replace(/ng/g, 'ङ');
+            result = result.replace(/ny/g, 'ञ');
+
+            // Double vowels before single vowels
+            result = result.replace(/aa/g, 'ा');
+            result = result.replace(/ii/g, 'ी');
+            result = result.replace(/uu/g, 'ू');
+            result = result.replace(/ai/g, 'ै');
+            result = result.replace(/au/g, 'ौ');
+
+            // Single vowels
+            result = result.replace(/a/g, '');  // 'a' inherent in consonants
+            result = result.replace(/i/g, 'ि');
+            result = result.replace(/u/g, 'ु');
+            result = result.replace(/e/g, 'े');
+            result = result.replace(/o/g, 'ो');
+
+            // Single consonants (after handling aspirated ones)
+            result = result.replace(/k/g, 'क');
+            result = result.replace(/g/g, 'ग');
+            result = result.replace(/j/g, 'ज');
+            result = result.replace(/t/g, 'त');
+            result = result.replace(/d/g, 'द');
+            result = result.replace(/n/g, 'न');
+            result = result.replace(/p/g, 'प');
+            result = result.replace(/b/g, 'ब');
+            result = result.replace(/m/g, 'म');
+            result = result.replace(/y/g, 'य');
+            result = result.replace(/r/g, 'र');
+            result = result.replace(/l/g, 'ल');
+            result = result.replace(/v/g, 'व');
+            result = result.replace(/w/g, 'व');
+            result = result.replace(/s/g, 'स');
+            result = result.replace(/h/g, 'ह');
+
+            return result;
+        }
+
+        function matchesQuery(name, query) {
+            const lowerName = name.toLowerCase();
+            const lowerQuery = query.toLowerCase();
+
+            // Direct match (for Devanagari input)
+            if (lowerName.includes(lowerQuery)) {
+                return true;
+            }
+
+            // Transliteration match (for English input)
+            try {
+                const transliterated = transliterateToDevanagari(lowerQuery);
+                return lowerName.includes(transliterated);
+            } catch (e) {
+                return false;
+            }
+        }
+
+        // Get number from URL parameter
+        function getNumberFromURL() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const number = parseInt(urlParams.get('number'));
+            return (number >= 1 && number <= totalNames) ? number : 1;
+        }
+
+        // Load all names for search functionality
+        async function loadAllNames() {
+            if (allNames.length > 0) return; // Already loaded
+
+            const promises = [];
+            for (let i = 1; i <= totalNames; i++) {
+                const filename = i.toString().padStart(4, '0') + '.md';
+                promises.push(
+                    fetch('../SoubhagyaBhaskara/' + filename)
+                        .then(response => response.text())
+                        .then(content => {
+                            const match = content.match(/^#\s+(.+)$/m);
+                            if (match) {
+                                return {
+                                    number: i,
+                                    name: match[1].trim()
+                                };
+                            }
+                            return { number: i, name: `Name ${i}` };
+                        })
+                        .catch(() => ({ number: i, name: `Name ${i}` }))
+                );
+            }
+
+            allNames = await Promise.all(promises);
+        }
+
+        // Search functionality
+        const searchBox = document.getElementById('searchBox');
+        const searchResults = document.getElementById('searchResults');
+
+        searchBox.addEventListener('focus', async () => {
+            await loadAllNames();
+        });
+
+        searchBox.addEventListener('input', (e) => {
+            const query = e.target.value.toLowerCase().trim();
+
+            if (!query) {
+                searchResults.classList.remove('show');
+                searchResults.innerHTML = '';
+                return;
+            }
+
+            const filtered = allNames.filter(item => {
+                return item.number.toString().includes(query) ||
+                       matchesQuery(item.name, query);
+            }).slice(0, 10); // Show max 10 results
+
+            if (filtered.length === 0) {
+                searchResults.innerHTML = '<div class="no-results-message">No names found</div>';
+                searchResults.classList.add('show');
+                return;
+            }
+
+            searchResults.innerHTML = filtered.map(item => `
+                <div class="search-result-item" onclick="jumpToName(${item.number})">
+                    <span class="search-result-number">${toDevanagariNumber(item.number)}</span>
+                    <span class="search-result-name">${item.name}</span>
+                </div>
+            `).join('');
+            searchResults.classList.add('show');
+        });
+
+        // Close search results when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!searchBox.contains(e.target) && !searchResults.contains(e.target)) {
+                searchResults.classList.remove('show');
+            }
+        });
+
+        // Jump to a specific name from search
+        function jumpToName(number) {
+            loadName(number);
+            searchBox.value = '';
+            searchResults.classList.remove('show');
+            searchResults.innerHTML = '';
+        }
+
+        // Load markdown file and convert to HTML
+        async function loadName(number) {
+            if (!number) number = currentNumber;
+            currentNumber = parseInt(number);
+
+            const filename = `../SoubhagyaBhaskara/${currentNumber.toString().padStart(4, '0')}.md`;
+
+            try {
+                const response = await fetch(filename);
+                if (!response.ok) throw new Error('File not found');
+
+                let markdown = await response.text();
+
+                // Remove YAML front matter if present
+                markdown = markdown.replace(/^---[\s\S]*?---\n/, '');
+
+                // Convert markdown to HTML
+                const html = marked.parse(markdown);
+
+                document.getElementById('content').innerHTML = html;
+
+                // Update URL without reloading
+                const newURL = `${window.location.pathname}?number=${currentNumber}`;
+                window.history.pushState({ number: currentNumber }, '', newURL);
+
+                // Update button states
+                document.getElementById('prevBtn').disabled = (currentNumber === 1);
+                document.getElementById('nextBtn').disabled = (currentNumber === totalNames);
+
+                // Update page title
+                const h1 = document.querySelector('h1');
+                if (h1) {
+                    document.title = h1.textContent + ' - Lalita Sahasranama';
+                }
+
+            } catch (error) {
+                document.getElementById('content').innerHTML =
+                    `<div class="loading">Error loading name ${currentNumber}: ${error.message}</div>`;
+            }
+        }
+
+        // Navigate between names
+        function navigate(direction) {
+            const newNumber = currentNumber + direction;
+            if (newNumber >= 1 && newNumber <= totalNames) {
+                loadName(newNumber);
+            }
+        }
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowLeft') navigate(-1);
+            if (e.key === 'ArrowRight') navigate(1);
+        });
+
+        // Handle browser back/forward buttons
+        window.addEventListener('popstate', (e) => {
+            if (e.state && e.state.number) {
+                loadName(e.state.number);
+            }
+        });
+
+        // Initialize
+        currentNumber = getNumberFromURL();
+        loadName(currentNumber);
+    </script>
+</body>
+</html>
