@@ -466,17 +466,17 @@
 </head>
 <body>
     <div class="navigation">
-        <button class="nav-button" id="prevBtn" onclick="navigate(-1)">P</button>
+        <button class="nav-button" id="prevBtn" onclick="navigate(-1)">&lt;</button>
 
         <div class="nav-center" id="navCenter">
             <div class="number-row" onclick="window.location.href='../';" title="Go to names list">
                 <span>↑</span>
-                <span id="nameNumber">1</span>
+                <span id="nameNumber">१</span>
             </div>
             <span class="name-title">Loading...</span>
         </div>
 
-        <button class="nav-button" id="nextBtn" onclick="navigate(1)">N</button>
+        <button class="nav-button" id="nextBtn" onclick="navigate(1)">&gt;</button>
     </div>
 
     <div class="content">
@@ -517,10 +517,20 @@
             return String(num).padStart(4, '0');
         }
 
+        // Convert Arabic numerals to Sanskrit (Devanagari) numerals
+        function toSanskritNumber(num) {
+            const sanskritDigits = ['०', '१', '२', '३', '४', '५', '६', '७', '८', '९'];
+            return String(num).split('').map(d => sanskritDigits[parseInt(d)]).join('');
+        }
+
         // Fetch file with error handling
         async function fetchFile(url) {
             try {
-                const response = await fetch(url);
+                // Add cache-busting timestamp to prevent browser caching
+                const cacheBuster = '?t=' + new Date().getTime();
+                const response = await fetch(url + cacheBuster, {
+                    cache: 'no-store'
+                });
                 if (!response.ok) return null;
                 return await response.text();
             } catch (error) {
@@ -531,7 +541,11 @@
         // Fetch JSON file with error handling
         async function fetchJSON(url) {
             try {
-                const response = await fetch(url);
+                // Add cache-busting timestamp to prevent browser caching
+                const cacheBuster = '?t=' + new Date().getTime();
+                const response = await fetch(url + cacheBuster, {
+                    cache: 'no-store'
+                });
                 if (!response.ok) return null;
                 return await response.json();
             } catch (error) {
@@ -605,7 +619,7 @@
                 const nameData = await loadNameData(currentNumber);
 
                 // Display number and name in navigation center
-                document.getElementById('nameNumber').textContent = currentNumber;
+                document.getElementById('nameNumber').textContent = toSanskritNumber(currentNumber);
                 document.querySelector('.name-title').textContent = nameData.name;
 
                 // Display mantra section (always show, use "-" if not available)
@@ -833,6 +847,10 @@
 
         // Keyboard navigation
         document.addEventListener('keydown', (e) => {
+            // Don't navigate if user is typing in a textarea or input
+            if (e.target.tagName === 'TEXTAREA' || e.target.tagName === 'INPUT') {
+                return;
+            }
             if (e.key === 'ArrowLeft') navigate(-1);
             if (e.key === 'ArrowRight') navigate(1);
         });
