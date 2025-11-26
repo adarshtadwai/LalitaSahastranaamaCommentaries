@@ -841,5 +841,17 @@
         currentNumber = getNumberFromURL();
         loadName(currentNumber);
     </script>
+
+    <!-- Edit Module (optional - only loads if edit server is running) -->
+    <script src="../../editor/edit-module.js"></script>
+    <script>
+        // Initialize edit module after page loads
+        window.addEventListener('load', async () => {
+            const nameNumber = getNumberFromURL().toString().padStart(4, '0');
+            if (window.EditModule) {
+                await EditModule.init(nameNumber);
+            }
+        });
+    </script>
 </body>
 </html>
