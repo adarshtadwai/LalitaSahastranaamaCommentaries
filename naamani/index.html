@@ -579,7 +579,7 @@
         // Fetch all names data from lightweight index
         async function loadNames() {
             try {
-                const response = await fetch('../names-index.json');
+                const response = await fetch('../Data/naamani.json');
                 const data = await response.json();
                 names.push(...data.names);
 
