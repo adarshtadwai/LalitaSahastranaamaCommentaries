@@ -7,7 +7,7 @@
 #   जयमङ्गला: false  # true when commentary is added
 #   सौभाग्यभास्कर: false  # true when commentary is added
 #   बालातपा: false  # true when commentary is added
-#   नाममन्त्र: true  # auto-generated, always true
+#   नाममन्त्र: false  # true when revised
 
 रूप:  # Appearance/Form
   # मुख:  # Face
