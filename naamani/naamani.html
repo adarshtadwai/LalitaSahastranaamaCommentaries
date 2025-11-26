@@ -26,17 +26,17 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            gap: 15px;
+            gap: 2px;
         }
 
         .nav-button {
             background: rgba(255, 255, 255, 0.2);
             color: white;
             border: 2px solid rgba(255, 255, 255, 0.3);
-            padding: 10px 20px;
+            padding: 8px 16px;
             border-radius: 5px;
             cursor: pointer;
-            font-size: 1em;
+            font-size: 0.95em;
             font-family: 'Annapurna SIL', sans-serif;
             transition: all 0.3s;
             text-decoration: none;
@@ -60,7 +60,42 @@
             flex: 1;
             text-align: center;
             color: white;
-            font-size: 1.1em;
+            padding: 0 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .nav-center .number-row {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 0.9em;
+            background: rgba(255, 255, 255, 0.2);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .nav-center .number-row:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+
+        .nav-center .name-title {
+            font-size: 2em;
+            font-weight: bold;
+        }
+
+        .nav-center .mantra {
+            font-size: 0.7em;
+            font-style: italic;
+            color: rgba(255, 255, 255, 0.9);
+            font-weight: normal;
         }
 
         /* Content Area */
@@ -70,17 +105,42 @@
             margin: 0 auto;
         }
 
-        /* Name Header */
-        #nameHeader {
-            text-align: center;
-            padding: 30px 20px 10px 20px;
-            margin-bottom: 5px;
+        /* Mantra Section */
+        #mantra-section {
+            font-size: 1.1em;
+            color: #555;
+            padding: 15px 20px;
+            background: #f0f8ff;
+            border-left: 4px solid #4682B4;
+            border-radius: 4px;
+            text-align: left;
+            max-width: 1200px;
+            margin: 20px auto 10px auto;
         }
 
-        #nameHeader h1 {
-            font-size: 3em;
-            color: #8B0000;
-            margin-bottom: 0;
+        #mantra-section .label {
+            font-weight: bold;
+            color: #4682B4;
+            margin-right: 8px;
+        }
+
+        /* Balatapa Section */
+        #balatapa-section {
+            font-size: 1.1em;
+            color: #555;
+            padding: 15px 20px;
+            background: #fff8dc;
+            border-left: 4px solid #DAA520;
+            border-radius: 4px;
+            text-align: left;
+            max-width: 1200px;
+            margin: 10px auto 20px auto;
+        }
+
+        #balatapa-section .label {
+            font-weight: bold;
+            color: #8B4513;
+            margin-right: 8px;
         }
 
         .loading {
@@ -132,7 +192,96 @@
         }
 
         .commentary-text p {
-            margin-bottom: 20px;
+            background: #fef9f3;
+            padding: 15px 20px;
+            border-left: 4px solid #DAA520;
+            margin-bottom: 15px;
+            border-radius: 4px;
+        }
+
+        /* Hide व्याख्यानम् headings completely */
+        .commentary-text h2 {
+            display: none;
+        }
+
+        /* Style blockquotes (slokas) to flow inline with text */
+        .commentary-text blockquote {
+            display: inline;
+            background: transparent;
+            border: none;
+            padding: 0;
+            margin: 0;
+            color: #7b2cbf;
+            font-weight: 500;
+        }
+
+        .commentary-text blockquote p {
+            display: inline;
+            background: transparent;
+            border: none;
+            padding: 0;
+            margin: 0;
+            color: #7b2cbf;
+        }
+
+        /* Personal notes section */
+        .commentary-text h3 {
+            background: #e8f4f8;
+            color: #1a5490;
+            font-size: 1em;
+            padding: 10px 15px;
+            margin: 15px 0 10px 0;
+            border-left: 4px solid #4a90e2;
+            border-radius: 4px;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .commentary-text h3:hover {
+            background: #d8e9f3;
+        }
+
+        .commentary-text h3::after {
+            content: '▼';
+            font-size: 0.8em;
+            transition: transform 0.3s;
+        }
+
+        .commentary-text h3.collapsed::after {
+            transform: rotate(-90deg);
+        }
+
+        /* Hide personal notes content by default */
+        .personal-notes {
+            display: none;
+            background: #f8fbfd;
+            padding: 12px 18px;
+            margin: 0 0 15px 0;
+            border-left: 4px solid #4a90e2;
+            border-radius: 4px;
+            font-style: italic;
+            color: #666;
+        }
+
+        .personal-notes.expanded {
+            display: block;
+        }
+
+        /* Hide placeholder text for personal notes */
+        .commentary-text em {
+            color: #999;
+            font-size: 0.95em;
+        }
+
+        /* Hide horizontal rules (section dividers) */
+        .commentary-text hr {
+            border: none;
+            height: 2px;
+            background: linear-gradient(to right, transparent, #DAA520, transparent);
+            margin: 30px 0;
         }
 
         .sanskrit-quote {
@@ -201,6 +350,58 @@
             to { opacity: 1; transform: translateY(0); }
         }
 
+        /* Collapsible Commentary Header */
+        .collapsible-commentary-header {
+            background: #fef9f3;
+            color: #333;
+            padding: 15px 20px;
+            margin: 20px 0 0 0;
+            border-radius: 8px 8px 0 0;
+            cursor: pointer;
+            display: block;
+            font-size: 1.1em;
+            font-weight: 600;
+            transition: all 0.3s;
+            user-select: none;
+            border: 1px solid #e8dcc8;
+        }
+
+        .collapsible-commentary-header:hover {
+            background: #fdf5e6;
+            border-color: #dac89a;
+        }
+
+        .collapsible-commentary-header .commentary-name {
+            color: #333;
+            font-weight: 600;
+        }
+
+        .collapsible-commentary-header .toggle-hint {
+            font-size: 0.85em;
+            color: #a0826d;
+            margin-left: 8px;
+            font-weight: 400;
+        }
+
+        .collapsible-commentary-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease-out;
+            background: white;
+            border-radius: 0 0 8px 8px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+
+        .collapsible-commentary-content.expanded {
+            max-height: 10000px;
+            transition: max-height 0.6s ease-in;
+        }
+
+        .collapsible-commentary-content .commentary-section {
+            margin: 0;
+            border-radius: 0 0 8px 8px;
+        }
+
         /* Responsive */
         @media (max-width: 768px) {
             .navigation {
@@ -211,6 +412,24 @@
             .nav-center {
                 width: 100%;
                 order: -1;
+                font-size: 1.5em;
+            }
+
+            .nav-button {
+                font-size: 0.85em;
+                padding: 6px 12px;
+            }
+
+            #mantra-section {
+                margin: 15px 15px 10px 15px;
+                padding: 12px 15px;
+                font-size: 1em;
+            }
+
+            #balatapa-section {
+                margin: 10px 15px 15px 15px;
+                padding: 12px 15px;
+                font-size: 1em;
             }
 
             .commentary-section {
@@ -225,18 +444,26 @@
 </head>
 <body>
     <div class="navigation">
-        <button class="nav-button" id="prevBtn" onclick="navigate(-1)">← Previous</button>
+        <button class="nav-button" id="prevBtn" onclick="navigate(-1)">P</button>
 
-        <div class="nav-center">
-            <a href="../" class="nav-button">↑ Back to List</a>
+        <div class="nav-center" id="navCenter">
+            <div class="number-row" onclick="window.location.href='../';" title="Go to names list">
+                <span>↑</span>
+                <span id="nameNumber">1</span>
+            </div>
+            <span class="name-title">Loading...</span>
         </div>
 
-        <button class="nav-button" id="nextBtn" onclick="navigate(1)">Next →</button>
+        <button class="nav-button" id="nextBtn" onclick="navigate(1)">N</button>
     </div>
 
     <div class="content">
-        <div id="nameHeader" style="display: none;">
-            <!-- Name will be displayed here -->
+        <div id="mantra-section" style="display: none;">
+            <!-- Mantra will be displayed here -->
+        </div>
+
+        <div id="balatapa-section" style="display: none;">
+            <!-- Balatapa will be displayed here -->
         </div>
 
         <div class="commentary-tabs" id="commentaryTabs" style="display: none;">
@@ -300,18 +527,26 @@
             // Load Datta commentary
             const dattaData = await fetchJSON(`../../Data/DattaCommentary/${numStr}.json`);
 
+            // Load Mantra
+            const mantraTxt = await fetchFile(`../../Data/Mantra/${numStr}.txt`);
+
+            // Load Balatapa commentary (one-line commentary)
+            const balatapaTxt = await fetchFile(`../../Data/Balatapa/${numStr}.txt`);
+
             // Load Soubhagya commentary
             const soubhagyaMarkdown = await fetchFile(`../../Data/SoubhagyaBhaskara/${numStr}.md`);
 
             // Load Jayamangala commentary (if exists)
-            const jayamangalaData = await fetchJSON(`../../Data/Jayamangala/${numStr}.json`);
+            const jayamangalaMarkdown = await fetchFile(`../../Data/Jayamangala/${numStr}.md`);
 
             return {
                 number: number,
                 name: nameText ? nameText.trim() : `Name ${number}`,
+                mantra: mantraTxt || "",
                 datta_commentary: dattaData || { meaning: "", commentary: "" },
+                balatapa_commentary: balatapaTxt || "",
                 soubhagya_commentary: soubhagyaMarkdown || "",
-                jayamangala_commentary: jayamangalaData || null
+                jayamangala_commentary: jayamangalaMarkdown || ""
             };
         }
 
@@ -347,48 +582,53 @@
                 // Load data from individual files
                 const nameData = await loadNameData(currentNumber);
 
-                // Display name header
-                const nameHeaderHTML = `<h1>${nameData.name}</h1>`;
-                document.getElementById('nameHeader').innerHTML = nameHeaderHTML;
-                document.getElementById('nameHeader').style.display = 'block';
+                // Display number and name in navigation center
+                document.getElementById('nameNumber').textContent = currentNumber;
+                document.querySelector('.name-title').textContent = nameData.name;
 
-                // Always show all tabs, display "not available" message if no content
+                // Display mantra section (always show, use "-" if not available)
+                const mantraContent = (nameData.mantra && nameData.mantra.trim().length > 0)
+                    ? nameData.mantra.trim()
+                    : '-';
+                document.getElementById('mantra-section').innerHTML =
+                    `<span class="label">नाममन्त्रः »</span>${mantraContent}`;
+                document.getElementById('mantra-section').style.display = 'block';
+
+                // Display balatapa section (always show, use "-" if not available)
+                const balatapContent = (nameData.balatapa_commentary && nameData.balatapa_commentary.trim().length > 0)
+                    ? nameData.balatapa_commentary.trim()
+                    : '-';
+                document.getElementById('balatapa-section').innerHTML =
+                    `<span class="label">बालातपा »</span>${balatapContent}`;
+                document.getElementById('balatapa-section').style.display = 'block';
+
+                // Tabs in order: जयमङ्गला, सौभाग्यभास्कर (removed नाममन्त्रम् and बालातपा tabs)
                 const tabs = [];
                 const panels = [];
 
-                // 1. Meaning tab (always show)
-                tabs.push({id: 'meaning', label: 'Meaning'});
-                let meaningHTML = '';
-                if (nameData.datta_commentary.meaning) {
-                    meaningHTML += `<h3>English</h3><div class="meaning-box">${formatText(nameData.datta_commentary.meaning)}</div>`;
+                // 3. जयमङ्गला tab
+                let jayamangalaMarkdown = nameData.jayamangala_commentary || '';
+                jayamangalaMarkdown = jayamangalaMarkdown.replace(/^#\s+.+$/m, '').trim();
+
+                let jayamangalaHTML = '';
+                if (jayamangalaMarkdown && jayamangalaMarkdown.length > 0) {
+                    jayamangalaHTML = `<div class="commentary-text">${marked.parse(jayamangalaMarkdown)}</div>`;
                 } else {
-                    meaningHTML = '<div class="no-commentary">English meaning not yet available for this name.</div>';
+                    jayamangalaHTML = '<div class="no-commentary">जयमङ्गला commentary not yet available for this name.</div>';
                 }
+                tabs.push({id: 'jayamangala', label: 'जयमङ्गला'});
                 panels.push({
-                    id: 'meaning',
-                    html: meaningHTML
+                    id: 'jayamangala',
+                    html: jayamangalaHTML
                 });
 
-                // 2. English Commentary tab (always show)
-                tabs.push({id: 'datta', label: 'English Commentary'});
-                let dattaHTML = '';
-                if (nameData.datta_commentary.commentary) {
-                    dattaHTML = `<div class="commentary-text">${formatText(nameData.datta_commentary.commentary)}</div>`;
-                } else {
-                    dattaHTML = '<div class="no-commentary">English commentary not yet available for this name.</div>';
-                }
-                panels.push({
-                    id: 'datta',
-                    html: dattaHTML
-                });
-
-                // 3. सौभाग्यभास्कर tab (always show)
+                // 4. सौभाग्यभास्कर tab
                 let soubhagyaMarkdown = nameData.soubhagya_commentary || '';
                 soubhagyaMarkdown = soubhagyaMarkdown.replace(/^#\s+.+$/m, '').trim();
 
                 let soubhagyaHTML = '';
                 if (soubhagyaMarkdown && soubhagyaMarkdown.length > 0) {
-                    soubhagyaHTML = marked.parse(soubhagyaMarkdown);
+                    soubhagyaHTML = `<div class="commentary-text">${marked.parse(soubhagyaMarkdown)}</div>`;
                 } else {
                     soubhagyaHTML = '<div class="no-commentary">सौभाग्यभास्कर commentary not yet available for this name.</div>';
                 }
@@ -398,42 +638,47 @@
                     html: soubhagyaHTML
                 });
 
-                // 4. Jayamangala tab (always show)
-                tabs.push({id: 'jayamangala', label: 'जयमङ्गला'});
-                let jayamangalaHTML = '';
-                if (nameData.jayamangala_commentary && nameData.jayamangala_commentary.commentary) {
-                    jayamangalaHTML = `<div class="commentary-text">${formatText(nameData.jayamangala_commentary.commentary)}</div>`;
-                } else {
-                    jayamangalaHTML = '<div class="no-commentary">जयमङ्गला commentary not yet available for this name.</div>';
-                }
-                panels.push({
-                    id: 'jayamangala',
-                    html: jayamangalaHTML
-                });
+                // Hide tabs section since we have no tabs now
+                document.getElementById('commentaryTabs').style.display = 'none';
 
-                // Build tabs HTML
-                const tabsHTML = tabs.map((tab, index) =>
-                    `<button class="tab-button ${index === 0 ? 'active' : ''}" data-tab="${tab.id}">${tab.label}</button>`
-                ).join('');
-
-                // Build panels HTML
-                const panelsHTML = panels.map((panel, index) => `
-                    <div class="tab-panel ${index === 0 ? 'active' : ''}" id="${panel.id}-panel">
-                        <div class="commentary-section">
-                            ${panel.html}
+                // Build collapsible commentaries (जयमङ्गला and सौभाग्यभास्कर)
+                let panelsHTML = `
+                    <div class="collapsible-commentary-wrapper">
+                        <div class="collapsible-commentary-header collapsed" onclick="toggleCommentary('jayamangala')">
+                            <span class="commentary-name">जयमङ्गला</span>
+                            <span class="toggle-hint">»&nbsp;&nbsp; click to toggle</span>
+                        </div>
+                        <div class="collapsible-commentary-content" id="jayamangala-collapsible">
+                            <div class="commentary-section">
+                                ${panels[0].html}
+                            </div>
                         </div>
                     </div>
-                `).join('');
 
-                // Update tabs and content
-                document.getElementById('commentaryTabs').innerHTML = tabsHTML;
+                    <div class="collapsible-commentary-wrapper">
+                        <div class="collapsible-commentary-header collapsed" onclick="toggleCommentary('soubhagya')">
+                            <span class="commentary-name">सौभाग्यभास्कर</span>
+                            <span class="toggle-hint">»&nbsp;&nbsp; click to toggle</span>
+                        </div>
+                        <div class="collapsible-commentary-content" id="soubhagya-collapsible">
+                            <div class="commentary-section">
+                                ${panels[1].html}
+                            </div>
+                        </div>
+                    </div>
+                `;
+
+                // Update content
                 document.getElementById('content').innerHTML = panelsHTML;
-
-                // Show tabs
-                document.getElementById('commentaryTabs').style.display = 'flex';
 
                 // Setup tab switching
                 setupTabs();
+
+                // Setup collapsible personal notes sections
+                setupPersonalNotes();
+
+                // Merge blockquotes inline with preceding paragraph
+                mergeBlockquotesInline();
 
                 // Update button states
                 document.getElementById('prevBtn').disabled = (currentNumber === 1);
@@ -480,6 +725,79 @@
                 if (targetButton) {
                     targetButton.click();
                 }
+            }
+        }
+
+        // Setup collapsible personal notes sections
+        function setupPersonalNotes() {
+            // Find all h3 elements (मम टिप्पणी sections) in commentary-text divs
+            document.querySelectorAll('.commentary-text h3').forEach(heading => {
+                // Start collapsed
+                heading.classList.add('collapsed');
+
+                // Find the next element (which should be the paragraph with notes)
+                let nextElem = heading.nextElementSibling;
+                if (nextElem && nextElem.tagName === 'P') {
+                    nextElem.classList.add('personal-notes');
+
+                    // Hide if it contains placeholder text
+                    if (nextElem.textContent.includes('अत्र स्वकीयं टिप्पणी लिख्यताम्')) {
+                        heading.style.display = 'none';
+                        nextElem.style.display = 'none';
+                    } else {
+                        // Add click handler to toggle
+                        heading.addEventListener('click', () => {
+                            heading.classList.toggle('collapsed');
+                            nextElem.classList.toggle('expanded');
+                        });
+                    }
+                }
+            });
+        }
+
+        // Merge blockquotes (slokas) inline with preceding paragraph
+        function mergeBlockquotesInline() {
+            document.querySelectorAll('.commentary-text blockquote').forEach(blockquote => {
+                let prevElem = blockquote.previousElementSibling;
+
+                // Find the previous paragraph (skip over other elements)
+                while (prevElem && prevElem.tagName !== 'P') {
+                    prevElem = prevElem.previousElementSibling;
+                }
+
+                if (prevElem && prevElem.tagName === 'P') {
+                    // Get sloka text
+                    const slokaText = blockquote.textContent.trim();
+
+                    // Create span for sloka
+                    const slokaSpan = document.createElement('span');
+                    slokaSpan.style.color = '#7b2cbf';
+                    slokaSpan.style.fontWeight = '500';
+                    slokaSpan.textContent = ' ' + slokaText;
+
+                    // Append to previous paragraph
+                    prevElem.appendChild(slokaSpan);
+
+                    // Remove blockquote
+                    blockquote.remove();
+                }
+            });
+        }
+
+        // Toggle collapsible commentary sections
+        function toggleCommentary(id) {
+            const header = event.currentTarget;
+            const content = document.getElementById(`${id}-collapsible`);
+
+            header.classList.toggle('collapsed');
+            content.classList.toggle('expanded');
+
+            // Re-run personal notes and blockquote merging for newly expanded content
+            if (content.classList.contains('expanded')) {
+                setTimeout(() => {
+                    setupPersonalNotes();
+                    mergeBlockquotesInline();
+                }, 100);
             }
         }
 
