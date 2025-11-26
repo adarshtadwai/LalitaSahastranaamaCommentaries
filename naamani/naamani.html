@@ -352,7 +352,6 @@
 
         /* Collapsible Commentary Header */
         .collapsible-commentary-header {
-            background: #fef9f3;
             color: #333;
             padding: 15px 20px;
             margin: 20px 0 0 0;
@@ -363,12 +362,36 @@
             font-weight: 600;
             transition: all 0.3s;
             user-select: none;
-            border: 1px solid #e8dcc8;
         }
 
-        .collapsible-commentary-header:hover {
-            background: #fdf5e6;
-            border-color: #dac89a;
+        /* जयमङ्गला - Light lavender/purple theme */
+        .collapsible-commentary-header.jayamangala {
+            background: #f5f0ff;
+            border: 1px solid #e0d4f7;
+        }
+
+        .collapsible-commentary-header.jayamangala:hover {
+            background: #ede4ff;
+            border-color: #d0c0f0;
+        }
+
+        .collapsible-commentary-header.jayamangala .toggle-hint {
+            color: #8b7ab8;
+        }
+
+        /* सौभाग्यभास्कर - Light rose/pink theme */
+        .collapsible-commentary-header.soubhagya {
+            background: #fff0f5;
+            border: 1px solid #f7d4e5;
+        }
+
+        .collapsible-commentary-header.soubhagya:hover {
+            background: #ffe4ef;
+            border-color: #f0c0d8;
+        }
+
+        .collapsible-commentary-header.soubhagya .toggle-hint {
+            color: #b87a9a;
         }
 
         .collapsible-commentary-header .commentary-name {
@@ -378,7 +401,6 @@
 
         .collapsible-commentary-header .toggle-hint {
             font-size: 0.85em;
-            color: #a0826d;
             margin-left: 8px;
             font-weight: 400;
         }
@@ -644,7 +666,7 @@
                 // Build collapsible commentaries (जयमङ्गला and सौभाग्यभास्कर)
                 let panelsHTML = `
                     <div class="collapsible-commentary-wrapper">
-                        <div class="collapsible-commentary-header collapsed" onclick="toggleCommentary('jayamangala')">
+                        <div class="collapsible-commentary-header jayamangala collapsed" onclick="toggleCommentary('jayamangala')">
                             <span class="commentary-name">जयमङ्गला</span>
                             <span class="toggle-hint">»&nbsp;&nbsp; click to toggle</span>
                         </div>
@@ -656,7 +678,7 @@
                     </div>
 
                     <div class="collapsible-commentary-wrapper">
-                        <div class="collapsible-commentary-header collapsed" onclick="toggleCommentary('soubhagya')">
+                        <div class="collapsible-commentary-header soubhagya collapsed" onclick="toggleCommentary('soubhagya')">
                             <span class="commentary-name">सौभाग्यभास्कर</span>
                             <span class="toggle-hint">»&nbsp;&nbsp; click to toggle</span>
                         </div>
