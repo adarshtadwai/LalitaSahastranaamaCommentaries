@@ -18,7 +18,7 @@
     <!-- English/IAST: Gentium Plus (excellent for diacritics) -->
     <link href="https://fonts.googleapis.com/css2?family=Gentium+Plus:wght@400;700&display=swap" rel="stylesheet">
 
-    <script src="../sanscript.js"></script>
+    <script src="../assets/js/sanscript.js"></script>
     <style>
         * {
             margin: 0;
@@ -773,7 +773,7 @@
 
             namesList.innerHTML = sortedNames.map(item => `
                 <div class="name-item" data-number="${item.number}">
-                    <a href="../name/${item.number}/">
+                    <a href="../name.html?n=${item.number}">
                         <span class="name-number">${toDevanagariNumber(item.number)}</span>
                         <span class="name-text">${getNameInLanguage(item)}</span>
                     </a>

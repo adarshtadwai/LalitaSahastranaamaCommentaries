@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="sa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lalita Sahasranama - Loading...</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Annapurna+SIL:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Annapurna SIL', sans-serif;
+            background: #fdfbf7;
+        }
+
+        /* Navigation Bar */
+        .navigation {
+            position: sticky;
+            top: 0;
+            background: linear-gradient(135deg, #8B0000, #8B4513);
+            padding: 15px 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            z-index: 100;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .nav-button {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            font-family: 'Annapurna SIL', sans-serif;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .nav-button:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+
+        .nav-button:disabled {
+            background: rgba(255, 255, 255, 0.1);
+            cursor: not-allowed;
+            transform: none;
+            opacity: 0.5;
+        }
+
+        .nav-center {
+            flex: 1;
+            text-align: center;
+            color: white;
+            font-size: 1.1em;
+        }
+
+        /* Content Area */
+        .content {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Name Header */
+        #nameHeader {
+            text-align: center;
+            padding: 30px 20px 10px 20px;
+            margin-bottom: 5px;
+        }
+
+        #nameHeader h1 {
+            font-size: 3em;
+            color: #8B0000;
+            margin-bottom: 0;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 50px;
+            font-size: 1.5em;
+            color: #8B4513;
+        }
+
+        /* Commentary Sections */
+        .commentary-section {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+
+        .commentary-section h2 {
+            color: #8B0000;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #DAA520;
+        }
+
+        .commentary-section h3 {
+            color: #8B4513;
+            font-size: 1.4em;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+
+        .meaning-box {
+            background: #fff8dc;
+            padding: 20px;
+            border-left: 4px solid #DAA520;
+            border-radius: 6px;
+            font-size: 1.15em;
+            line-height: 1.8;
+            color: #555;
+            margin: 20px 0;
+        }
+
+        .commentary-text {
+            line-height: 1.9;
+            color: #444;
+            font-size: 1.1em;
+        }
+
+        .commentary-text p {
+            margin-bottom: 20px;
+        }
+
+        .sanskrit-quote {
+            background: #f9f4ef;
+            border-left: 4px solid #8B4513;
+            padding: 15px 20px;
+            margin: 20px 0;
+            font-size: 1.2em;
+            color: #8B0000;
+            border-radius: 4px;
+        }
+
+        .no-commentary {
+            text-align: center;
+            padding: 40px 20px;
+            color: #8B4513;
+            font-size: 1.1em;
+            font-style: italic;
+        }
+
+        /* Commentary Tabs */
+        .commentary-tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 10px;
+            border-bottom: 3px solid #DAA520;
+            flex-wrap: wrap;
+        }
+
+        .tab-button {
+            background: transparent;
+            border: none;
+            padding: 15px 25px;
+            font-size: 1.1em;
+            font-family: 'Annapurna SIL', sans-serif;
+            color: #8B4513;
+            cursor: pointer;
+            border-bottom: 3px solid transparent;
+            margin-bottom: -3px;
+            transition: all 0.3s;
+            font-weight: 600;
+        }
+
+        .tab-button:hover {
+            background: rgba(139, 0, 0, 0.05);
+            color: #8B0000;
+        }
+
+        .tab-button.active {
+            color: #8B0000;
+            border-bottom-color: #8B0000;
+            background: rgba(139, 0, 0, 0.05);
+        }
+
+        .tab-panel {
+            display: none;
+        }
+
+        .tab-panel.active {
+            display: block;
+            animation: fadeIn 0.3s;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .navigation {
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+
+            .nav-center {
+                width: 100%;
+                order: -1;
+            }
+
+            .commentary-section {
+                padding: 20px;
+            }
+
+            .content {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navigation">
+        <button class="nav-button" id="prevBtn" onclick="navigate(-1)">← Previous</button>
+
+        <div class="nav-center">
+            <a href="names/" class="nav-button">↑ Back to List</a>
+        </div>
+
+        <button class="nav-button" id="nextBtn" onclick="navigate(1)">Next →</button>
+    </div>
+
+    <div class="content">
+        <div id="nameHeader" style="display: none;">
+            <!-- Name will be displayed here -->
+        </div>
+
+        <div class="commentary-tabs" id="commentaryTabs" style="display: none;">
+            <!-- Tabs will be dynamically added based on available content -->
+        </div>
+
+        <div id="content">
+            <div class="loading">Loading name...</div>
+        </div>
+    </div>
+
+    <script>
+        let currentNumber = 1;
+        const totalNames = 1000;
+        let allNamesData = null;
+
+        // Get number from URL parameter (?n=123)
+        function getNumberFromURL() {
+            const params = new URLSearchParams(window.location.search);
+            const number = parseInt(params.get('n'));
+            if (number >= 1 && number <= totalNames) return number;
+            return 1;
+        }
+
+        // Load all names data once
+        async function loadAllNamesData() {
+            if (allNamesData) return allNamesData;
+
+            try {
+                const response = await fetch("all-names.json");
+                const data = await response.json();
+                allNamesData = data.names;
+                return allNamesData;
+            } catch (error) {
+                console.error('Error loading names data:', error);
+                return null;
+            }
+        }
+
+        // Format text with paragraph breaks and Sanskrit highlighting
+        function formatText(text) {
+            if (!text) return '';
+
+            const paragraphs = text.split('\n\n');
+
+            return paragraphs.map(para => {
+                para = para.trim();
+                if (!para) return '';
+
+                // Check if paragraph is Sanskrit (contains Devanagari)
+                if (/[\u0900-\u097F]/.test(para) && para.length < 200) {
+                    return `<div class="sanskrit-quote">${para}</div>`;
+                }
+
+                return `<p>${para}</p>`;
+            }).join('');
+        }
+
+        // Load name and commentaries
+        async function loadName(number) {
+            if (!number) number = currentNumber;
+            currentNumber = parseInt(number);
+
+            try {
+                // Load all names data if not already loaded
+                await loadAllNamesData();
+
+                if (!allNamesData || currentNumber < 1 || currentNumber > totalNames) {
+                    throw new Error('Invalid name number');
+                }
+
+                // Get the data for this specific name (array is 0-indexed)
+                const nameData = allNamesData[currentNumber - 1];
+
+                // Display name header
+                const nameHeaderHTML = `<h1>${nameData.name}</h1>`;
+                document.getElementById('nameHeader').innerHTML = nameHeaderHTML;
+                document.getElementById('nameHeader').style.display = 'block';
+
+                // Determine which tabs to show
+                const tabs = [];
+                const panels = [];
+
+                // 1. Meaning tab (shows English meaning)
+                if (nameData.datta_commentary.meaning) {
+                    tabs.push({id: 'meaning', label: 'Meaning'});
+
+                    let meaningHTML = '';
+                    if (nameData.datta_commentary.meaning) {
+                        meaningHTML += `<h3>English</h3><div class="meaning-box">${formatText(nameData.datta_commentary.meaning)}</div>`;
+                    }
+
+                    panels.push({
+                        id: 'meaning',
+                        html: meaningHTML
+                    });
+                }
+
+                // 2. English Commentary tab (only if commentary exists, no meaning here)
+                if (nameData.datta_commentary.commentary) {
+                    tabs.push({id: 'datta', label: 'English Commentary'});
+                    panels.push({
+                        id: 'datta',
+                        html: `<div class="commentary-text">${formatText(nameData.datta_commentary.commentary)}</div>`
+                    });
+                }
+
+                // 3. सौभाग्यभास्कर tab (only if has content)
+                let soubhagyaMarkdown = nameData.soubhagya_commentary || '';
+                soubhagyaMarkdown = soubhagyaMarkdown.replace(/^#\s+.+$/m, '').trim();
+
+                if (soubhagyaMarkdown && soubhagyaMarkdown.length > 0) {
+                    const soubhagyaHTML = marked.parse(soubhagyaMarkdown);
+                    tabs.push({id: 'soubhagya', label: 'सौभाग्यभास्कर'});
+                    panels.push({
+                        id: 'soubhagya',
+                        html: soubhagyaHTML
+                    });
+                }
+
+                // Build tabs HTML
+                const tabsHTML = tabs.map((tab, index) =>
+                    `<button class="tab-button ${index === 0 ? 'active' : ''}" data-tab="${tab.id}">${tab.label}</button>`
+                ).join('');
+
+                // Build panels HTML
+                const panelsHTML = panels.map((panel, index) => `
+                    <div class="tab-panel ${index === 0 ? 'active' : ''}" id="${panel.id}-panel">
+                        <div class="commentary-section">
+                            ${panel.html}
+                        </div>
+                    </div>
+                `).join('');
+
+                // Update tabs and content
+                document.getElementById('commentaryTabs').innerHTML = tabsHTML;
+                document.getElementById('content').innerHTML = panelsHTML;
+
+                // Show tabs
+                document.getElementById('commentaryTabs').style.display = 'flex';
+
+                // Setup tab switching
+                setupTabs();
+
+                // Update button states
+                document.getElementById('prevBtn').disabled = (currentNumber === 1);
+                document.getElementById('nextBtn').disabled = (currentNumber === totalNames);
+
+                // Update page title with the name
+                document.title = `${nameData.name} - Lalita Sahasranama`;
+
+                // Update URL without reloading page
+                const newUrl = `${window.location.pathname}?n=${currentNumber}${window.location.hash}`;
+                window.history.replaceState({number: currentNumber}, '', newUrl);
+
+            } catch (error) {
+                document.getElementById('content').innerHTML =
+                    `<div class="loading">Error loading name ${currentNumber}: ${error.message}</div>`;
+            }
+        }
+
+        // Setup tab switching
+        function setupTabs() {
+            const tabButtons = document.querySelectorAll('.tab-button');
+            tabButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // Remove active class from all tabs and panels
+                    tabButtons.forEach(btn => btn.classList.remove('active'));
+                    document.querySelectorAll('.tab-panel').forEach(panel => panel.classList.remove('active'));
+
+                    // Add active class to clicked tab
+                    button.classList.add('active');
+
+                    // Show corresponding panel
+                    const tabName = button.dataset.tab;
+                    document.getElementById(`${tabName}-panel`).classList.add('active');
+
+                    // Update URL hash to remember active tab
+                    window.location.hash = tabName;
+                });
+            });
+
+            // Restore active tab from URL hash if present
+            const hash = window.location.hash.slice(1);
+            if (hash) {
+                const targetButton = document.querySelector(`[data-tab="${hash}"]`);
+                if (targetButton) {
+                    targetButton.click();
+                }
+            }
+        }
+
+        // Navigate between names
+        function navigate(direction) {
+            const newNumber = currentNumber + direction;
+            if (newNumber >= 1 && newNumber <= totalNames) {
+                currentNumber = newNumber;
+                loadName(newNumber);
+            }
+        }
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowLeft') navigate(-1);
+            if (e.key === 'ArrowRight') navigate(1);
+        });
+
+        // Initialize
+        currentNumber = getNumberFromURL();
+        loadName(currentNumber);
+    </script>
+</body>
+</html>
