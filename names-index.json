@@ -1,0 +1,5004 @@
+{
+  "names": [
+    {
+      "number": 1,
+      "name": "श्रीमाता",
+      "meaning": "She who is the auspicious Mother"
+    },
+    {
+      "number": 2,
+      "name": "श्रीमहाराज्ञी",
+      "meaning": "She who is the Empress of the Universe"
+    },
+    {
+      "number": 3,
+      "name": "श्रीमत्सिंहासनेश्वरी",
+      "meaning": "She who is the queen of the most glorious throne"
+    },
+    {
+      "number": 4,
+      "name": "चिदग्निकुण्डसम्भूता",
+      "meaning": "She who was born in the fire-pit of Pure Consciousness"
+    },
+    {
+      "number": 5,
+      "name": "देवकार्यसमुद्यता",
+      "meaning": "She who is intent on fulfilling the wishes of the gods"
+    },
+    {
+      "number": 6,
+      "name": "उद्यद्भानुसहस्राभा",
+      "meaning": "She who has the radiance of a thousand rising suns"
+    },
+    {
+      "number": 7,
+      "name": "चतुर्बाहुसमन्विता",
+      "meaning": "She who is four-armed"
+    },
+    {
+      "number": 8,
+      "name": "रागस्वरूपपाशाढ्या",
+      "meaning": "She who is holding the rope of love in Her hand"
+    },
+    {
+      "number": 9,
+      "name": "क्रोधाकाराङ्कुशोज्ज्वला",
+      "meaning": "She who shines, bearing the goad of anger"
+    },
+    {
+      "number": 10,
+      "name": "मनोरूपेक्षुकोदण्डा",
+      "meaning": "She who holds in Her hand a sugarcane bow that represents the mind"
+    },
+    {
+      "number": 11,
+      "name": "पञ्चतन्मात्रसायका",
+      "meaning": "She who holds the five subtle elements as arrows"
+    },
+    {
+      "number": 12,
+      "name": "निजारुणप्रभापूरमज्जद्ब्रह्माण्डमण्डला",
+      "meaning": "she who immerses the entire universe in the red efflugence of"
+    },
+    {
+      "number": 13,
+      "name": "चम्पकाशोकपुन्नागसौगन्धिकलसत्कचा",
+      "meaning": "She whose hair has been adorned with flowers like campaka,"
+    },
+    {
+      "number": 14,
+      "name": "कुरुविन्दमणिश्रेणीकनत्कोटीरमण्डिता",
+      "meaning": "She who is resplendent with a crown adorned with rows of"
+    },
+    {
+      "number": 15,
+      "name": "अष्टमीचन्द्रविभ्राजदलिकस्थलशोभिता",
+      "meaning": "She whose forehead shines like the crescent moon of the eighth"
+    },
+    {
+      "number": 16,
+      "name": "मुखचन्द्रकलङ्काभमृगनाभिविशेषका",
+      "meaning": "She who wears a musk mark on Her forehead which shines like"
+    },
+    {
+      "number": 17,
+      "name": "वदनस्मरमाङ्गल्यगृहतोरणचिल्लिका",
+      "meaning": "She whose eyebrows shine like the archways leading to the"
+    },
+    {
+      "number": 18,
+      "name": "वक्त्रलक्ष्मीपरीवाहचलन्मीनाभलोचना",
+      "meaning": "She whose eyes possess the luster of the fish that move about"
+    },
+    {
+      "number": 19,
+      "name": "नवचम्पकपुष्पाभनासादण्डविराजिता",
+      "meaning": "She who is resplendent with a nose that has the beauty of a"
+    },
+    {
+      "number": 20,
+      "name": "ताराकान्तितिरस्कारिनासाभरणभासुरा",
+      "meaning": "She who shines with a nose-ornament that excels the luster of a star"
+    },
+    {
+      "number": 21,
+      "name": "कदम्बमञ्जरीक्लृप्तकर्णपूरमनोहरा",
+      "meaning": "She who is captivating, wearing bunches of kadamba flowers"
+    },
+    {
+      "number": 22,
+      "name": "ताटङ्कयुगलीभूततपनोडुपमण्डला",
+      "meaning": "She who wears the sun and the moon as a pair of large earrings"
+    },
+    {
+      "number": 23,
+      "name": "पद्मरागशिलादर्शपरिभाविकपोलभूः",
+      "meaning": "She whose cheeks excel mirrors made of rubies in their beauty"
+    },
+    {
+      "number": 24,
+      "name": "नवविद्रुमबिम्बश्रीन्यक्कारिरदनच्छदा",
+      "meaning": "She whose lips excel freshly cut coral and bimba fruit in"
+    },
+    {
+      "number": 25,
+      "name": "शुद्धविद्याङ्कुराकारद्विजपङ्क्तिद्वयोज्ज्वला",
+      "meaning": "She who has radiant teeth which resemble the buds of pure knowledge"
+    },
+    {
+      "number": 26,
+      "name": "कर्पूरवीटिकामोदसमाकर्षिदिगन्तरा",
+      "meaning": "She who is enjoying a camphor-laden betel roll, the fragrance"
+    },
+    {
+      "number": 27,
+      "name": "निजसल्लापमाधुर्यविनिर्भर्त्सितकच्छपी",
+      "meaning": "She who excels even the veeNa of sarasvatI in the sweetness"
+    },
+    {
+      "number": 28,
+      "name": "मन्दस्मितप्रभापूरमज्जत्कामेशमानसा",
+      "meaning": "She who submerges even the mind of KAmesha(Lord shiva) in"
+    },
+    {
+      "number": 29,
+      "name": "अनाकलितसादृश्यचिबुकश्रीविराजिता",
+      "meaning": "She whose chin cannot be compared to anything(it is beyond"
+    },
+    {
+      "number": 30,
+      "name": "कामेशबद्धमाङ्गल्यसूत्रशोभितकन्धरा",
+      "meaning": "She whose neck is adorned with the marriage thread tied by KAmesha"
+    },
+    {
+      "number": 31,
+      "name": "कनकाङ्गदकेयूरकमनीयभुजान्विता",
+      "meaning": "She whose arms are beautifully adorned with golden armlets"
+    },
+    {
+      "number": 32,
+      "name": "रत्नग्रैवेयचिन्ताकलोलमुक्ताफलान्विता",
+      "meaning": "She whose neck is resplendent with a gem-studded necklace with"
+    },
+    {
+      "number": 33,
+      "name": "कामेश्वरप्रेमरत्नमणिप्रतिपणस्तनी",
+      "meaning": "She who gives Her breasts to KAmeshvara in return for the gem"
+    },
+    {
+      "number": 34,
+      "name": "नाभ्यालवालरोमालिलताफलकुचद्वयी",
+      "meaning": "She whose breasts are the fruits on the creeper of the fine"
+    },
+    {
+      "number": 35,
+      "name": "लक्ष्यरोमलताधारतासमुन्नेयमध्यमा",
+      "meaning": "She who has a waist, the existence of which can only be inferred"
+    },
+    {
+      "number": 36,
+      "name": "स्तनभारदलन्मध्यपट्टबन्धवलित्रया",
+      "meaning": "She whose abdomen has three folds which form a belt to support"
+    },
+    {
+      "number": 37,
+      "name": "अरुणारुणकौसुम्भवस्त्रभास्वत्कटीतटी",
+      "meaning": "She whose hips are adorned with a garment as red as the rising"
+    },
+    {
+      "number": 38,
+      "name": "रत्नकिङ्किणिकारम्यरशनादामभूषिता",
+      "meaning": "She who is adorned with a girdle which is decorated with many"
+    },
+    {
+      "number": 39,
+      "name": "कामेशज्ञातसौभाग्यमार्दवोरुद्वयान्विता",
+      "meaning": "The beauty and softness of whose thighs are known only to"
+    },
+    {
+      "number": 40,
+      "name": "माणिक्यमकुटाकारजानुद्वयविराजिता",
+      "meaning": "She whose knees are like crowns shaped from the precious red"
+    },
+    {
+      "number": 41,
+      "name": "इन्द्रगोपपरिक्षिप्तस्मरतूणाभजङ्घिका",
+      "meaning": "She whose calves gleam like the jewel-covered quiver of the"
+    },
+    {
+      "number": 42,
+      "name": "गूढगुल्फा",
+      "meaning": "She whose ankles are hidden"
+    },
+    {
+      "number": 43,
+      "name": "कूर्मपृष्ठजयिष्णुप्रपदान्विता",
+      "meaning": "She whose feet have arches that rival the back of a tortoise"
+    },
+    {
+      "number": 44,
+      "name": "नखदीधितिसंछन्ननमज्जनतमोगुणा",
+      "meaning": "She whose toenails give out such a radiance that all the"
+    },
+    {
+      "number": 45,
+      "name": "पदद्वयप्रभाजालपराकृतसरोरुहा",
+      "meaning": "She whose feet defeat lotus flowers in radiance"
+    },
+    {
+      "number": 46,
+      "name": "शिञ्जानमणिमञ्जिरमण्डितश्रीपदाम्बुजा",
+      "meaning": "She whose auspicious lotus feet are adorned with gem-studded"
+    },
+    {
+      "number": 47,
+      "name": "मरालीमन्दगमना",
+      "meaning": "She whose gait is as slow and gentle as that of a swan"
+    },
+    {
+      "number": 48,
+      "name": "महालावण्यशेवधिः",
+      "meaning": "She who is the treasure-house of beauty"
+    },
+    {
+      "number": 49,
+      "name": "सर्वारुणा",
+      "meaning": "She who is entirely red in complexion"
+    },
+    {
+      "number": 50,
+      "name": "अनवद्याङ्गी",
+      "meaning": "She whose body is worthy of worship"
+    },
+    {
+      "number": 51,
+      "name": "सर्वाभरणभूषिता",
+      "meaning": "She who is resplendent with all types of ornaments"
+    },
+    {
+      "number": 52,
+      "name": "शिवा",
+      "meaning": "She who sits in the lap of shiva, who is the conqueror of desire"
+    },
+    {
+      "number": 53,
+      "name": "कामेश्वराङ्कस्था",
+      "meaning": "She who bestows all that is auspicious"
+    },
+    {
+      "number": 54,
+      "name": "शिवस्वाधीनवल्लभा",
+      "meaning": "She who keeps Her husband always under Her control"
+    },
+    {
+      "number": 55,
+      "name": "सुमेरुमध्यश‍ृङ्गस्था",
+      "meaning": ""
+    },
+    {
+      "number": 56,
+      "name": "श्रीमन्नगरनायिका",
+      "meaning": "She who is the Mistress of the most auspicious (or prosperous)"
+    },
+    {
+      "number": 57,
+      "name": "चिन्तामणिगृहान्तस्था",
+      "meaning": "She who resides in a house built of the chintAmaNi"
+    },
+    {
+      "number": 58,
+      "name": "पञ्चब्रह्मासनस्थिता",
+      "meaning": "She who sits on a seat made of five BrahmAs"
+    },
+    {
+      "number": 59,
+      "name": "महापद्माटवीसंस्था",
+      "meaning": "She who resides in the great lotus forest"
+    },
+    {
+      "number": 60,
+      "name": "कदम्बवनवासिनी",
+      "meaning": "She who resides in the kadamba forest"
+    },
+    {
+      "number": 61,
+      "name": "सुधासागरमध्यस्था",
+      "meaning": "She who resides in the center of the ocean of nectar"
+    },
+    {
+      "number": 62,
+      "name": "कामाक्षी",
+      "meaning": "She whose eyes awaken desire, or She who has beautiful eyes"
+    },
+    {
+      "number": 63,
+      "name": "कामदायिनी",
+      "meaning": "She who grants all wishes"
+    },
+    {
+      "number": 64,
+      "name": "देवर्षिगणसङ्घातस्तूयमानात्मवैभवा",
+      "meaning": "She whose might is the subject of praise by multitudes of gods"
+    },
+    {
+      "number": 65,
+      "name": "भण्डासुरवधोद्युक्तशक्तिसेनासमन्विता",
+      "meaning": "She who is endowed with an army of shaktis intent on slaying"
+    },
+    {
+      "number": 66,
+      "name": "सम्पत्करीसमारूढसिन्धुरव्रजसेविता",
+      "meaning": "Who is attended by a herd of elephants ably commanded by sampatkarI"
+    },
+    {
+      "number": 67,
+      "name": "अश्वारूढाधिष्ठिताश्वकोटिकोटिभिरावृता",
+      "meaning": "She who is surrounded by a cavalry of several million horses"
+    },
+    {
+      "number": 68,
+      "name": "चक्रराजरथारूढसर्वायुधपरिष्कृता",
+      "meaning": "She who shines in Her chariot chakrarAja, equipped with all"
+    },
+    {
+      "number": 69,
+      "name": "गेयचक्ररथारूढमन्त्रिणीपरिसेविता",
+      "meaning": "She who is served by the shakti named mantriNI who rides the"
+    },
+    {
+      "number": 70,
+      "name": "किरिचक्ररथारूढदण्डनाथापुरस्कृता",
+      "meaning": "She who is escorted by the shakti known as daNDanAthA, seated"
+    },
+    {
+      "number": 71,
+      "name": "ज्वालामालिनिकाक्षिप्तवह्निप्राकारमध्यगा",
+      "meaning": "She who has taken position at the center of the fortress of"
+    },
+    {
+      "number": 72,
+      "name": "भण्डसैन्यवधोद्युक्तशक्तिविक्रमहर्षिता",
+      "meaning": "She who rejoices at the valor of the shaktis who are intent"
+    },
+    {
+      "number": 73,
+      "name": "नित्यापराक्रमाटोपनिरीक्षणसमुत्सुका",
+      "meaning": "She who delights in seeing the might and the pride of Her"
+    },
+    {
+      "number": 74,
+      "name": "भण्डपुत्रवधोद्युक्तबालाविक्रमनन्दिता",
+      "meaning": "She who delights in seeing the valor of the goddess bAla who"
+    },
+    {
+      "number": 75,
+      "name": "मन्त्रिण्यम्बाविरचितविशुक्रवधतोषिता",
+      "meaning": ""
+    },
+    {
+      "number": 76,
+      "name": "विषङ्गप्राणहरणवाराहीवीर्यनन्दिता -",
+      "meaning": ""
+    },
+    {
+      "number": 77,
+      "name": "कामेश्वरमुखालोककल्पितश्रीगणेश्वरा",
+      "meaning": "She who gives rise to gaNesha by a glance at the face of kAmeshvara"
+    },
+    {
+      "number": 78,
+      "name": "महागणेशनिर्भिन्नविघ्नयन्त्रप्रहर्षिता",
+      "meaning": "She who rejoices when gaNesha shatters all obstacles"
+    },
+    {
+      "number": 79,
+      "name": "भण्डासुरेन्द्रनिर्मुक्तशस्त्रप्रत्यस्त्रवर्षिणी",
+      "meaning": "She who showers counter weapons to each weapon fired at Her"
+    },
+    {
+      "number": 80,
+      "name": "कराङ्गुलिनखोत्पन्ननारायणदशाकृतिः",
+      "meaning": "She who created from Her fingernails all ten incarnations of"
+    },
+    {
+      "number": 81,
+      "name": "महापाशुपतास्त्राग्निनिर्दग्धासुरसैनिका",
+      "meaning": "She who burned the armies of the demons in the fire of the"
+    },
+    {
+      "number": 82,
+      "name": "कामेश्वरास्त्रनिर्दग्धसभण्डासुरशून्यका",
+      "meaning": "She who burned and destroyed bhaNDAsura and his capital shUnyaka"
+    },
+    {
+      "number": 83,
+      "name": "ब्रह्मोपेन्द्रमहेन्द्रादिदेवसंस्तुतवैभवा",
+      "meaning": "She whose many powers are extolled by brahmA, viShNu, shiva"
+    },
+    {
+      "number": 84,
+      "name": "हरनेत्राग्निसन्दग्धकामसञ्जीवनौषधिः",
+      "meaning": "She who became the life-giving medicine for kAmadeva (the god"
+    },
+    {
+      "number": 85,
+      "name": "श्रीमद्वाग्भवकूटैकस्वरूपमुखपङ्कजा",
+      "meaning": "She whose lotus face is the auspicious vAgbhavakUTa (a group"
+    },
+    {
+      "number": 86,
+      "name": "कण्ठाधःकटिपर्यन्तमध्यकूटस्वरूपिणी",
+      "meaning": "She who from Her neck to Her waist is of the form of the"
+    },
+    {
+      "number": 87,
+      "name": "शक्तिकूटैकतापन्नकट्यधोभागधारिणी",
+      "meaning": "She whose form below the waist is the shaktikUTa (the last"
+    },
+    {
+      "number": 88,
+      "name": "मूलमन्त्रात्मिका",
+      "meaning": "She who is the embodiment of the mUla mantra (the"
+    },
+    {
+      "number": 89,
+      "name": "मूलकूटत्रयकलेवरा",
+      "meaning": "She whose (subtle) body is made of the three parts of the"
+    },
+    {
+      "number": 90,
+      "name": "कुलामृतैकरसिका",
+      "meaning": "She who is especially fond of the nectar known as kula"
+    },
+    {
+      "number": 91,
+      "name": "कुलसङ्केतपालिनी",
+      "meaning": "She who protects the code of rituals of the path of yoga known"
+    },
+    {
+      "number": 92,
+      "name": "कुलाङ्गना",
+      "meaning": "She who is well-born (who is from a good family)"
+    },
+    {
+      "number": 93,
+      "name": "कुलान्तस्था",
+      "meaning": "She who resides in the kula vidyA"
+    },
+    {
+      "number": 94,
+      "name": "कौलिनी",
+      "meaning": "She who belongs to the kula"
+    },
+    {
+      "number": 95,
+      "name": "कुलयोगिनी",
+      "meaning": "She who is the deity in the kulas"
+    },
+    {
+      "number": 96,
+      "name": "अकुला",
+      "meaning": "She who does not have a family"
+    },
+    {
+      "number": 97,
+      "name": "समयान्तस्था",
+      "meaning": "She who resides inside 'samaya'"
+    },
+    {
+      "number": 98,
+      "name": "समयाचारतत्परा",
+      "meaning": "She who is attached to the samaya form of worship"
+    },
+    {
+      "number": 99,
+      "name": "मूलाधारैकनिलया",
+      "meaning": "She whose principal abode is the mUlAdhAra"
+    },
+    {
+      "number": 100,
+      "name": "ब्रह्मग्रन्थिविभेदिनी",
+      "meaning": "She who breaks through the knot of brahma"
+    },
+    {
+      "number": 101,
+      "name": "मणिपूरान्तरुदिता",
+      "meaning": "She who emerges in the maNipUra cakra"
+    },
+    {
+      "number": 102,
+      "name": "विष्णुग्रन्थिविभेदिनी",
+      "meaning": "She who breaks through the knot of viShNu"
+    },
+    {
+      "number": 103,
+      "name": "आज्ञाचक्रान्तरालस्था",
+      "meaning": "She who resides at the center of the Aj~nA chakra"
+    },
+    {
+      "number": 104,
+      "name": "रुद्रग्रन्थिविभेदिनी",
+      "meaning": "She who breaks through the knot of shiva"
+    },
+    {
+      "number": 105,
+      "name": "सहस्राराम्बुजारूढा",
+      "meaning": "She who ascends to the thousand-petaled lotus"
+    },
+    {
+      "number": 106,
+      "name": "सुधासाराभिवर्षिणी",
+      "meaning": "She who pours out streams of ambrosia"
+    },
+    {
+      "number": 107,
+      "name": "तडिल्लतासमरुचिः",
+      "meaning": "She who is as beautiful as a flash of lightning"
+    },
+    {
+      "number": 108,
+      "name": "षट्चक्रोपरिसंस्थिता",
+      "meaning": "She who resides above the six chakrAs"
+    },
+    {
+      "number": 109,
+      "name": "महासक्तिः",
+      "meaning": "She who is greatly attached to the festive union of shiva and shakti"
+    },
+    {
+      "number": 110,
+      "name": "कुण्डलिनी",
+      "meaning": "She who has the form a coil"
+    },
+    {
+      "number": 111,
+      "name": "बिसतन्तुतनीयसी",
+      "meaning": "She who is fine and delicate as the fiber of the lotus"
+    },
+    {
+      "number": 112,
+      "name": "भवानी",
+      "meaning": "O Divine Mother Bhavānī! I am your servant. Please cast your compassionate eyes in my direction. Even before the person utters the word Bhavānī completely, you bless him with aikya (state of complete merger into the Absolute). Please also absorb me into you. Bless me with feelings of oneness with you."
+    },
+    {
+      "number": 113,
+      "name": "भावनागम्या",
+      "meaning": "She can be reached easily only through right bhāvana."
+    },
+    {
+      "number": 114,
+      "name": "भवारण्यकुठारिका",
+      "meaning": "स्हे wहो लोवेस् औस्पिचिओउस्नेस्स् इस् भद्र-प्रिया। (She who loves auspiciousness is Bhadra-priyā.)"
+    },
+    {
+      "number": 115,
+      "name": "भद्रप्रिया",
+      "meaning": "She who is fond of all auspicious things - who gives all"
+    },
+    {
+      "number": 116,
+      "name": "भद्रमूर्तिः",
+      "meaning": "She drives away that which is inauspicious and blesses abundantly with that which is auspicious (shubha). She is pleased when the being even casually thinks about Her."
+    },
+    {
+      "number": 117,
+      "name": "भक्तसौभाग्यदायिनी",
+      "meaning": "The 6 attributes of prosperity, beauty, fame, power, knowledge and dispassion are together are known as Bhaga (soubhagya). The Goddess who showers these is known as Bhagawati.The Supreme Mother as Bhagawati showers auspiciousness on Her devotees."
+    },
+    {
+      "number": 118,
+      "name": "भक्तिप्रिया",
+      "meaning": "The trait of devotion (bhakti) is very dear to Her."
+    },
+    {
+      "number": 119,
+      "name": "भक्तिगम्या",
+      "meaning": "Bhakti is a state of mind wherein all thoughts of the devotee automatically go and attach themselves to the lotus feet of the Lord just as the relationship that is maintained between the ankolam seeds and its tree; the needle and the magnet; the pativrata and her husband; the creeper and the tree; the river and the ocean."
+    },
+    {
+      "number": 120,
+      "name": "भक्तिवश्या",
+      "meaning": "She is under the vaśa (control, grip) of bhakti (devotion)."
+    },
+    {
+      "number": 121,
+      "name": "भयापहा",
+      "meaning": "She who dispels fear"
+    },
+    {
+      "number": 122,
+      "name": "शाम्भवी",
+      "meaning": "She who is the wife of shambhu (shiva)"
+    },
+    {
+      "number": 123,
+      "name": "शारदाराध्या",
+      "meaning": "She who is worshipped by sharadA (sarasvatI, the goddess of speech)"
+    },
+    {
+      "number": 124,
+      "name": "शर्वाणी",
+      "meaning": "She who is the wife of sharva (shiva)"
+    },
+    {
+      "number": 125,
+      "name": "शर्मदायिनी",
+      "meaning": "She who confers happiness"
+    },
+    {
+      "number": 126,
+      "name": "शाङ्करी",
+      "meaning": "She who gives happiness"
+    },
+    {
+      "number": 127,
+      "name": "श्रीकरी",
+      "meaning": "She who bestows riches in abundance"
+    },
+    {
+      "number": 128,
+      "name": "साध्वी",
+      "meaning": "She who is chaste"
+    },
+    {
+      "number": 129,
+      "name": "शरच्चन्द्रनिभानना",
+      "meaning": "She whose face shines like the full moon in the clear autumn sky"
+    },
+    {
+      "number": 130,
+      "name": "शातोदरी",
+      "meaning": "She who is slender-waister"
+    },
+    {
+      "number": 131,
+      "name": "शान्तिमती",
+      "meaning": "She who is peaceful"
+    },
+    {
+      "number": 132,
+      "name": "निराधारा",
+      "meaning": "She is without (nir) any support (ādhāra)."
+    },
+    {
+      "number": 133,
+      "name": "निरञ्जना",
+      "meaning": "She is devoid of illusion and ignorance (anjana). Further She destroys illusion.Anjana is the black paste that is applied to beautify the eyes (akin to the eye liner). Black colour is associated with ignorance (avidya), illusion (maya) and bondage (moha). White colour is associated with knowledge (Jnana) and purity (shuddha) as in full moon, milk and so on. She destroys ignorance and illusion within the being."
+    },
+    {
+      "number": 134,
+      "name": "निर्लेपा",
+      "meaning": "The Sun is the eye (chakshu) for all the worlds (sarva loka). This Sun is unaffected by any defect/ blemish in the visible external eye of the individual. Likewise the inner being (atma) within all the beings is untouched by any happening. He is Nirlepa."
+    },
+    {
+      "number": 135,
+      "name": "निर्मला",
+      "meaning": "She is without (nir) any mala (dirt, impurity). She is pure."
+    },
+    {
+      "number": 136,
+      "name": "नित्या",
+      "meaning": "He is unborn (aja), eternal (nitya), everlasting (shāswata) and ancient (purana)."
+    },
+    {
+      "number": 137,
+      "name": "निराकरा",
+      "meaning": "She is without form (ākārā). The closest She can be compared to is space."
+    },
+    {
+      "number": 138,
+      "name": "निराकुला",
+      "meaning": "She is without tensions. She is unruffled."
+    },
+    {
+      "number": 139,
+      "name": "निर्गुणा",
+      "meaning": "All our karmas (actions) arise out of our traits (gunas). One should rise above these gunas. Engage in niśkāma karma (actions that are not linked to any desire)."
+    },
+    {
+      "number": 140,
+      "name": "निष्कला",
+      "meaning": "Shiva obtains the power to create only when He is united with śakti (energy). In its absence the Supreme Lord cannot even move."
+    },
+    {
+      "number": 141,
+      "name": "शान्ता",
+      "meaning": "She is an embodiment of peace."
+    },
+    {
+      "number": 142,
+      "name": "निष्कामा",
+      "meaning": "She is free from desire (kāma)."
+    },
+    {
+      "number": 143,
+      "name": "निरुपप्लवा",
+      "meaning": "She is indestructible."
+    },
+    {
+      "number": 144,
+      "name": "नित्यमुक्ता",
+      "meaning": "She is eternally liberated (mukta, free)."
+    },
+    {
+      "number": 145,
+      "name": "निर्विकारा",
+      "meaning": "She is changeless; without modifications."
+    },
+    {
+      "number": 146,
+      "name": "निष्प्रपञ्चा",
+      "meaning": "She is beyond (over and above) this universe (prapancha)."
+    },
+    {
+      "number": 147,
+      "name": "निराश्रया",
+      "meaning": "She is not dependent on anything for her existence."
+    },
+    {
+      "number": 148,
+      "name": "नित्यशुद्धा",
+      "meaning": "Our physical body is full of dirt and impurities. Yet, the inner being, also known as the Lord Shiva, who resides within, is eternally pure (Nitya shuddha)."
+    },
+    {
+      "number": 149,
+      "name": "नित्यबुद्धा",
+      "meaning": "She is a form of eternal knowledge."
+    },
+    {
+      "number": 150,
+      "name": "निरवद्या",
+      "meaning": "She is devoid of ignorance and illusion."
+    },
+    {
+      "number": 151,
+      "name": "निरन्तरा",
+      "meaning": "Commentary:"
+    },
+    {
+      "number": 152,
+      "name": "निष्कारणा",
+      "meaning": "The Supreme Mother, who is the primordial force for this creation, does not need a cause (apparent reason, कारण) (kāraṇa)) for Her existence."
+    },
+    {
+      "number": 153,
+      "name": "निष्कलङ्का",
+      "meaning": "She is faultless, unblemished and sinless. This re-iterates Her state of purity.This is a very powerful name towards description of the Supreme Essence."
+    },
+    {
+      "number": 154,
+      "name": "निरुपाधिः",
+      "meaning": "She is devoid of upadhi (carrier, body)."
+    },
+    {
+      "number": 155,
+      "name": "निरीश्वरा",
+      "meaning": "The Supreme Energy (Supreme Mother) has no father (janita) nor Lord (adhipa, leader)."
+    },
+    {
+      "number": 156,
+      "name": "नीरागा",
+      "meaning": "She is over and above the feelings of like, dislike, attachment etc. (rāga)."
+    },
+    {
+      "number": 157,
+      "name": "रागमथनी",
+      "meaning": "She churns the feelings of rāga that exist in the mind of the devotee and causes them to be thrown out.She thus ensures that her devotee evolves to a state that is above likes-dislikes."
+    },
+    {
+      "number": 158,
+      "name": "निर्मदा",
+      "meaning": "She is devoid of arrogance and self-pride (mada)."
+    },
+    {
+      "number": 159,
+      "name": "मदनाशिनी",
+      "meaning": "Commentary:"
+    },
+    {
+      "number": 160,
+      "name": "निश्चिन्ता",
+      "meaning": "The funeral pyre (छिता) ((chitā)) envelops the dead body and reduces it to ashes. However the fire called छिन्ता (chintā) (worries, anxieties) burns out a living entity itself!"
+    },
+    {
+      "number": 161,
+      "name": "निरहङ्कारा",
+      "meaning": "She is devoid of the sense of individuality (ego, aham)."
+    },
+    {
+      "number": 162,
+      "name": "निर्मोहा",
+      "meaning": "How can delusion (moha) and grief (shoka) exist in one who sees the self everywhere?"
+    },
+    {
+      "number": 163,
+      "name": "मोहनाशिनी",
+      "meaning": "She destroys the delusion (moha) that exists in the mind of her devotees."
+    },
+    {
+      "number": 164,
+      "name": "निर्ममा",
+      "meaning": "Selfish feelings such as ‘my, mine’ are unknown to Her."
+    },
+    {
+      "number": 165,
+      "name": "ममताहन्त्री",
+      "meaning": "She destroys feelings of ‘mama’ (selfishness) from her devotees."
+    },
+    {
+      "number": 166,
+      "name": "निष्पापा",
+      "meaning": "She is sinless. She cannot be touched by sin (pāpā)."
+    },
+    {
+      "number": 167,
+      "name": "पापनाशिनी",
+      "meaning": "Sins (pāpā) as huge as Mountain Meru are washed away in a second when the person worships Divine Mother.Doesn’t a lighted matchstick engulf and burn down within a matter of seconds, the entire quantity of petrol contained in the container? Sins likewise are reduced to ashes within a second with Her grace."
+    },
+    {
+      "number": 168,
+      "name": "निष्क्रोधा",
+      "meaning": "Oh Lakshmi Nrsimha! I have become blind (andha). This is because the sense of discrimination (viveka) has been stolen from me. I am totally bound and tied down by the thieves who are none other than my senses (indriya). My blindness has caused me to fall in to the deep well of delusion (moha). The well is very deep and dark. O Lord, Please protect me and lift me up."
+    },
+    {
+      "number": 169,
+      "name": "क्रोधशमनी",
+      "meaning": "Desire and anger (Kama and Krodha) co-exist and emerge from the same root. Desire leads to anger and anger grows out of not having things our way. The root for this is rajo guna (rajasic tendencies) i.e. the desire to rule, to manage, to win and to have everyone else obey him or her."
+    },
+    {
+      "number": 170,
+      "name": "निर्लोभा",
+      "meaning": "She is without greed (lobha)."
+    },
+    {
+      "number": 171,
+      "name": "लोभनाशिनी",
+      "meaning": "She destroys the traits of greed and covetousness from her devotees."
+    },
+    {
+      "number": 172,
+      "name": "निःसंशया",
+      "meaning": "She has no doubts."
+    },
+    {
+      "number": 173,
+      "name": "संशयघ्नी",
+      "meaning": "When the sadhaka directly sees ‘Me’ as Paramatma seated in the hearts of all living beings, the knot in his heart is cut and all of his doubts are shredded. All the bad karmas performed until those moments are completely nullified."
+    },
+    {
+      "number": 174,
+      "name": "निर्भवा",
+      "meaning": "She is without birth (janma)."
+    },
+    {
+      "number": 175,
+      "name": "भवनाशिनी",
+      "meaning": "She destroys bhava (samsāra) i.e. She pulls out her devotee from this cycle of births and deaths."
+    },
+    {
+      "number": 176,
+      "name": "निर्विकल्पा",
+      "meaning": "She is changeless."
+    },
+    {
+      "number": 177,
+      "name": "निराबाधा",
+      "meaning": "She is indestructible. Here it refers to the supreme knowledge (Jnana) that is indestructible."
+    },
+    {
+      "number": 178,
+      "name": "निर्भेदा",
+      "meaning": "She destroys such feelings of differentiation (dualism) that exist within her devotees."
+    },
+    {
+      "number": 179,
+      "name": "भेदनाशिनी",
+      "meaning": "She who removes from Her devotees all sense of differences"
+    },
+    {
+      "number": 180,
+      "name": "निर्नाशा",
+      "meaning": "She is indestructible. She is eternal."
+    },
+    {
+      "number": 181,
+      "name": "मृत्युमथनी",
+      "meaning": "O Lord! You are sweet smelling (sugandhi) and bestow good health. Further very easily You dispel the fear of death. Please free me from this fear of death but not from the experience of Amrita (nectar, bliss)."
+    },
+    {
+      "number": 182,
+      "name": "निष्क्रिया",
+      "meaning": "She is over and above action (kriya)."
+    },
+    {
+      "number": 183,
+      "name": "निष्परिग्रहा",
+      "meaning": "The Lord does not accept anything. He does not take even the merits (punya) or sins (pāpa) of any being nor does he give merit (punya) or sin (pāpa). It is only our actions that cause merit or demerit."
+    },
+    {
+      "number": 184,
+      "name": "निस्तुला",
+      "meaning": "O Divine Mother! O daughter of the snow capped Himalayas! Your beauty is beyond comparison. Brahma and others try to describe and weigh your beauty but they are not able to find any comparison against which they can measure it."
+    },
+    {
+      "number": 185,
+      "name": "नीलचिकुरा",
+      "meaning": "She has long black hair."
+    },
+    {
+      "number": 186,
+      "name": "निरपाया",
+      "meaning": "She is beyond danger/risk (apāyā). She is indestructible."
+    },
+    {
+      "number": 187,
+      "name": "निरत्यया",
+      "meaning": "It is impossible to override Her dictates."
+    },
+    {
+      "number": 188,
+      "name": "दुर्लभा",
+      "meaning": "She is extremely difficult to obtain."
+    },
+    {
+      "number": 189,
+      "name": "दुर्गमा",
+      "meaning": "Commentary:"
+    },
+    {
+      "number": 190,
+      "name": "दुर्गा",
+      "meaning": "All of us are reflections of Her form. She is the mirror within which we are seeing ourselves and thus this world exists. She has turned Herself into this universe. She is the cause for this creation. In this creation that is full of form and name, She has taken on a form. The entire visible nature (Prakriti) is Her form and so She ensures a never-ending abundant supply of all materials and sources in it. The five basic elements (pancha bhootas) are also Her forms. She is the endless energy that renews itself every day or every second. She is endless, forever young and vibrant and ever-powerful. She is Nava Durga (the 9 forms of Durga)."
+    },
+    {
+      "number": 191,
+      "name": "दुःखहन्त्री",
+      "meaning": "She dispels all grief and fears (dukha)."
+    },
+    {
+      "number": 192,
+      "name": "सुखप्रदा",
+      "meaning": "She bestows happiness and bliss (sukha) upon Her devotee. This includes both ordinary happiness as well as spiritual bliss."
+    },
+    {
+      "number": 193,
+      "name": "दुष्टदूरा",
+      "meaning": "She drives away the bad feelings and thoughts (dushta bhāvana). She is unattainable by those who entertain bad thoughts and are evil."
+    },
+    {
+      "number": 194,
+      "name": "दुराचारशमनी",
+      "meaning": "She shreds away durāchāra from among Her devotees."
+    },
+    {
+      "number": 195,
+      "name": "दोषवर्जिता",
+      "meaning": "She relieves the devotee from all doshas (the bad habits, defects or bad traits that exist within)."
+    },
+    {
+      "number": 196,
+      "name": "सर्वज्ञा",
+      "meaning": "She is omniscient (all- knowing; master in all forms of knowledge.)"
+    },
+    {
+      "number": 197,
+      "name": "सान्द्रकरुणा",
+      "meaning": "Commentary:"
+    },
+    {
+      "number": 198,
+      "name": "समानाधिकवर्जिता",
+      "meaning": "Every being is equal in Her eyes."
+    },
+    {
+      "number": 199,
+      "name": "सर्वशक्तिमयी",
+      "meaning": "She is the form of all energies (sarva shakti). She is the entire energy."
+    },
+    {
+      "number": 200,
+      "name": "सर्वमङ्गला",
+      "meaning": "Just by thinking about Brahma all forms of evils and inauspiciousness (ashubha) are driven away and auspiciousness (shubha) is bestowed upon the person."
+    },
+    {
+      "number": 201,
+      "name": "सद्गतिप्रदा",
+      "meaning": "Commentary:"
+    },
+    {
+      "number": 202,
+      "name": "सर्वेश्वरी",
+      "meaning": "It is Lord Iśa who pervades this entire universe. He is the sole independent entity. He pervades everything that is contained within this universe. Every object that we utilize in this world belongs to the Supreme Lord Isha. Use all the wealth in your position of a trustee and then hand it over to others when your time comes."
+    },
+    {
+      "number": 203,
+      "name": "सर्वमयी",
+      "meaning": "She is all-pervading."
+    },
+    {
+      "number": 204,
+      "name": "सर्वमन्त्रस्वरूपिणी",
+      "meaning": "Shiva sounded the dhakka (drum) 45 times in the assembly of eminent Maharishis. Based on individual capacity a different shastra (scripture) or stotra (hymn, incantation) resounded in the ear of each Maharishi seated there. They accepted the shastra received by them as divine order and accordingly developed that shastra (scripture). The first sound that was heard by them was Omkāra (Pranava mantra, OM)."
+    },
+    {
+      "number": 205,
+      "name": "सर्वयन्त्रात्मिका",
+      "meaning": "She is the atma (soul) for all Yantras (mystic symbols) in the creation.She manifests in the form of all the Yantras."
+    },
+    {
+      "number": 206,
+      "name": "सर्वतन्त्ररूपा",
+      "meaning": "Just as all the water falling from the sky ultimately ends up in the ocean, all salutations (namaskaara) offered to all the Gods ultimately reach the single Supreme Almighty."
+    },
+    {
+      "number": 207,
+      "name": "मनोन्मनी",
+      "meaning": "It is She who resides during the state that arises when the mind is absolutely controlled (mano nigraha).This is a very important name and is deeply connected to yoga."
+    },
+    {
+      "number": 208,
+      "name": "माहेश्वरी",
+      "meaning": "As the energy (shakti) of Lord Māheśwara She is Māheśwari."
+    },
+    {
+      "number": 209,
+      "name": "महादेवी",
+      "meaning": "I meditate on Mahādeva, the most Supreme being. May such Rudra illuminate my mind."
+    },
+    {
+      "number": 210,
+      "name": "महालक्ष्मी",
+      "meaning": "As the Goddess of prosperity and sustenance, She is Mahālakshmī."
+    },
+    {
+      "number": 211,
+      "name": "मृडप्रिया",
+      "meaning": "She is very dear to Shiva. She is Gowri."
+    },
+    {
+      "number": 212,
+      "name": "महारूपा",
+      "meaning": "१)  हेर् फ़ोर्म् (रोओप) इस् लर्गे अन्द् इन्फ़िनिते (महा)। (1)  Her form (roopa) is large and infinite (mahā).)"
+    },
+    {
+      "number": 213,
+      "name": "महापूज्या",
+      "meaning": "She is the most venerable and is supremely worthy of worship.The first puja is always offered to Her. In fact, all pujas reach Her."
+    },
+    {
+      "number": 214,
+      "name": "महापातकनाशिनी",
+      "meaning": "O Mother! Neither do I know any mantra nor do I have any idea of yantra. I don’t know any hymn (stotra, stuti) either. I have no idea how to invoke you or how to meditate upon you. I know neither your story nor your glory. I do not even know how to weep effectively and properly, so ignorant am I. But I have sought shelter under You, and I know that just following your orders and walking on your path is sufficient to end all troubles and sorrows."
+    },
+    {
+      "number": 215,
+      "name": "महामाया",
+      "meaning": "With Her powerful personality, the Divine Mother as Mahāmāya deludes the mind of even the wise (jnani)."
+    },
+    {
+      "number": 216,
+      "name": "महासत्त्वा",
+      "meaning": "She is the personification of Sattva guna (trait of purity). She is the supreme truth (sat).The 3 main aspects of Parabrahma are ‘Sacchidananda’ i.e. sat +chit+ ananda, where ‘Sat’ stands for the Supreme Truth. She is replete with this ‘Sat’ (ultimate truth) and has complete knowledge of it. She Herself is truth; She is the true existence. She is Parabrahma."
+    },
+    {
+      "number": 217,
+      "name": "महाशक्तिः",
+      "meaning": "Only when Shiva is coupled with energy (shakti), He can create. In its absence, He cannot budge even an inch."
+    },
+    {
+      "number": 218,
+      "name": "महारतिः",
+      "meaning": "Commentary:"
+    },
+    {
+      "number": 219,
+      "name": "महाभोगा",
+      "meaning": "She enjoys the greatest and most supreme luxuries."
+    },
+    {
+      "number": 220,
+      "name": "महैश्वर्या",
+      "meaning": "She possesses the greatest wealth (aishwarya) of this creation."
+    },
+    {
+      "number": 221,
+      "name": "महावीर्या",
+      "meaning": "In valour and strength (virya) She is unsurpassed."
+    },
+    {
+      "number": 222,
+      "name": "महाबला",
+      "meaning": "Commentary:"
+    },
+    {
+      "number": 223,
+      "name": "महाबुद्धिः",
+      "meaning": "She is the epitome of intelligence and wisdom."
+    },
+    {
+      "number": 224,
+      "name": "महासिद्धिः",
+      "meaning": "She is the storehouse of the greatest or the most-supreme siddhis (accomplishments)."
+    },
+    {
+      "number": 225,
+      "name": "महायोगेश्वरेश्वरी",
+      "meaning": "Commentary:"
+    },
+    {
+      "number": 226,
+      "name": "महातन्त्रा",
+      "meaning": "She herself is the greatest tantra."
+    },
+    {
+      "number": 227,
+      "name": "महामन्त्रा",
+      "meaning": "She is the Pranava mantra (Omkāra) which is the greatest mantra (महा- ((mahā-) mantra)."
+    },
+    {
+      "number": 228,
+      "name": "महायन्त्रा",
+      "meaning": "She is the Sri-yantra, the greatest of all yantras."
+    },
+    {
+      "number": 229,
+      "name": "महासना",
+      "meaning": "1)  She is seated on a greatest throne (maha + asana). She is Śrīmat Simhāsaneśvarī (refer nama 3).2)  ‘Mahat’ the fundamental principle (tattva) behind this creation is Her seat (asana)."
+    },
+    {
+      "number": 230,
+      "name": "महायागक्रमाराध्या",
+      "meaning": "She is to be worshipped through the process of Mahā- yāga (the greatest yāga/ sacrifice).Maha yaaga (greatest sacrifice, yagna) refers to the antar yāga (internal worship) of the Srichakra. In Her opinion, this is the most supreme yāga."
+    },
+    {
+      "number": 231,
+      "name": "महाभैरवपूजिता",
+      "meaning": "Commentary:"
+    },
+    {
+      "number": 232,
+      "name": "महेश्वरमहाकल्पमहाताण्डवसाक्षिणी",
+      "meaning": "She is the witness (sākshi) for the dance of bliss (maha tāndava) performed by Maheswara (Lord Nataraja) at the time of the final dissolution (maha kalpa)."
+    },
+    {
+      "number": 233,
+      "name": "महाकामेशमहिषी",
+      "meaning": "She is the queen (mahishi) of Maha-kameśa i.e. Parabrahma."
+    },
+    {
+      "number": 234,
+      "name": "महात्रिपुरसुन्दरी",
+      "meaning": "She is Maha Tripurambika, the cause of the entire creation.In the Srichakra, the topmost dot is the Bindu. Just below this Bindu is the triangle called Trikona/ Tripura. As She is the greatest empress who rules this tripura, She is addressed as महा-त्रिपुर-सुन्दरी। (Mahā-tripura-sundarī.)"
+    },
+    {
+      "number": 235,
+      "name": "चतुष्षष्ट्युपचाराढ्या",
+      "meaning": "She is worshipped with 64 forms of services (upachāra).The routine puja performed at homes comprises of 16 types of services offered to the deity (shodasha upachāra puja). In reality, the deity is offered 64 forms of services and such puja is dear to her. It is an extremely detailed procedure of puja that can be witnessed during the navāvarana puja procedure."
+    },
+    {
+      "number": 236,
+      "name": "चतुष्षष्टिकलामयी",
+      "meaning": "She is a personification of the 64 arts (kalas).All these 64 arts exist in Her and are a part of Her; She can be called an embodiment of these arts."
+    },
+    {
+      "number": 237,
+      "name": "महाचतुष्षष्टिकोटियोगिनीगणसेविता",
+      "meaning": "64 crore (640 million) troops of yogini-devatas (demigoddesses) serve Her."
+    },
+    {
+      "number": 238,
+      "name": "मनुविद्या",
+      "meaning": "She can be worshipped through the method called Manu-vidya."
+    },
+    {
+      "number": 239,
+      "name": "चन्द्रविद्या",
+      "meaning": "She can be worshipped through the method called Chandra-vidya."
+    },
+    {
+      "number": 240,
+      "name": "चन्द्रमण्डलमध्यगा",
+      "meaning": "She is seated in the centre of the Chandra mandala (the moon galaxy)."
+    },
+    {
+      "number": 241,
+      "name": "चारुरूपा",
+      "meaning": "Commentary:"
+    },
+    {
+      "number": 242,
+      "name": "चारुहासा",
+      "meaning": "She is the form of exquisite and ultimate bliss (ananda)."
+    },
+    {
+      "number": 243,
+      "name": "चारुचन्द्रकलाधरा",
+      "meaning": "She retains the 16th phase (कला) ((kalā)) of the moon on Her forehead."
+    },
+    {
+      "number": 244,
+      "name": "चराचरजगन्नाथा",
+      "meaning": "She is the queen who rules the entire universe (jagat) that is abounding with living (छरा) ((charā)) and non-living (achara) objects."
+    },
+    {
+      "number": 245,
+      "name": "चक्रराजनिकेतना",
+      "meaning": "Her residence is the Srichakra, the king amongst chakras."
+    },
+    {
+      "number": 246,
+      "name": "पार्वती",
+      "meaning": "She is the daughter of the Himalayas (Himavat putri)."
+    },
+    {
+      "number": 247,
+      "name": "पद्मनयना",
+      "meaning": "Her eyes are long and beautiful like lotus petals. She is lotus-eyed."
+    },
+    {
+      "number": 248,
+      "name": "पद्मरागसमप्रभा",
+      "meaning": "She glows as brightly as the ruby (padmarāga)."
+    },
+    {
+      "number": 249,
+      "name": "पञ्चप्रेतासनासीना",
+      "meaning": "She retains the pancha (five) pretās as Her Seat (asana)."
+    },
+    {
+      "number": 250,
+      "name": "पञ्चब्रह्मस्वरुपिणी",
+      "meaning": "He, who by His mere presence causes our body, mind, intellect, antahkarana (inner mind), and senses (indriyas) to move is Brahma. He is the root for our existence, our movement and our action, thoughts as well as our intellect."
+    },
+    {
+      "number": 251,
+      "name": "चिन्मयी",
+      "meaning": "Jnana is that which glows purely out of its own illumination and without the support of any external illumination (prakasha)."
+    },
+    {
+      "number": 252,
+      "name": "परमानन्दा",
+      "meaning": "She enjoys eternal ultimate bliss."
+    },
+    {
+      "number": 253,
+      "name": "विज्ञानघनरूपिणी",
+      "meaning": "She is the treasure house of wisdom and experience (vijnana, anubhava)."
+    },
+    {
+      "number": 254,
+      "name": "ध्यानध्यातृध्येयरूपा",
+      "meaning": "She manifests in the form of the triad (set of three) of meditation (dhyāna), the practitioner of meditation (dhyātr) and the object of meditation (dhyeya)."
+    },
+    {
+      "number": 255,
+      "name": "धर्माधर्मविवर्जिता",
+      "meaning": "She is over and above righteousness (dharma) and unrighteousness (adharma). This represents the essence of the Supreme (Parabrahma tattva)."
+    },
+    {
+      "number": 256,
+      "name": "विश्वरुपा",
+      "meaning": "She takes on the form of this universe (Viśwa)."
+    },
+    {
+      "number": 257,
+      "name": "जागरिणी",
+      "meaning": "During the waking state (explained above) the Supreme Mother, who in reality exists within the being, takes on the name जागरिणी। (Jāgariṇī.) She enables the being to function in this wakeful state."
+    },
+    {
+      "number": 258,
+      "name": "स्वपन्ती",
+      "meaning": "It is She who exists in the dream state (swapna avastha) experienced by the being."
+    },
+    {
+      "number": 259,
+      "name": "तैजसात्मिका",
+      "meaning": "During the dream state, the Divine Mother who exists within takes on the name Taijasā."
+    },
+    {
+      "number": 260,
+      "name": "सुप्ता",
+      "meaning": "She is present in the being during the deep sleep state of śuśupti (Suptā)."
+    },
+    {
+      "number": 261,
+      "name": "प्राज्ञात्मिका",
+      "meaning": "In the deep sleep state the Supreme Mother takes on the name Prājnā."
+    },
+    {
+      "number": 262,
+      "name": "तुर्या",
+      "meaning": "स्हे एxइस्त्स् इन् थे ४थ् स्तगे क्नोwन् अस् तुर्या। (She exists in the 4th stage known as turyā.)"
+    },
+    {
+      "number": 263,
+      "name": "सर्वावस्थाविवर्जिता",
+      "meaning": "She is beyond all states of existence."
+    },
+    {
+      "number": 264,
+      "name": "सृष्टिकर्त्री",
+      "meaning": "She is the cause behind this entire creation (sristhi)."
+    },
+    {
+      "number": 265,
+      "name": "ब्रह्मरूपा",
+      "meaning": "For the purposes of creation, She takes on the form of Brahma."
+    },
+    {
+      "number": 266,
+      "name": "गोप्त्री",
+      "meaning": "She is the force who protects and upholds this creation."
+    },
+    {
+      "number": 267,
+      "name": "गोविन्दरूपिणी",
+      "meaning": "For the purpose of sustaining this creation, She manifests as Govinda (Vishnu)."
+    },
+    {
+      "number": 268,
+      "name": "संहारिणी",
+      "meaning": "She is the supreme force behind the task of dissolution."
+    },
+    {
+      "number": 269,
+      "name": "रुद्ररूपा",
+      "meaning": "For the purposes of accomplishing the task of dissolution (samhāra), She manifests as Rudra."
+    },
+    {
+      "number": 270,
+      "name": "तिरोधानकरी",
+      "meaning": "Commentary:"
+    },
+    {
+      "number": 271,
+      "name": "ईश्वरी",
+      "meaning": "For performing the task of Tirodhāna the Supreme Mother takes on the name Īśvarī."
+    },
+    {
+      "number": 272,
+      "name": "सदाशिवा",
+      "meaning": "As Sadāśivā, She performs the 5th task of Anugraha."
+    },
+    {
+      "number": 273,
+      "name": "अनुग्रहदा",
+      "meaning": "As Sadāshivā, She accomplishes the task of granting Anugraha."
+    },
+    {
+      "number": 274,
+      "name": "पञ्चकृत्यपरायणा",
+      "meaning": "Brahma creates, Vishnu protects and Rudra destroys. Īśvara performs the task of tirodhāna and in the end it is the Supreme Mother, who as Sadāshiva, grants final liberation to the being. All this happens just by the subtle movement of Her eyebrows for a second!"
+    },
+    {
+      "number": 275,
+      "name": "भानुमण्डलमध्यस्था",
+      "meaning": "She is seated in the centre of the entire solar system."
+    },
+    {
+      "number": 276,
+      "name": "भैरवी",
+      "meaning": "Commentary:"
+    },
+    {
+      "number": 277,
+      "name": "भगमालिनी",
+      "meaning": "Material prosperity, courage, valour, fame, knowledge  and renunciation (vairagya) are all Her traits. These collectively are known as Bhaga."
+    },
+    {
+      "number": 278,
+      "name": "पद्मासना",
+      "meaning": "Commentary:"
+    },
+    {
+      "number": 279,
+      "name": "भगवती",
+      "meaning": "She who has complete knowledge of the creation, sustenance and dissolution of the creation is Bhagawati. She is an embodiment of both knowledge (vidya) and ignorance (avidya)."
+    },
+    {
+      "number": 280,
+      "name": "पद्मनाभसहोदरी",
+      "meaning": "She is the sister of Vishnu (Padmanābha). It implies that along with Vishnu, She takes on the responsibility of sustenance of this creation."
+    },
+    {
+      "number": 281,
+      "name": "उन्मेषनिमिषोत्पन्नविपन्नभुवनावली",
+      "meaning": "The creation, sustenance and dissolution of this entire creation takes place just within the blinking of Her eyelids."
+    },
+    {
+      "number": 282,
+      "name": "सहस्रशीर्षवदना",
+      "meaning": "She wears thousand heads and thousand faces."
+    },
+    {
+      "number": 283,
+      "name": "सहस्राक्षी",
+      "meaning": "She has thousands of eyes."
+    },
+    {
+      "number": 284,
+      "name": "सहस्रपात्",
+      "meaning": "She possesses thousands of feet."
+    },
+    {
+      "number": 285,
+      "name": "आब्रह्मकीटजननी",
+      "meaning": "All beings right from Brahma up to the tiniest insect (keeta) are born out of Her. She is the mother (janani) for all life in this creation."
+    },
+    {
+      "number": 286,
+      "name": "वर्णाश्रमविधायिनि",
+      "meaning": "She is the force who has created the ashramas (stages of life) and varnās (castes) for the well being of the entire creation. This is Her directive."
+    },
+    {
+      "number": 287,
+      "name": "निजाज्ञारूपनिगमा",
+      "meaning": "She passes down Her commands (ajna) through the medium of Vedas, agamas and scriptures (shastras)."
+    },
+    {
+      "number": 288,
+      "name": "पुण्यापुण्यफलप्रदा",
+      "meaning": "She delivers the results/ fruits (phala) for all the deeds –good and bad."
+    },
+    {
+      "number": 289,
+      "name": "श्रुतिसीमन्तसिन्दूरीकृतपादाब्जधूलिका",
+      "meaning": "When the Vedas (shruti) bow at Her feet, the dust of Her feet (pādabja dhūlika) forms the sindhūra on the forehead of the Vedas."
+    },
+    {
+      "number": 290,
+      "name": "सकलागमसन्दोहशुक्तिसम्पुटमौक्तिका",
+      "meaning": "If the Vedas are the oyster shell, then She is pearl within it."
+    },
+    {
+      "number": 291,
+      "name": "पुरुषार्थप्रदा",
+      "meaning": "She fulfils the 4 fold objectives of life (Purusharthas)."
+    },
+    {
+      "number": 292,
+      "name": "पूर्णा",
+      "meaning": "That is infinite, this is infinite, from infinity comes infinity. If infinity is subtracted from infinity, still infinity is left. ‘That and this’ refers to OM."
+    },
+    {
+      "number": 293,
+      "name": "भोगिनी",
+      "meaning": "She is the life force for the entire creation (the universal Kundalini)."
+    },
+    {
+      "number": 294,
+      "name": "भुवनेश्वरी",
+      "meaning": "She is the queen (Eshwari) who rules this entire creation that consists of the 14 worlds (bhuvana).She monitors and regulates the functioning of the entire universe."
+    },
+    {
+      "number": 295,
+      "name": "अम्बिका",
+      "meaning": "She is the mother."
+    },
+    {
+      "number": 296,
+      "name": "अनादिनिधना",
+      "meaning": "Commentary:"
+    },
+    {
+      "number": 297,
+      "name": "हरिब्रह्मेन्द्रसेविता",
+      "meaning": "Devata troops headed by Hari (Vishnu), Brahma and Indra worship Her."
+    },
+    {
+      "number": 298,
+      "name": "नारायणी",
+      "meaning": "She is the wife/ energy of Nārayana."
+    },
+    {
+      "number": 299,
+      "name": "नादरूपा",
+      "meaning": "She is the form of sound (nāda)."
+    },
+    {
+      "number": 300,
+      "name": "नामरूपविवर्जिता",
+      "meaning": "She is over and above name (nāma) and form (roopa)."
+    },
+    {
+      "number": 301,
+      "name": "ह्रीङ्कारी",
+      "meaning": "The seed letter (beejākshara) Hreem is both Her name and form."
+    },
+    {
+      "number": 302,
+      "name": "ह्रीमती",
+      "meaning": "Commentary:"
+    },
+    {
+      "number": 303,
+      "name": "हृद्या",
+      "meaning": "One who steals the heart is Hrdhya."
+    },
+    {
+      "number": 304,
+      "name": "हेयोपादेयवर्जिता",
+      "meaning": "O Divine Mother! Your eyes are so long as beautiful. They spread in every nook and corner so that every minute aspect too comes under your protection. O Mother, please bathe me with your merciful look. With that one glance this being (individual) will stand to gain a lot while you, O Mother do not stand to lose anything. Does not the Moon shine equally over forests and palaces equally? Likewise please do not shower your grace only on a select few."
+    },
+    {
+      "number": 305,
+      "name": "राजराजार्चिता",
+      "meaning": "The emperor of all emperors (rāja-rāja) i.e. Gods such as Indra, Kubera, Manu, Moon and others ardently worship Her."
+    },
+    {
+      "number": 306,
+      "name": "राज्ञी",
+      "meaning": "She is the empress of this entire universe. As the queen of Lord Rajarajeshwara, She is aptly called Rājñī."
+    },
+    {
+      "number": 307,
+      "name": "रम्या",
+      "meaning": "She is exquisitely beautiful and is the cause of all our joy."
+    },
+    {
+      "number": 308,
+      "name": "राजीवलोचना",
+      "meaning": "Her eyes are long and beautifully stretched akin to lotus petals or the Hreem mantra. She is lotus eyed (padma nayana)."
+    },
+    {
+      "number": 309,
+      "name": "रञ्जनी",
+      "meaning": "She causes immense happiness in the hearts of people."
+    },
+    {
+      "number": 310,
+      "name": "रमणी",
+      "meaning": "She is delightful, playful and joyful. It also means that She blesses her devotees with joy."
+    },
+    {
+      "number": 311,
+      "name": "रस्या",
+      "meaning": "She is abounding in supreme essence, the taste of which is the source of unending joy."
+    },
+    {
+      "number": 312,
+      "name": "रणत्किङ्किणिमेखला",
+      "meaning": "The bells of Her waistband ‘Mekhala’ gently and tunefully reverberate with the sound ‘kinkini’."
+    },
+    {
+      "number": 313,
+      "name": "रमा",
+      "meaning": "She showers bliss and joy (ananda) upon Her devotees."
+    },
+    {
+      "number": 314,
+      "name": "राकेन्दुवदना",
+      "meaning": "Her face is as beautiful as the full moon. This depicts Her completeness."
+    },
+    {
+      "number": 315,
+      "name": "रतिरूपा",
+      "meaning": "She is as beautiful as Rati, the wife of Manmatha (God of Love) or She has taken on the form of Rati.When Manmatha was reduced to ashes (refer introduction), his wife Rati fervently prayed to the Supreme Mother and composed many hymns (Rati stotram). Through these hymns she sought to know the faults for which her husband was thus punished and begged that he should be restored to life. Manmatha is Lakshmi Devi’s son. Rati as such is her daughter-in-law. Taking on the form of Rati (Ratiroopa) implies that She has placed herself in Rati’s shoes and thereby understands her grief. This highlights the beautiful relationship that she shares with her daughter-in-law."
+    },
+    {
+      "number": 316,
+      "name": "रतिप्रिया",
+      "meaning": "1) She loves her daughter-in-law Rati.2) She is worshipped by Rati.3) The beautiful compositions of Rati (Rati stotrams) are very dear to Her."
+    },
+    {
+      "number": 317,
+      "name": "रक्षाकरी",
+      "meaning": "She eternally protects."
+    },
+    {
+      "number": 318,
+      "name": "राक्षसघ्नी",
+      "meaning": "She is the annihilator of demons.Deities (Devatas) and demons co-exist. The good and the bad thoughts within the individual are the Devatas and the demons respectively. The churning that takes place in the mind due to this, is the churning of the ocean (amruta mathana). These mental demons wreck havoc in the mind. In addition to these mental demons, there also exist physical demons. Of course, they do not possess horns and dreadful face unlike their counterparts of earlier eons."
+    },
+    {
+      "number": 319,
+      "name": "रामा",
+      "meaning": "She plays joyfully in the heart of the devotee/ yogi. She gives limitless joy and contentment."
+    },
+    {
+      "number": 320,
+      "name": "रमणलम्पटा",
+      "meaning": "She diligently follows Lord Ramana and is always by His side."
+    },
+    {
+      "number": 321,
+      "name": "काम्या",
+      "meaning": "Attaining Her is the highest desire entertained by her devotees."
+    },
+    {
+      "number": 322,
+      "name": "कामकलारूपा",
+      "meaning": "Desire or inner sankalpa (desire, intent) is the root for all action. It exists subtly in an invisible state deep within. It is not ‘I’ who performed the action. Desire is the karta (the doer of the action). Desire (kaama) is causing the performance of the action (kārayita). I am not the cause. Hence all these intentions and desires are offered to you (swaha) O Lord Kāma Kāmeshwara."
+    },
+    {
+      "number": 323,
+      "name": "कदम्बकुसुमप्रिया",
+      "meaning": "Flowers of the kadamba tree are very dear to Her."
+    },
+    {
+      "number": 324,
+      "name": "कल्याणी",
+      "meaning": "She is an embodiment of auspiciousness. Nitya कल्याण (kalyāṇa) samshrayāt- She is the form of eternal auspiciousness."
+    },
+    {
+      "number": 325,
+      "name": "जगतीकन्दा",
+      "meaning": "She is the root (kanda) for the entire universe (jagat). It can also be interpreted to mean that She is the child (kanda) of this creation (jagat)."
+    },
+    {
+      "number": 326,
+      "name": "करुणारससागरा",
+      "meaning": "She is an ocean (sāgara) of compassion (karuna)."
+    },
+    {
+      "number": 327,
+      "name": "कलावती",
+      "meaning": "She is an embodiment of spiritual kaḷas (arts)."
+    },
+    {
+      "number": 328,
+      "name": "कलालापा",
+      "meaning": "She is the ālāpāna in art (kaḷa) of music (ālāpāna is the melodious articulation of the notes by the singer through the usage of syllables)."
+    },
+    {
+      "number": 329,
+      "name": "कान्ता",
+      "meaning": "In the literal sense, Kāntā means that She is exceptionally beautiful. At a deeper level, Kāntā emphasizes that She is the Vedanta."
+    },
+    {
+      "number": 330,
+      "name": "कादम्बरीप्रिया",
+      "meaning": "In literal sense, it means She loves the honey/ nectar of Kadamba flowers. The deeper meaning is that She loves those who intensely seek liberation."
+    },
+    {
+      "number": 331,
+      "name": "वरदा",
+      "meaning": "She is the one who grants boons; She is Varalakshmi."
+    },
+    {
+      "number": 332,
+      "name": "वामनयना",
+      "meaning": "Commentary:"
+    },
+    {
+      "number": 333,
+      "name": "वारुणी मदविव्हला",
+      "meaning": "Commentary:"
+    },
+    {
+      "number": 334,
+      "name": "विश्वाधिका",
+      "meaning": "He who has witnessed the creation of the first being is Vishwādhikā. Only he who possesses the capacity to create the universe, sustain it and thereafter merge/ absorb it completely into Himself is entitled to be addressed as ‘Vishwādhikā’."
+    },
+    {
+      "number": 335,
+      "name": "वेदवेद्या",
+      "meaning": "I am the one who is residing in every heart, from Me comes remembrance, knowledge and forgetfulness. I am to be known through the Vedas. All the Vedas teach purely about Me. All the knowledge in the world merges into that Supreme Knowledge that is contained in the Vedas. I am the author of Vedanta, and I am the one who is desirous of knowing the Vedas."
+    },
+    {
+      "number": 336,
+      "name": "विन्ध्याचलनिवासिनी",
+      "meaning": "She resides in the Vindhya Mountains."
+    },
+    {
+      "number": 337,
+      "name": "विधात्री",
+      "meaning": "Vidhātri is She who bestows upon others everything that is needed for their sustenance. She fulfills their desires."
+    },
+    {
+      "number": 338,
+      "name": "वेदजननी",
+      "meaning": "She is the author/creator of Vedas and hence is their mother (Janani)."
+    },
+    {
+      "number": 339,
+      "name": "विष्णुमाया",
+      "meaning": "This divine illusion, consisting of gunas (traits), is extremely difficult to overcome.  I am the creator of this illusion. Whoever surrenders to me, turning away from the world, succeeds in crossing the terrible māyā."
+    },
+    {
+      "number": 340,
+      "name": "विलासिनी",
+      "meaning": "Commentary:"
+    },
+    {
+      "number": 341,
+      "name": "क्षेत्रस्वरूपा",
+      "meaning": "O Arjuna, this physical body is called the kshetra, and one who resides within is called the Kshetrajna.Lalita Sahasranama too begins the Jnana khanda with this same reference. This shows the similarity not only in the content of the texts, but more importantly in the form that preached these texts."
+    },
+    {
+      "number": 342,
+      "name": "क्षेत्रेशी",
+      "meaning": "She is the empress (eshi) who governs this gross body (kshetra).  She sustains this body (kshetra) and enables it to function."
+    },
+    {
+      "number": 343,
+      "name": "क्षेत्रक्षेत्रज्ञपालिनी",
+      "meaning": "She sustains and rules over both -the body (kshetra) as well as the being who resides within (jeevatma, kshetrajna)."
+    },
+    {
+      "number": 344,
+      "name": "क्षयवृद्धिविनिर्मुक्ता",
+      "meaning": "Being eternal, She is beyond destruction and decay (kshaya) or growth (prosperity, vriddhi)."
+    },
+    {
+      "number": 345,
+      "name": "क्षेत्रपालसमर्चिता",
+      "meaning": "She is worshipped by Shiva, who is known as Kshetrapāla."
+    },
+    {
+      "number": 346,
+      "name": "विजया",
+      "meaning": "She is eternally victorious."
+    },
+    {
+      "number": 347,
+      "name": "विमला",
+      "meaning": "She is absolutely pure without even the slightest trace of impurity (mala)."
+    },
+    {
+      "number": 348,
+      "name": "वन्द्या",
+      "meaning": "She is worshipful, venerable."
+    },
+    {
+      "number": 349,
+      "name": "वन्दारुजनवत्सला",
+      "meaning": "She loves Her devotees as her children."
+    },
+    {
+      "number": 350,
+      "name": "वाग्वादिनी",
+      "meaning": "As She at all times abides in the form of speech on the tongue of all Her devotees, She is known as Vagvādini."
+    },
+    {
+      "number": 351,
+      "name": "वामकेशी",
+      "meaning": "Commentary:"
+    },
+    {
+      "number": 352,
+      "name": "वह्निमण्डलवासिनी",
+      "meaning": "She resides within the fire (Vahni, agni) galaxy (mandala)."
+    },
+    {
+      "number": 353,
+      "name": "भक्तिमत्कल्पलतिका",
+      "meaning": "She fulfils every desire of Her devotee (bhakta)."
+    },
+    {
+      "number": 354,
+      "name": "पशुपाशविमोचिनी",
+      "meaning": "She relieves all beings from the bondages."
+    },
+    {
+      "number": 355,
+      "name": "संहृताशेषपाषण्डा",
+      "meaning": "She destroys the non-believers (pāshandās). She merges their bad intellect (buddhi) into herself and clears the path for the sincere devotees."
+    },
+    {
+      "number": 356,
+      "name": "सदाचारप्रवर्तिका",
+      "meaning": "She creates/promotes good conduct (sadāchāra)."
+    },
+    {
+      "number": 357,
+      "name": "तापत्रयाग्निसन्तप्तसमाह्लादनचन्द्रिका",
+      "meaning": "Like the full moon She emits cooling rays to douse the fire of afflictions (tāpatrayās) in which people are burning and suffering."
+    },
+    {
+      "number": 358,
+      "name": "तरुणी",
+      "meaning": "She is eternally young."
+    },
+    {
+      "number": 359,
+      "name": "तापसाराध्या",
+      "meaning": "She is worshipped by all tapasvis (those who undertake penance)."
+    },
+    {
+      "number": 360,
+      "name": "तनुमध्या",
+      "meaning": "She has a very slender waistline."
+    },
+    {
+      "number": 361,
+      "name": "तमोऽपहा",
+      "meaning": "She destroys absolute ignorance (tamo guna)."
+    },
+    {
+      "number": 362,
+      "name": "चित् (चितिः)",
+      "meaning": "Our worshipful salutations to the Divine Mother who pervades this entire universe and abides within all beings in the form of consciousness (chit)."
+    },
+    {
+      "number": 363,
+      "name": "तत्पदलक्ष्यार्था",
+      "meaning": "The infinite essence, the divinity, which pervades the entire universe and is present in everything- living, movable, as well as non- living and immovable object is ‘tat’. It is the Supreme Mother. Such knowledge, realization and experience happen purely due to the grace of the Guru. I reverentially offer my salutations to such a Guru."
+    },
+    {
+      "number": 364,
+      "name": "चिदेकरसरूपिणी",
+      "meaning": "She is Cit, the highest experience/ knowledge. It is the experience of the supreme consciousness (chit). Such knowledge is her true form."
+    },
+    {
+      "number": 365,
+      "name": "स्वात्मानन्दलवीभूतब्रह्माद्यानन्दसन्ततिः",
+      "meaning": "Word (padam) that existed merely as intent (sankalpa, apada) has now taken on a form and become audible. A pada (word, sentence) has been formed and has come out. Once the word is expressed it converts back into nāda (sound) and merges into the universe. He, who is able to visualize the distinction (vibhaaga) between the spoken word (pada) and apada (speech in its sound, naada form) is the true seer. He is a true jnani. He knows the judicious use of words."
+    },
+    {
+      "number": 366,
+      "name": "परा",
+      "meaning": "It is the Divine Mother who exists in the form of Parā."
+    },
+    {
+      "number": 367,
+      "name": "प्रत्यक्चितीरूपा",
+      "meaning": "She is the intelligence (Jnana, chiti) that exists within each individual being (pratyak)."
+    },
+    {
+      "number": 368,
+      "name": "पश्यन्ती",
+      "meaning": "It is the Divine Mother who manifests as Paśyanti i.e. the second stage in the formation of speech."
+    },
+    {
+      "number": 369,
+      "name": "परदेवता",
+      "meaning": "At the Paśyanti stage of speech, the Divine Mother takes on the name Paradevatā."
+    },
+    {
+      "number": 370,
+      "name": "मध्यमा",
+      "meaning": "She changes into the third stage of speech i.e. Madhyama."
+    },
+    {
+      "number": 371,
+      "name": "वैखरीरूपा",
+      "meaning": "She appears in the form of Vaikhari – the final stage wherein sound converts into meaningful words and is audible."
+    },
+    {
+      "number": 372,
+      "name": "भक्तमानसहंसिका",
+      "meaning": "She is the swan (hamsa) who swims in the mind (manas) of genuine devotees (bhaktas)."
+    },
+    {
+      "number": 373,
+      "name": "कामेश्वरप्राणनाडी",
+      "meaning": "She is the central life force (prāna nādi) for Lord Kāmeśwara."
+    },
+    {
+      "number": 374,
+      "name": "कृतज्ञा",
+      "meaning": "She is all knowing. She is the witness for every happening in this universe. She has knowledge of all the actions (karmas) performed by the individual."
+    },
+    {
+      "number": 375,
+      "name": "कामपूजिता",
+      "meaning": "Kāma, the Lord of desires, reverentially worships Her. She lovingly accepts this worship."
+    },
+    {
+      "number": 376,
+      "name": "श‍ृङ्गाररससम्पूर्णा",
+      "meaning": "O Mother Goddess! After breaking through the subtle pathways, after having overcome the power of Mooladhāra, Swadhisthana, Anāhata, Manipura and Ajnā chakras, You reach the Sahasrāra chakra (the 1000 petalled lotus) and there you wander about freely with your consort."
+    },
+    {
+      "number": 377,
+      "name": "जया",
+      "meaning": "Commentary:"
+    },
+    {
+      "number": 378,
+      "name": "जालन्धरस्थिता",
+      "meaning": "Commentary:"
+    },
+    {
+      "number": 379,
+      "name": "ओड्याणपीठनिलया",
+      "meaning": "She resides in those who perform the abdominal lock (odhyana bandha)."
+    },
+    {
+      "number": 380,
+      "name": "बिन्दुमण्डलवासिनी",
+      "meaning": "She resides within the bindu mandala (galaxy). Bindu is the top most/ central dot over and above the Srichakra."
+    },
+    {
+      "number": 381,
+      "name": "रहोयागक्रमाराध्या",
+      "meaning": "She is worshipped through the secretive rituals (raho yāga)."
+    },
+    {
+      "number": 382,
+      "name": "रहस्तर्पणतर्पिता",
+      "meaning": "She is pleased with secretive offerings (rahas-tarpana) made by the devotee."
+    },
+    {
+      "number": 383,
+      "name": "सद्यःप्रसादिनी",
+      "meaning": "Her grace falls instantly on those who practice ‘rahoyāga’ and offer ‘रहस्तर्पणऽ (‘rahastarpaṇa’) (see names 381, 382)"
+    },
+    {
+      "number": 384,
+      "name": "विश्वसाक्षिणी",
+      "meaning": "She is the witness (sākshi) for every action and every thought of each and every being in this creation (vishwa, jagat)."
+    },
+    {
+      "number": 385,
+      "name": "साक्षिवर्जिता",
+      "meaning": "She has no witness to record Her deeds/ actions."
+    },
+    {
+      "number": 386,
+      "name": "षडङ्गदेवतायुक्ता",
+      "meaning": "Commentary:"
+    },
+    {
+      "number": 387,
+      "name": "षाड्गुण्यपरिपूरिता",
+      "meaning": "She is the embodiment of the six primary traits. For this reason She takes on the name ‘Bhagawan’ or ‘Bhagawati’."
+    },
+    {
+      "number": 388,
+      "name": "नित्यक्लिन्ना",
+      "meaning": "She is ever compassionate (daya)."
+    },
+    {
+      "number": 389,
+      "name": "निरुपमा",
+      "meaning": "She is beyond comparison. This is Her form as a Guru."
+    },
+    {
+      "number": 390,
+      "name": "निर्वाण सुखदायिनी",
+      "meaning": "She bestows the happiness (sukha) of final liberation/ salvation (nirvāna, kaivalya)."
+    },
+    {
+      "number": 391,
+      "name": "नित्या-षोडशिकारूपा",
+      "meaning": "She shines in Her 16 eternal forms."
+    },
+    {
+      "number": 392,
+      "name": "श्रीकण्ठार्धशरीरिणी",
+      "meaning": "She is the left half of Shreekanta’s body. (Sreekanta is Shiva). This is the Ardha-naareshwara form of the divine wherein the right half of the body is that of Shiva’s and the left half is Hers."
+    },
+    {
+      "number": 393,
+      "name": "प्रभावती",
+      "meaning": "She is shining with infinite and endless effulgence (knowledge)."
+    },
+    {
+      "number": 394,
+      "name": "प्रभारूपा",
+      "meaning": "She is the form of illumination (same as above)."
+    },
+    {
+      "number": 395,
+      "name": "प्रसिद्धा",
+      "meaning": "She is very famous. The Supreme Knowledge and its effulgence are inherently well known to every being."
+    },
+    {
+      "number": 396,
+      "name": "परमेश्वरी",
+      "meaning": "He is Brahma, He is Vishnu, He is Siva, He is Indra, He is Eternal, He is Supreme (Parama), He is the Lord of all. He is self-illumination (svarāt)."
+    },
+    {
+      "number": 397,
+      "name": "मूलप्रकृतिः",
+      "meaning": "It is my essence (prakriti) that manifests visibly as the Ashta murtis (the eight forms) of earth, fire, water etc."
+    },
+    {
+      "number": 398,
+      "name": "अव्यक्ता",
+      "meaning": "She is in an un-manifested, invisible state. This is akin to the moola prakriti state at which point she is invisible."
+    },
+    {
+      "number": 399,
+      "name": "व्यक्ताव्यक्तस्वरूपीणि",
+      "meaning": "All beings are in an un-manifest state in the beginning before birth, they manifest in the in-between state when they take on a form, and upon death they become un-manifest again."
+    },
+    {
+      "number": 400,
+      "name": "व्यापिनी",
+      "meaning": "She is all pervading."
+    },
+    {
+      "number": 401,
+      "name": "विविधाकारा",
+      "meaning": "She who has a multitude of forms"
+    },
+    {
+      "number": 402,
+      "name": "विद्याऽविद्यास्वरूपिणी",
+      "meaning": "Both knowledge and ignorance are Her forms."
+    },
+    {
+      "number": 403,
+      "name": "महाकामेशनयनकुमुदाह्लादकौमुदी",
+      "meaning": "Just as the kumuda (water lily that flowers purely at night) joyously flowers when caressed by the moon rays, Mahā Kameśa flowers in Her divine company. She is pleasing to the eye (nayana) of Mahā Kameśa (Shiva)."
+    },
+    {
+      "number": 404,
+      "name": "भक्तहार्दतमोभेदभानुमद्भानुसन्ततिः",
+      "meaning": "She is the Sun (Bhanu) within the heart of the devotee whose incessant rays (bhanumat) dispel and destroy the ignorance (tamas)."
+    },
+    {
+      "number": 405,
+      "name": "शिवदूती",
+      "meaning": "She, to whom Lord Shiva himself is a doota (messenger), is Śivadūtī."
+    },
+    {
+      "number": 406,
+      "name": "शिवाराध्या",
+      "meaning": "She is worshipped by Shiva or it can be understood to mean that She worships Shiva. Shiva and Shivā are the masculine and feminine forms of the same Almighty."
+    },
+    {
+      "number": 407,
+      "name": "शिवमूर्तिः",
+      "meaning": "She is the form of auspiciousness (Shiva)."
+    },
+    {
+      "number": 408,
+      "name": "शिवङ्करी",
+      "meaning": "She grants auspiciousness to those who understand the essence (tattva) behind ‘Śivadūtī’ and ‘शिवमूर्तिःऽ। (‘Śivamūrtiḥ’.) She blesses that such devotees should reach their destination i.e. merger into Shiva."
+    },
+    {
+      "number": 409,
+      "name": "शिवप्रिया",
+      "meaning": "She is very dear to Shiva or Shiva is very dear to Her."
+    },
+    {
+      "number": 410,
+      "name": "शिवपरा",
+      "meaning": "स्हे इस् रेप्लेते wइथ् औस्पिचिओउस्नेस्स् (स्हिव, मण्गऌअ)। (She is replete with auspiciousness (Shiva, maṇgaḷa).)"
+    },
+    {
+      "number": 411,
+      "name": "शिष्टेष्टा",
+      "meaning": "Those who adhere to right conduct and follow the path of righteousness as prescribed by the scriptures are very dear to Her."
+    },
+    {
+      "number": 412,
+      "name": "शिष्टपूजिता",
+      "meaning": "Worship offered by sistas is very dear to Her and She accepts such worship."
+    },
+    {
+      "number": 413,
+      "name": "अप्रमेया",
+      "meaning": "She cannot be measured or understood by any known parameters. She is over and above even time and space."
+    },
+    {
+      "number": 414,
+      "name": "स्वप्रकाशा",
+      "meaning": "The brilliance of the Sun, which illuminates the entire creation and which dissipates its darkness, comes from Me. Likewise the illumination of the moon and fire also arise from Me. Understand that all that illumination is My illumination."
+    },
+    {
+      "number": 415,
+      "name": "मनोवाचामगोचरा",
+      "meaning": "The knowledge of Brahma cannot be got by listening to lectures (pravachana), nor can He be perceived by the greatest of all intellectuals, nor can He be attained by innumerable listening to the Vedas. Only those who have His grace can attain Him. Hearing and talking about the Supreme are merely aids progress on the path."
+    },
+    {
+      "number": 416,
+      "name": "चिच्छक्तिः",
+      "meaning": "She is the universal knowledge (Jnana) which includes both the individual knowledge (vyasthi) and the composite knowledge (samisthi)."
+    },
+    {
+      "number": 417,
+      "name": "चेतनारूपा",
+      "meaning": "She is the pure consciousness that exists within the creation.  She is the power behind the running of this creation."
+    },
+    {
+      "number": 418,
+      "name": "जडशक्तिः",
+      "meaning": "She is the mechanical force (energy) that exists within every inanimate object."
+    },
+    {
+      "number": 419,
+      "name": "जडात्मिका",
+      "meaning": "She is the form of the all the inanimate objects."
+    },
+    {
+      "number": 420,
+      "name": "गायत्री",
+      "meaning": "O Lord Sun! You are brightest illumination (varenya). I am offering my worship to you. By doing so, I will get a tinge of your illumination. May such illumination shine within me. Please direct my intellect towards the ways of dharma."
+    },
+    {
+      "number": 421,
+      "name": "व्याहृतिः",
+      "meaning": "She manifests as the 7 invocations (व्याहृतिः) ((Vyāhṛtiḥ)) preceding the Gayatri mantra."
+    },
+    {
+      "number": 422,
+      "name": "सन्ध्या",
+      "meaning": "As She is the powerful energy who is born at Sandhya times, She is Sandhya Devi. She is worshipped at each Sandhya times."
+    },
+    {
+      "number": 423,
+      "name": "द्विजवृन्दनिषेविता",
+      "meaning": "She is worshipped by the twice born i.e. those people who have undergone the sacred thread ceremony and have been initiated into Gayatri mantra."
+    },
+    {
+      "number": 424,
+      "name": "तत्त्वासना",
+      "meaning": "Tattvas (the 24 secret principles that are the root of all this creation) are like a seat (asana) upon which She is seated."
+    },
+    {
+      "number": 425,
+      "name": "तत्",
+      "meaning": "That which has no second (atma, Paramatma) and that which is alone and eternal (sat); that which has no name and form; that which remains the same at all times (changeless both before and after creation) is ‘tat’. This is the atma. This is God."
+    },
+    {
+      "number": 426,
+      "name": "त्वं",
+      "meaning": "She is the intelligence and force (chaitanya) that is beyond the body and the sense of hearing. She causes the senses (indriyas) within the individual to function."
+    },
+    {
+      "number": 427,
+      "name": "अयी",
+      "meaning": "Ayi is the stage at the merger of Tat and Tvam. ‘You’ are ‘that’."
+    },
+    {
+      "number": 428,
+      "name": "पञ्चकोशान्तरस्थिता",
+      "meaning": "She is seated within the 5 sheaths (Pancha koshās)."
+    },
+    {
+      "number": 429,
+      "name": "निःसीममहिमा",
+      "meaning": "O Supreme Mother! Scholars, the masters of agamas have described You as Saraswati (wife of Brahma). You have been described as Lakshmi (Vishnu’s wife) and as Parvati (wife of Shiva). But you, O Mother, are the main source from which these 3 goddesses get their powers. You are in the fourth state i.e. tureeya state. Your greatness is endless. You are the महा-माय (mahā-māya) who puts this entire world under the supreme illusion."
+    },
+    {
+      "number": 430,
+      "name": "नित्ययौवना",
+      "meaning": "She is eternally young. She always remains as a 16 years old young maiden."
+    },
+    {
+      "number": 431,
+      "name": "मदशालिनी",
+      "meaning": "She remains eternally in a state of supreme bliss."
+    },
+    {
+      "number": 432,
+      "name": "मदघूर्णितरक्ताक्षी",
+      "meaning": "Her laughter can be seen in Her eyes."
+    },
+    {
+      "number": 433,
+      "name": "मदपाटलगण्डभूः",
+      "meaning": "Her cheeks soaked in bliss are shining vibrantly in white colour."
+    },
+    {
+      "number": 434,
+      "name": "चन्दनद्रवदिग्धाङ्गी",
+      "meaning": "Her body is completely embalmed with sandal paste."
+    },
+    {
+      "number": 435,
+      "name": "चाम्पेयकुसुमप्रिया",
+      "meaning": "She loves Jasmine (Champaka) flowers."
+    },
+    {
+      "number": 436,
+      "name": "कुशला",
+      "meaning": "He whose mind is verily fixed in yoga and whose mind being in a state of equilibrium sees happiness and dejection alike, frees himself from the pāpa (sin) or punya (merit) attached to the deed. Work thus performed is yoga. This is the true state of Kuśalatva."
+    },
+    {
+      "number": 437,
+      "name": "कोमलाकारा",
+      "meaning": "She possesses a slender delicate body. She possesses a very gentle nature (mrdu swabhāva)."
+    },
+    {
+      "number": 438,
+      "name": "कुरुकुल्ला",
+      "meaning": "I contemplate upon Goddess Kurukulla who is seated majestically upon the Kuruvinda gems. She resembles the Mountain Meru and She is extremely pleased with the offering of kumkuma. Mentally I offer prostrations to you O Kurukulla Devi and request you to always remain with me."
+    },
+    {
+      "number": 439,
+      "name": "कुलेश्वरी",
+      "meaning": "She is the presiding deity (eshwari) of Mooladhāra chakra (Kula)."
+    },
+    {
+      "number": 440,
+      "name": "कुलकुण्डालया",
+      "meaning": "O Divine Mother! You move from the Mooladhaara, your official residence, you reach the Sahasrara and there you drench all the naadis of the body with the nectar. Thereafter you return back to your residence the Kula Kunda where you sleep."
+    },
+    {
+      "number": 441,
+      "name": "कौलमार्गतत्परसेविता",
+      "meaning": "Koula mārga refers to the pure path of yoga. She adores the offerings made by those spiritual aspirants who strictly abide by the Koula Marga."
+    },
+    {
+      "number": 442,
+      "name": "कुमारगणनाथाम्बा",
+      "meaning": "She is the mother of Kumāra (Lord Subrahmanya or Kumaraswamy) and Gananātha (Ganapati)."
+    },
+    {
+      "number": 443,
+      "name": "तुष्टिः",
+      "meaning": "As Tushtih, She resides within us in the form of contentment and happiness."
+    },
+    {
+      "number": 444,
+      "name": "पुष्टिः",
+      "meaning": "Pushti is state of total contentment and completeness (poornatva) that follows tushti."
+    },
+    {
+      "number": 445,
+      "name": "मतिः",
+      "meaning": "O Divine Mother Durga! It is enough if someone merely thinks about you casually. You relieve them of all their problems instantly. Moreover you grant good reflective, discriminatory and thinking capacity on them."
+    },
+    {
+      "number": 446,
+      "name": "धृतिः",
+      "meaning": "Courage is Her form. She instills in us the courage required."
+    },
+    {
+      "number": 447,
+      "name": "शान्तिः",
+      "meaning": "Let there be peace in this universe, peace in all the planes above and below it."
+    },
+    {
+      "number": 448,
+      "name": "स्वस्तिमती",
+      "meaning": "May Indra, the Lord of heaven do good. May the Sun (Poosha) do good to us. May Trayaksha destroy the enemies and bring about peace. May Bruhaspati, the Guru of the Devatas, bless me with the right intellect. Let there be peace everywhere and on every plane."
+    },
+    {
+      "number": 449,
+      "name": "कान्तिः",
+      "meaning": "She is the form of inner illumination or radiance."
+    },
+    {
+      "number": 450,
+      "name": "नन्दिनी",
+      "meaning": "She is the supreme bliss (ananda)."
+    },
+    {
+      "number": 451,
+      "name": "विघ्ननाशिनी",
+      "meaning": "She dispels all forms of obstacles not only in the materialistic world but also in the path of spiritual pursuits. She destroys ignorance."
+    },
+    {
+      "number": 452,
+      "name": "तेजोवती",
+      "meaning": "She is the cause of tejas (illumination) that exists with the individual as well as in the Sun."
+    },
+    {
+      "number": 453,
+      "name": "त्रिनयना",
+      "meaning": "Commentary:"
+    },
+    {
+      "number": 454,
+      "name": "लोलाक्षी",
+      "meaning": "She is the form of desire (kāma-rūpa) in women (lolākshi)."
+    },
+    {
+      "number": 455,
+      "name": "मालिनी",
+      "meaning": "She wears the garland (māla) of alphabets (akshara, varna) and hence is Mālinī."
+    },
+    {
+      "number": 456,
+      "name": "हंसिनी",
+      "meaning": "The four Vedas—namely the Rig, Yajur, Sama and Atharva Veda all emanated from the breath of Paramatma."
+    },
+    {
+      "number": 457,
+      "name": "माता",
+      "meaning": "As a protector and guide to every being She is addressed as Mother."
+    },
+    {
+      "number": 458,
+      "name": "मलयाचलवासिनी",
+      "meaning": "Commentary:"
+    },
+    {
+      "number": 459,
+      "name": "सुमुखी",
+      "meaning": "Her face is glowing with infinite radiance."
+    },
+    {
+      "number": 460,
+      "name": "नलिनी",
+      "meaning": "Commentary:"
+    },
+    {
+      "number": 461,
+      "name": "सुभ्रूः",
+      "meaning": "Her eyebrows are inexplicably beautiful. They are the gateways for infinite bliss."
+    },
+    {
+      "number": 462,
+      "name": "शोभना",
+      "meaning": "An unusual radiance/ glow (kanti) encircles Her."
+    },
+    {
+      "number": 463,
+      "name": "सुरनायिका",
+      "meaning": "She is the leader (nāyika) of the Devatas (Sura, deities). It can also be understood to mean that She is the leader of all Swaras (notes in music, sur)."
+    },
+    {
+      "number": 464,
+      "name": "कालकण्ठी",
+      "meaning": "Her neck (kantha) is dark black in colour. From this it can be understood that-"
+    },
+    {
+      "number": 465,
+      "name": "कान्तिमती",
+      "meaning": "She can be understood through the understanding of the Vedas. She is Vedānta."
+    },
+    {
+      "number": 466,
+      "name": "क्षोभिणी",
+      "meaning": "She is the kshobha (mental disturbances) that is experienced."
+    },
+    {
+      "number": 467,
+      "name": "सूक्ष्मरूपिणी",
+      "meaning": "The senses (indriyas) are very subtle. Subtler than them is the mind. Subtler than this mind is the intellect (buddhi) and the one who is far subtler than this intellect and that which controls it, is Paramatma.Being physically unmanifest, the spiritual centers (chakras), are invisible to the naked eye. Inward vision (antar drishti) is the sole means to spot them."
+    },
+    {
+      "number": 468,
+      "name": "वज्रेश्वरी",
+      "meaning": "She is hard, firm and resplendent akin to a diamond. Vajreshwari is the presiding deity of Vishuddha chakra (located at the throat)."
+    },
+    {
+      "number": 469,
+      "name": "वामदेवी",
+      "meaning": "She is the energy (shakti) of Vāmadeva, one of the five Rudras. Vāmadevi is the presiding deity for the Anahata chakra (located near the heart). She is the energy who takes us towards Shiva and blesses us with auspiciousness."
+    },
+    {
+      "number": 470,
+      "name": "वयोऽवस्थाविवर्जिता",
+      "meaning": "She is beyond the states of growth and old age. She is the presiding deity for the Manipura chakra (located at the navel)."
+    },
+    {
+      "number": 471,
+      "name": "सिद्धेश्वरि",
+      "meaning": "She is the ruler (Eshwari) all the siddhas (accomplished souls) and has them under Her sway. She is the presiding deity of Swadhisthana chakra."
+    },
+    {
+      "number": 472,
+      "name": "सिद्धविद्या",
+      "meaning": "She is the authority over all the knowledge that is possessed by Siddhas such as Agastya Maharishi. She is the presiding deity of Mooladhāra chakra, the primary/ first chakra."
+    },
+    {
+      "number": 473,
+      "name": "सिद्धमाता",
+      "meaning": "She is the mother to all Siddhas. She is the presiding deity of Ajna chakra (located at the forehead)."
+    },
+    {
+      "number": 474,
+      "name": "यशस्विनी",
+      "meaning": "She is very famous. The Supreme Mother is known as Yashaswini in Sahasrara chakra."
+    },
+    {
+      "number": 475,
+      "name": "विशुद्धिचक्रनिलया",
+      "meaning": "Vishuddha chakra, located at the throat, is Her residence."
+    },
+    {
+      "number": 476,
+      "name": "आरक्तवर्णा",
+      "meaning": "At the Vishuddha chakra, the Divine Mother is in the āraktavarna colour (a colour that is a mixture of blood red and ash)."
+    },
+    {
+      "number": 477,
+      "name": "त्रिलोचना",
+      "meaning": "The Divine Mother seated at the Vishuddha Chakra has 3 eyes. She is Trinayana."
+    },
+    {
+      "number": 478,
+      "name": "खट्वाङ्गादिप्रहरणा",
+      "meaning": "Holding the ‘khatvānga’ and other weapons in Her hand, She is guarding (praharana) the foetus during its first month of growth."
+    },
+    {
+      "number": 479,
+      "name": "वदनैकसमन्विता",
+      "meaning": "She has only one face."
+    },
+    {
+      "number": 480,
+      "name": "पायसान्नप्रिया",
+      "meaning": "She loves pāyasānna."
+    },
+    {
+      "number": 481,
+      "name": "त्वक्स्था",
+      "meaning": "She is the presiding deity for tvak (skin)."
+    },
+    {
+      "number": 482,
+      "name": "पशुलोकभयङ्करी",
+      "meaning": "She causes a fear in animals (pashu)."
+    },
+    {
+      "number": 483,
+      "name": "अमृतादिमहाशक्तिसंवृता",
+      "meaning": "At the Vishuddha chakra She resides together with Amruta and the various other divine energies (maha shaktis, divine mothers)."
+    },
+    {
+      "number": 484,
+      "name": "डाकिनीश्वरी",
+      "meaning": "She is Daakini, the ruler (eshwari) of Vishuddha chakra."
+    },
+    {
+      "number": 485,
+      "name": "अनाहताब्जनिलया",
+      "meaning": "She resides in the lotus called Anahata Chakra."
+    },
+    {
+      "number": 486,
+      "name": "श्यामाभा",
+      "meaning": "She is Shyāma Devi. She blesses with knowledge."
+    },
+    {
+      "number": 487,
+      "name": "वदनद्वया",
+      "meaning": "At the Anahata Chakra, She manifests in a form that has 2 faces."
+    },
+    {
+      "number": 488,
+      "name": "दंष्ट्रोज्ज्वला",
+      "meaning": "O Divine Mother!  The dust under your feet washes away all darkness from the mind of the ignorant. They are the heaps of Chintamani (wish fulfilling) gems that are showered on the poorest of men. Just as Lord Varaha’s tusks brought up the earth at the time when it was sinking, your holy feet pull up those who are drowned in this ocean called samsara."
+    },
+    {
+      "number": 489,
+      "name": "अक्षमालादिधरा",
+      "meaning": "The Supreme Mother wears an aksha-māla around Her neck."
+    },
+    {
+      "number": 490,
+      "name": "रुधिरसंस्थिता",
+      "meaning": "She resides within the blood (rudhira). It can be interpreted to mean that She is the blood within the being."
+    },
+    {
+      "number": 491,
+      "name": "कालरात्र्यादिशक्त्यौघवृता",
+      "meaning": "She resides at the Anahata chakra together with Kālarātri Devi and other divine energies (महा ((mahā) shaktis)."
+    },
+    {
+      "number": 492,
+      "name": "स्निग्धौदनप्रिया",
+      "meaning": "She loves the dish Snigdhaudana."
+    },
+    {
+      "number": 493,
+      "name": "महावीरेन्द्रवरदा",
+      "meaning": "Commentary:"
+    },
+    {
+      "number": 494,
+      "name": "राकिण्यम्बास्वरूपिणी",
+      "meaning": "She is Rākini Devi, the presiding deity of the Anahata chakra."
+    },
+    {
+      "number": 495,
+      "name": "मणिपूराब्जनिलया",
+      "meaning": "She resides in the Manipura chakra (located at the navel)."
+    },
+    {
+      "number": 496,
+      "name": "वदनत्रयसंयुता",
+      "meaning": "In this Manipura chakra, She is in a form with 3 faces."
+    },
+    {
+      "number": 497,
+      "name": "वज्रादिकायुधोपेता",
+      "meaning": "The Divine Mother, at the Anahata Chakra, is equipped with the 4 weapons – thunderbolt (Vajra), energy (shakti), long stick (danda) and the Abhaya mudra (the assurance of fear-not)."
+    },
+    {
+      "number": 498,
+      "name": "डामर्यादिभिरावृता",
+      "meaning": "Dāmari and other divine energies (Maha shaktis) accompany the Divine Mother seated at the Manipura chakra."
+    },
+    {
+      "number": 499,
+      "name": "रक्तवर्णा",
+      "meaning": "She is crimson red in colour."
+    },
+    {
+      "number": 500,
+      "name": "मांसनिष्ठा",
+      "meaning": "She blesses the person with well-developed flesh and muscles that are the basis for sustaining this body.At 3 months, the foetus begins to develop muscles and flesh and is growing rapidly."
+    },
+    {
+      "number": 501,
+      "name": "गुडान्नप्रीतमानसा",
+      "meaning": "She is very pleased when the dish गुडान्न (guḍānna) is offered to Her."
+    },
+    {
+      "number": 502,
+      "name": "समस्तभक्तसुखदा",
+      "meaning": "the one who is grieved, the one who desires materialistic comforts, the one who seeks the divine knowledge and the man of wisdom worship God."
+    },
+    {
+      "number": 503,
+      "name": "लाकिन्यम्बास्वरूपिणी",
+      "meaning": "She is is Lākini Devi, the presiding deity of Manipura chakra also known as  Siddeshwari."
+    },
+    {
+      "number": 504,
+      "name": "स्वाधिष्ठानाम्बुजगता",
+      "meaning": "She is seated in the lotus called Swadhisthana chakra."
+    },
+    {
+      "number": 505,
+      "name": "चतुर्वक्त्रमनोहरा",
+      "meaning": "In the Swadhisthana Chakra, She is glowing resplendently with Her four faces."
+    },
+    {
+      "number": 506,
+      "name": "शूलाद्यायुधसम्पन्ना",
+      "meaning": "She is fully equipped with trident and other weapons."
+    },
+    {
+      "number": 507,
+      "name": "पीतवर्णा",
+      "meaning": "She is resplendently shining with Her yellow coloured clothes."
+    },
+    {
+      "number": 508,
+      "name": "अतिगर्विता",
+      "meaning": "She takes great pride (garva) in her splendour (soundarya)."
+    },
+    {
+      "number": 509,
+      "name": "मेदोनिष्ठा",
+      "meaning": "She blesses the foetus with bone marrow."
+    },
+    {
+      "number": 510,
+      "name": "मधुप्रीता",
+      "meaning": "The Divine Mother loves honey."
+    },
+    {
+      "number": 511,
+      "name": "बन्धिन्यादिसमन्विता",
+      "meaning": "Bandini and other divine energies (Maha shaktis) accompany the Goddess Kakini at Swadhishthana chakra."
+    },
+    {
+      "number": 512,
+      "name": "दध्यन्नासक्तहृदया",
+      "meaning": "Watching the rising sun, inhaling the smoke in the crematorium and consuming curd rice (yoghurt) at night lead to a gradual deterioration in health and decrease life span of the individual. Watching the setting sun, inhaling the homa smoke and consuming milk rice at night result in better health and increased life span."
+    },
+    {
+      "number": 513,
+      "name": "काकिनीरूपधारिणी",
+      "meaning": "At the Swadhisthana chakra, the Supreme Mother takes on the name Kākinī."
+    },
+    {
+      "number": 514,
+      "name": "मूलाधाराम्बुजारूढा",
+      "meaning": "She is seated majestically over the lotus called Muladhāra Chakra."
+    },
+    {
+      "number": 515,
+      "name": "पञ्चवक्त्रा",
+      "meaning": "At the Muladhāra, the Supreme Mother takes on 5 faces. This is the Pancha Brahma or Pancha rudra form."
+    },
+    {
+      "number": 516,
+      "name": "अस्थिसंस्थिता",
+      "meaning": "The garland of bones adores Her neck."
+    },
+    {
+      "number": 517,
+      "name": "अङ्कुशादिप्रहरणा",
+      "meaning": "At this chakra, She holds in Her hands the weapons- ankusha (goad), kamala (lotus), pustaka (book) and Jnana Mudra (mudra depicting knowledge)."
+    },
+    {
+      "number": 518,
+      "name": "वरदादिनिषेविता",
+      "meaning": "Varadā, Shrīhī, Shadā and Saraswati are Her 4 names. She resides within the Mooladharā Chakra in all these forms."
+    },
+    {
+      "number": 519,
+      "name": "मुद्गौदनासक्तचित्ता",
+      "meaning": "The Divine Mother seated at the Mooladhāra chakra should be offered Mudganna as this is dear to Her."
+    },
+    {
+      "number": 520,
+      "name": "साकिन्यम्बास्वरूपिणी",
+      "meaning": "At Mooladhara Chakra, the Divine Mother is seated as Sākini Devi."
+    },
+    {
+      "number": 521,
+      "name": "आज्ञाचक्राब्जनिलया",
+      "meaning": "Ajna chakra is Her residence."
+    },
+    {
+      "number": 522,
+      "name": "शुक्लवर्णा",
+      "meaning": "She is of white complexioned akin to the moon."
+    },
+    {
+      "number": 523,
+      "name": "षडानना",
+      "meaning": "She has 6 faces."
+    },
+    {
+      "number": 524,
+      "name": "मज्जासंस्था",
+      "meaning": "She exists in the form of the bone marrow (majja). She fills the foetus with this bone-marrow (majja)."
+    },
+    {
+      "number": 525,
+      "name": "हंसवतीमुख्यशक्तिसमन्विता",
+      "meaning": "At the Ajna chakra She is accompanied by two deities Hamsavati and Kshmāvati (also known as mukhya shakti)."
+    },
+    {
+      "number": 526,
+      "name": "हरिद्रान्नैकरसिका",
+      "meaning": "She loves the offering of rice mixed with turmeric."
+    },
+    {
+      "number": 527,
+      "name": "हाकिनीरूपधारिणी",
+      "meaning": "At the Ajna chakra, She takes on the name Hākinī."
+    },
+    {
+      "number": 528,
+      "name": "सहस्रदलपद्मस्था",
+      "meaning": "She is seated within the thousand-petalled lotus (Sahasrara)."
+    },
+    {
+      "number": 529,
+      "name": "सर्ववर्णोपशोभिता",
+      "meaning": "She is glowing resplendently and is shining with all colours (sarva varna) without any limitations."
+    },
+    {
+      "number": 530,
+      "name": "सर्वायुधधरा",
+      "meaning": "The Divine Mother is seated in the Sahasrara Chakra equipped with every kind of weapon."
+    },
+    {
+      "number": 531,
+      "name": "शुक्लसंस्थिता",
+      "meaning": "She fills the shukla into the being."
+    },
+    {
+      "number": 532,
+      "name": "सर्वतोमुखी",
+      "meaning": "She has innumerable faces that face every direction. This depicts Her infiniteness."
+    },
+    {
+      "number": 533,
+      "name": "सर्वौदनप्रीतचित्ता",
+      "meaning": "Every being is born out of food, sustains on this earth with the aid of food and upon death once again merges back into food. Food is the root of everything. It is food that is being born and it is food that is growing."
+    },
+    {
+      "number": 534,
+      "name": "याकिन्यम्बास्वरूपिणी",
+      "meaning": "At the Sahasrara Chakra She is Yākini Devi also known as Yaśasvinī (refer nama 474)."
+    },
+    {
+      "number": 535,
+      "name": "स्वाहा",
+      "meaning": "The Divine Mother manifests as Swāhā Devi to deliver the oblations of the yagna (āhuti) to the respective deity."
+    },
+    {
+      "number": 536,
+      "name": "स्वधा",
+      "meaning": "The Divine Mother has manifested as Swadhā in order to pass on the oblations to the forefathers."
+    },
+    {
+      "number": 537,
+      "name": "अमतिः",
+      "meaning": "She is the ignorance (avidya)."
+    },
+    {
+      "number": 538,
+      "name": "मेधा",
+      "meaning": "She is the intellect, memory power and power of retention that is found in every being."
+    },
+    {
+      "number": 539,
+      "name": "श्रुतिः",
+      "meaning": "She exists in the form of the four Vedas."
+    },
+    {
+      "number": 540,
+      "name": "स्मृतिः",
+      "meaning": "स्हे अप्पेअर्स् इन् थे फ़ोर्म् ओफ़् थे वरिओउस् स्मृतिस्। (She appears in the form of the various smṛtis.)"
+    },
+    {
+      "number": 541,
+      "name": "अनुत्तमा",
+      "meaning": "She holds the most superior position. She is unsurpassed."
+    },
+    {
+      "number": 542,
+      "name": "पुण्यकीर्तिः",
+      "meaning": "Commentary:"
+    },
+    {
+      "number": 543,
+      "name": "पुण्यलभ्या",
+      "meaning": "Only those with meritorious deeds to their credit can reach Her."
+    },
+    {
+      "number": 544,
+      "name": "पुण्यश्रवणकीर्तना",
+      "meaning": "Just hearing (shravana) or singing Her divine names (keertana) results in the person being blessed with tremendous merit (punya)."
+    },
+    {
+      "number": 545,
+      "name": "पुलोमजार्चिता",
+      "meaning": "Pulomaja (Sachi Devi), wife of Lord Indra ardently worships Her."
+    },
+    {
+      "number": 546,
+      "name": "बन्धमोचनी",
+      "meaning": "She relieves her devotees from the various bondages (bandha) of life."
+    },
+    {
+      "number": 547,
+      "name": "बर्बरालका",
+      "meaning": "It is the various deeds of the past lives that protect a person wherever he is, whether he is in a forest, in a war, in water, in fire, deep in an ocean, on the hill-top, whether he is awake or asleep or in any dangerous situation."
+    },
+    {
+      "number": 548,
+      "name": "विमर्शरूपिणी",
+      "meaning": "She is the power of discrimination between the real and unreal. Such discrimination (vimarsha) leads towards viveka (wisdom)."
+    },
+    {
+      "number": 549,
+      "name": "विद्या",
+      "meaning": "She is the Supreme Knowledge."
+    },
+    {
+      "number": 550,
+      "name": "वियदादि जगत्प्रसूः",
+      "meaning": "Beginning with the sky (akasha or viyat), She has created this entire universe (jagat)."
+    },
+    {
+      "number": 551,
+      "name": "सर्वव्याधिप्रशमनी",
+      "meaning": "She cures all the diseases both physical (vyādhi) and mental (ādhi)."
+    },
+    {
+      "number": 552,
+      "name": "सर्वमृत्युनिवारिणी",
+      "meaning": "She destroys the fear of death."
+    },
+    {
+      "number": 553,
+      "name": "अग्रगण्या",
+      "meaning": "Commentary:"
+    },
+    {
+      "number": 554,
+      "name": "अचिन्त्यरूपा",
+      "meaning": "Her true form is inconceivable by the human mind."
+    },
+    {
+      "number": 555,
+      "name": "कलिकल्मषनाशिनी",
+      "meaning": "She washes off all the impurities and sins (kalmasha) that pertain to Kali Yuga. She is the refuge for this Kali Yuga."
+    },
+    {
+      "number": 556,
+      "name": "कात्यायनी",
+      "meaning": "She is Kātyāyinī- the daughter of Muni Kata."
+    },
+    {
+      "number": 557,
+      "name": "कालहन्त्री",
+      "meaning": "When the five elements (pancha bhutas) are in harmony, the five attributes of the elements will manifest in the yogi in the right proportions, and the fire of yoga will be kindled and the body will be full of that fire."
+    },
+    {
+      "number": 558,
+      "name": "कमलाक्षनिषेविता",
+      "meaning": "Kamalaksha i.e. Mahavishnu worships Her"
+    },
+    {
+      "number": 559,
+      "name": "ताम्बूलपूरितमुखी",
+      "meaning": "Due to the juice of the betel leaves, Her lips are red in colour."
+    },
+    {
+      "number": 560,
+      "name": "दाडिमीकुसुमप्रभा",
+      "meaning": "She is shining like the dark red pomegranate flower."
+    },
+    {
+      "number": 561,
+      "name": "मृगाक्षी",
+      "meaning": "Her eyes are beautiful, gentle and wide like that of a deer."
+    },
+    {
+      "number": 562,
+      "name": "मोहिनी",
+      "meaning": "O Mother! By your grace Hari (Lord Vishnu) was once able to become the charming female Mohini and stir waves of passion in the mind of the most impassioned Lord Shiva itself. He who had burnt the three cities and who is the enemy of Kaama (the Lord of desire) could fall into the trap of moha. Manmatha (Kaama, the Lord of desire) is able to stir waves of passion in the minds of the greatest of saints."
+    },
+    {
+      "number": 563,
+      "name": "मुख्या",
+      "meaning": "Commentary:"
+    },
+    {
+      "number": 564,
+      "name": "मृडानी",
+      "meaning": "Commentary:"
+    },
+    {
+      "number": 565,
+      "name": "मित्ररूपिणी",
+      "meaning": "He who showers false praises in our presence but who spoils our tasks behind our back should not be befriended. Persons who resort to unethical and magical practices should never be befriended. He who guides and advices against bad deeds, he who shows the good path, he who can keep the secrets, he who only propagates the truth and who brings out the good traits in us, He who rushes to the aid when in distress is a true friend."
+    },
+    {
+      "number": 566,
+      "name": "नित्यतृप्ता",
+      "meaning": "She is ever contended (tushti) and seeks nothing more. She grants this contentment to the true spiritual aspirant."
+    },
+    {
+      "number": 567,
+      "name": "भक्तनिधिः",
+      "meaning": "She is the reservoir (treasure house) for all devotees (bhaktas)."
+    },
+    {
+      "number": 568,
+      "name": "नियन्त्री",
+      "meaning": "She governs this Universe and ensures that all beings follow the right path. She causes all beings to adhere to dharma."
+    },
+    {
+      "number": 569,
+      "name": "निखिलेश्वरी",
+      "meaning": "She is the empress (eshwari) of the entire creation (nikhila) that consists of  movable and immovable objects."
+    },
+    {
+      "number": 570,
+      "name": "मैत्र्यादिवासनालभ्या",
+      "meaning": "Commentary:"
+    },
+    {
+      "number": 571,
+      "name": "महाप्रलयसाक्षिणी",
+      "meaning": "She is the witness for the final dissolution (absorption) known as Mahā Pralaya."
+    },
+    {
+      "number": 572,
+      "name": "पराशक्तिः",
+      "meaning": "Everything happens on account of Her potency. It is the energy without whose will even a tiny blade of grass will not move."
+    },
+    {
+      "number": 573,
+      "name": "परानिष्ठा",
+      "meaning": "She is the siddhi (accomplishment) in the accomplished beings."
+    },
+    {
+      "number": 574,
+      "name": "प्रज्ञानघनरुपिणी",
+      "meaning": "That wisdom with which the ‘being’ sees and hears, that through which he enjoys the tastes and he talks, that through which he absorbs good knowledge and enjoys good associations is known as Prajñāna."
+    },
+    {
+      "number": 575,
+      "name": "माध्वीपानालसा",
+      "meaning": "She is intoxicated due to the consumption of wine (madhu)."
+    },
+    {
+      "number": 576,
+      "name": "मत्ता",
+      "meaning": "She is in a slumber caused by complete intoxication."
+    },
+    {
+      "number": 577,
+      "name": "मातृकावर्णरूपिणी",
+      "meaning": "I pray that the Goddess of words, who in each of her 4 hands holds the garland of crystal beads, a parrot, white lotus and book respectively, and whose luster can be compared to the kunda flowers, moon, conch  or the crystal beads should live always in my face and bless me."
+    },
+    {
+      "number": 578,
+      "name": "महाकैलासनिलया",
+      "meaning": "Mahā-kailāsa is Her residence."
+    },
+    {
+      "number": 579,
+      "name": "मृणालमृदुदोर्लता",
+      "meaning": "Her arms are as tender as lotus stalks."
+    },
+    {
+      "number": 580,
+      "name": "महनीया",
+      "meaning": "She is the most supreme being and is most venerable (worshipful)."
+    },
+    {
+      "number": 581,
+      "name": "दयामूर्तिः",
+      "meaning": "She is form of complete compassion."
+    },
+    {
+      "number": 582,
+      "name": "महासाम्राज्यशालिनी",
+      "meaning": "She is the empress of this entire universe (Mahā sāmrājya)."
+    },
+    {
+      "number": 583,
+      "name": "आत्मविद्या",
+      "meaning": "आत्म-विद्या (Ātma-vidyā) is the knowledge that teaches a person about the true self. Such knowledge is also Her form."
+    },
+    {
+      "number": 584,
+      "name": "महाविद्या",
+      "meaning": "The knowledge (scripture) of Mantras (Mantra shastra) is known as महा-विद्या। (Mahā-vidyā.) Such knowledge is also Her form."
+    },
+    {
+      "number": 585,
+      "name": "श्रीविद्या",
+      "meaning": "श्री-विद्या (Śrī-vidyā) is the path that leads towards total merger (aikya) into Her. She is the form of Srividya."
+    },
+    {
+      "number": 586,
+      "name": "कामसेविता",
+      "meaning": "Kāma (Manmatha, the Lord of desire) worships and serves Her."
+    },
+    {
+      "number": 587,
+      "name": "श्रीषोडशाक्षरीविद्या",
+      "meaning": "She is the 16-syllable mantra (shodashi) of Mother Rajarajeshwari that begins with the word Sri."
+    },
+    {
+      "number": 588,
+      "name": "त्रिकूटा",
+      "meaning": "She is the trikūta- the combined state of all the 3 kūtas."
+    },
+    {
+      "number": 589,
+      "name": "कामकोटिका",
+      "meaning": "Commentary:"
+    },
+    {
+      "number": 590,
+      "name": "कटाक्षकिङ्करीभुतकमलाकोटिसेविता",
+      "meaning": "Her power is such that just upon the blinking of Her eyelids, crores of Lakshmi Devis’ (limitless prosperity) attend and serve Her."
+    },
+    {
+      "number": 591,
+      "name": "शिरःस्थिता",
+      "meaning": "She is seated in the Sahasrara Chakra in Her position as Guru."
+    },
+    {
+      "number": 592,
+      "name": "चन्द्रनिभा",
+      "meaning": "Seated at the Sahasrara, She is shining resplendently like the moon."
+    },
+    {
+      "number": 593,
+      "name": "भालस्था",
+      "meaning": "She is seated in the centre of the forehead (phāla, bhrumadhya)."
+    },
+    {
+      "number": 594,
+      "name": "इन्द्रधनुःप्रभा",
+      "meaning": "At the Ajna Chakra (forehead) She shines likes a rainbow (Indra dhanu)."
+    },
+    {
+      "number": 595,
+      "name": "हृदयस्था",
+      "meaning": "Just as an entire banyan tree is hidden within a small seed, this entire world is contained within the heart and mind."
+    },
+    {
+      "number": 596,
+      "name": "रविप्रख्या",
+      "meaning": "Seated in the heart She is shining like the Sun."
+    },
+    {
+      "number": 597,
+      "name": "त्रिकोणान्तरदीपिका",
+      "meaning": "She is the shining lamp within the Trikona (triangle)."
+    },
+    {
+      "number": 598,
+      "name": "दाक्षायणी",
+      "meaning": "Commentary:"
+    },
+    {
+      "number": 599,
+      "name": "दैत्यहन्त्री",
+      "meaning": "She destroys demonic forces and traits within us hence She is Daitya (demon) hantri (destroyer)."
+    },
+    {
+      "number": 600,
+      "name": "दक्षयज्ञविनाशिनी",
+      "meaning": "She destroyed Daksha’s yagna."
+    },
+    {
+      "number": 601,
+      "name": "दरान्दोलितदीर्घाक्षी",
+      "meaning": "Commentary:"
+    },
+    {
+      "number": 602,
+      "name": "दरहासोज्ज्वलन्मुखी",
+      "meaning": "Seated in Guru’s position, the Supreme Mother is eternally joyful."
+    },
+    {
+      "number": 603,
+      "name": "गुरुमूर्तिः",
+      "meaning": "She assumes the form of a Guru."
+    },
+    {
+      "number": 604,
+      "name": "गुणनिधिः",
+      "meaning": "She is a treasure house of all good traits (guna)."
+    },
+    {
+      "number": 605,
+      "name": "गोमाता",
+      "meaning": "Commentary:"
+    },
+    {
+      "number": 606,
+      "name": "गुहजन्मभूः",
+      "meaning": "Commentary:"
+    },
+    {
+      "number": 607,
+      "name": "देवेशी",
+      "meaning": "As a ruler (Eshwari) for all the Devatas (deities) She is Deveshi."
+    },
+    {
+      "number": 608,
+      "name": "दण्डनीतिस्था",
+      "meaning": "Drive away from within me all traits of immodesty and arrogance O Lord Vishnu. Teach me to be humble at all times especially towards my Guru and all my elders. Subdue and tame my mind (damana) and prevent it from running away in all directions. Controlled by my senses, my mind is running after all the sensual desires that are nothing but a mirage. Help me control my senses. Let compassion towards all beings (bhootadaya, universal compassion) engulf me. Please help me cross the ocean of this samsara (bondages)."
+    },
+    {
+      "number": 609,
+      "name": "दहराकाशरूपिणी",
+      "meaning": "At the centre of the city called the body there is a subtle lotus known as the heart (Daharākāsha). This pure and sinless (untainted) lotus is the abode of the Absolute (Divine Mother). This Supreme being who is located in this inner space and who is pure and sinless should be meditated upon continuously."
+    },
+    {
+      "number": 610,
+      "name": "प्रतिपन्मुख्यराकान्ततिथिमण्डलपूजिता",
+      "meaning": "In the month of Ashwayuja, She is worshipped for the entire lunar fortnight beginning with pratipat (the first day) up to full moon (Purnima)."
+    },
+    {
+      "number": 611,
+      "name": "कलात्मिका",
+      "meaning": "Commentary:"
+    },
+    {
+      "number": 612,
+      "name": "कलानाथा",
+      "meaning": "She is the master (naatha) of all the kalas (phases). Hence She monitors and regulates them."
+    },
+    {
+      "number": 613,
+      "name": "काव्यालापविनोदिनी",
+      "meaning": "She takes great delight when kāvya is sung or recited."
+    },
+    {
+      "number": 614,
+      "name": "सचामररमावाणीसव्यदक्षिणसेविता",
+      "meaning": "Goddess Lakshmi (Ramā) and Goddess Saraswati (Shārada or Vāni) stand to Her left and right sides and fan Her. She joyfully accepts their services."
+    },
+    {
+      "number": 615,
+      "name": "आदिशक्तिः",
+      "meaning": "Atma is that which pervades everything or that which is all- pervasive is Atma."
+    },
+    {
+      "number": 616,
+      "name": "अमेया",
+      "meaning": "She who is not measurable by any means"
+    },
+    {
+      "number": 617,
+      "name": "आत्मा",
+      "meaning": "She who is the self in all"
+    },
+    {
+      "number": 618,
+      "name": "परमा",
+      "meaning": "a) She is a dazzling brilliance."
+    },
+    {
+      "number": 619,
+      "name": "पावनाकृतिः",
+      "meaning": "Just a glance of Her form (ākruti) bestows purity (pāvanā). Her holy form is cleansing and purifying."
+    },
+    {
+      "number": 620,
+      "name": "अनेककोटिब्रह्माण्डजननी",
+      "meaning": "Trillions of universes are contained within Her divine womb. She is the mother (Janani) to these infinite universes."
+    },
+    {
+      "number": 621,
+      "name": "दिव्यविग्रहा",
+      "meaning": "She has a divinely shaped body."
+    },
+    {
+      "number": 622,
+      "name": "क्लीङ्कारी",
+      "meaning": "Kleem is Her seed letter (beejakshara)."
+    },
+    {
+      "number": 623,
+      "name": "केवला",
+      "meaning": "She is one without a second. She alone exists."
+    },
+    {
+      "number": 624,
+      "name": "गुह्या",
+      "meaning": "You are the protector of all that which is deeply secretive and confidential. Please accept my japam, O Divine Mother. Please grace and bless me to achieve spiritual accomplishment and stable intellect."
+    },
+    {
+      "number": 625,
+      "name": "कैवल्यपददायिनी",
+      "meaning": "She bestows absolute liberation (kaivalya), which is the ultimate goal of yoga."
+    },
+    {
+      "number": 626,
+      "name": "त्रिपुरा",
+      "meaning": "Everything in this world comes under the triad."
+    },
+    {
+      "number": 627,
+      "name": "त्रिजगद्वन्द्या",
+      "meaning": "She is truly revered and worshipped in all the three planes (lokas, tri jagad)."
+    },
+    {
+      "number": 628,
+      "name": "त्रिमूर्तिः",
+      "meaning": "She manifests as the trinity- Brahma, Vishnu and Shiva."
+    },
+    {
+      "number": 629,
+      "name": "त्रिदशेश्वरी",
+      "meaning": "She is the ruler (Ishwari) for the Tri-dashas (the 3 stages)."
+    },
+    {
+      "number": 630,
+      "name": "त्र्यक्षरि",
+      "meaning": "She is in the form of 3 aksharas (alphabets)."
+    },
+    {
+      "number": 631,
+      "name": "दिव्यगन्धाढ्या",
+      "meaning": "She has adorned herself with divine sandal paste (divya gandha) that emits rich fragrance/perfume."
+    },
+    {
+      "number": 632,
+      "name": "सिन्दूरतिलकाञ्चिता",
+      "meaning": "She wears sindūra (red) mark on Her forehead."
+    },
+    {
+      "number": 633,
+      "name": "उमा",
+      "meaning": "Commentary:"
+    },
+    {
+      "number": 634,
+      "name": "शैलेन्द्रतनया",
+      "meaning": "She is the daughter of Himavān or Shailendra."
+    },
+    {
+      "number": 635,
+      "name": "गौरी",
+      "meaning": "She is the wife of Shiva, who is also known as Goura."
+    },
+    {
+      "number": 636,
+      "name": "गन्धर्वसेविता",
+      "meaning": "All the Gandharvas serve Her."
+    },
+    {
+      "number": 637,
+      "name": "विश्वगर्भा",
+      "meaning": "This entire universe is contained in Her womb. Alternatively, this entire universe is itself Her womb."
+    },
+    {
+      "number": 638,
+      "name": "स्वर्णगर्भा",
+      "meaning": "a) Gold (स्wअर्ना) ((swarnā)) and other valuables are held within Her womb."
+    },
+    {
+      "number": 639,
+      "name": "अवरदा",
+      "meaning": "Commentary:"
+    },
+    {
+      "number": 640,
+      "name": "वागधीश्वरी",
+      "meaning": "She is the ultimate ruler (Ishwari) for speech (vak)."
+    },
+    {
+      "number": 641,
+      "name": "ध्यानगम्या",
+      "meaning": "Only those who are able to fix their mind on the Absolute through the process of ‘dhyana’ are able to see Him."
+    },
+    {
+      "number": 642,
+      "name": "अपरिच्छेद्या",
+      "meaning": "She is indivisible and immeasurable."
+    },
+    {
+      "number": 643,
+      "name": "ज्ञानदा",
+      "meaning": "She bestows divine knowledge."
+    },
+    {
+      "number": 644,
+      "name": "ज्ञानविग्रहा",
+      "meaning": "Knowledge (Jnana) is her form."
+    },
+    {
+      "number": 645,
+      "name": "सर्ववेदान्तसंवेद्या",
+      "meaning": "All the Vedas speak about Me, I am the one who has created the Vedanta and I am the one who knows about them."
+    },
+    {
+      "number": 646,
+      "name": "सत्यानन्दस्वरूपिणी",
+      "meaning": "To those who try to seek Her through Vedanta, She appears as a form of truth and bliss (satya+ananda)."
+    },
+    {
+      "number": 647,
+      "name": "लोपामुद्रार्चिता",
+      "meaning": "Lopamudra Devi, the wife of Maharishi Agastya, worshipped Her."
+    },
+    {
+      "number": 648,
+      "name": "लीलाकॢप्तब्रह्माण्डमण्डला",
+      "meaning": "This entire universe is Her playful creation."
+    },
+    {
+      "number": 649,
+      "name": "अदृश्या",
+      "meaning": "All that is visible (seen) is destructible."
+    },
+    {
+      "number": 650,
+      "name": "दृश्यरहिता",
+      "meaning": "There is nothing that She seeks to ‘see’ as She is the triad of the seer, seeing and seen."
+    },
+    {
+      "number": 651,
+      "name": "विज्ञात्री",
+      "meaning": "She is the power that is seeing, hearing and experiencing this world."
+    },
+    {
+      "number": 652,
+      "name": "वेद्यवर्जिता",
+      "meaning": "She is a form of complete knowledge."
+    },
+    {
+      "number": 653,
+      "name": "योगिनी",
+      "meaning": "She manifests in the form of various Yogini mātās such as Dākini, Yākini and so on."
+    },
+    {
+      "number": 654,
+      "name": "योगदा",
+      "meaning": "She blesses Her devotees with Yoga, hence She is Yogadā."
+    },
+    {
+      "number": 655,
+      "name": "योग्या",
+      "meaning": "She can be reached purely through practices of yoga."
+    },
+    {
+      "number": 656,
+      "name": "योगानन्दा",
+      "meaning": "She is the supreme bliss (ananda) that is enjoyed by yogis who are accomplished in Yoga."
+    },
+    {
+      "number": 657,
+      "name": "युगन्धरा",
+      "meaning": "She bears all the yugas (eons) and is a support for all the trillions of yugas that come."
+    },
+    {
+      "number": 658,
+      "name": "इच्छाशक्तिज्ञानशक्तिक्रियाशक्तिस्वरूपिणी",
+      "meaning": "She is the 3 energies – Iccha shakti, Jnana shakti and Kriya shakti."
+    },
+    {
+      "number": 659,
+      "name": "सर्वाधारा",
+      "meaning": "She is the support for everything in this creation. At the same time, She does not depend on any substance for her sustenance."
+    },
+    {
+      "number": 660,
+      "name": "सुप्रतीष्ठा",
+      "meaning": "Commentary:"
+    },
+    {
+      "number": 661,
+      "name": "सदसद्रूपधारिणी",
+      "meaning": "Both sat (truth) and asat (falsehood, non-existence) are Her forms."
+    },
+    {
+      "number": 662,
+      "name": "अष्टमूर्तिः",
+      "meaning": "This is Her form as Mother Nature (prakriti maata). She has taken on 8 forms known as Ashtamurti for the sustenance of this creation."
+    },
+    {
+      "number": 663,
+      "name": "अजाजेत्री",
+      "meaning": "She helps the devotees conquer ignorance."
+    },
+    {
+      "number": 664,
+      "name": "लोकयात्रविधायिनी",
+      "meaning": "In this Shareera yātra or journey of life, performance of action is a must. Engage in those tasks that are obligatory because action is better than inaction. Even the maintenance of the body becomes impossible if him who is inactive."
+    },
+    {
+      "number": 665,
+      "name": "एकाकिनी",
+      "meaning": "Commentary:"
+    },
+    {
+      "number": 666,
+      "name": "भूमरूपा",
+      "meaning": "She is the personification of bliss (ānanda, bhūma)."
+    },
+    {
+      "number": 667,
+      "name": "निर्द्वैता",
+      "meaning": "Only he who has conquered all feelings of duality can enjoy pure bliss (bhūma). Feelings of duality are the basis for all problems."
+    },
+    {
+      "number": 668,
+      "name": "द्वैतवर्जिता",
+      "meaning": "She destroys feels of dualism (dvaita) among her devotees."
+    },
+    {
+      "number": 669,
+      "name": "अन्नदा",
+      "meaning": "When the food is pure, then the intellect (buddhi, the inner senses) gets purified."
+    },
+    {
+      "number": 670,
+      "name": "वसुदा",
+      "meaning": "She showers the Savitri upasakas with gold (vasu). This subtly implies that She grants them liberation (moksha)."
+    },
+    {
+      "number": 671,
+      "name": "वृद्धा",
+      "meaning": "Commentary:"
+    },
+    {
+      "number": 672,
+      "name": "ब्रह्मात्मैक्यस्वरूपिणी",
+      "meaning": "The state that arises after the individual soul (atma) merges into the Paramatma (Brahma) is yet another of Her forms."
+    },
+    {
+      "number": 673,
+      "name": "बृहती",
+      "meaning": "Her form is vast and cannot be comprehended by the mind."
+    },
+    {
+      "number": 674,
+      "name": "ब्राह्मणी",
+      "meaning": "स्हे इस् थे wइफ़े ओफ़् ब्राह्मणा (स्हिव)। (She is the wife of Brāhmaṇā (Shiva).)"
+    },
+    {
+      "number": 675,
+      "name": "ब्राह्मी",
+      "meaning": "She is the wife of four-faced Brahma."
+    },
+    {
+      "number": 676,
+      "name": "ब्रह्मानन्दा",
+      "meaning": "She is the supreme-most bliss known as Brahmananda."
+    },
+    {
+      "number": 677,
+      "name": "बलिप्रिया",
+      "meaning": "She is pleased when sacrifices are offered to Her."
+    },
+    {
+      "number": 678,
+      "name": "भाषारूपा",
+      "meaning": "She manifests in the form of languages."
+    },
+    {
+      "number": 679,
+      "name": "बृहत्सेना",
+      "meaning": "She has a large army at Her disposal to accomplish her tasks."
+    },
+    {
+      "number": 680,
+      "name": "भावाभावविवर्जिता",
+      "meaning": "She is beyond the states of bhāva and abhāva."
+    },
+    {
+      "number": 681,
+      "name": "सुखाराध्या",
+      "meaning": "She can be worshiped easily and comfortably without putting the body through great pains."
+    },
+    {
+      "number": 682,
+      "name": "शुभकरी",
+      "meaning": "She causes auspiciousness (subha)."
+    },
+    {
+      "number": 683,
+      "name": "शोभनासुलभागतिः",
+      "meaning": "She leads us on the most easy and auspicious path towards self-realization."
+    },
+    {
+      "number": 684,
+      "name": "राजराजेश्वरी",
+      "meaning": "She is the empress of all the empresses in the creation."
+    },
+    {
+      "number": 685,
+      "name": "राज्यदायिनी",
+      "meaning": "As She bestowed the kingdoms (rājya) on to the Lords of the eight directions (ashta dik pālaka), She is Rājya dāyini."
+    },
+    {
+      "number": 686,
+      "name": "राज्यवल्लभा",
+      "meaning": "She delights in having ownership of the heart."
+    },
+    {
+      "number": 687,
+      "name": "राजत्कृपा",
+      "meaning": "She is overflowing with kindness and compassion."
+    },
+    {
+      "number": 688,
+      "name": "राजपीठनिवेशितनिजाश्रिता",
+      "meaning": "She seats all those who have placed implicit trust in Her on the throne (Rāja pītha)."
+    },
+    {
+      "number": 689,
+      "name": "राज्यलक्ष्मी",
+      "meaning": "Savitri vidya extols the Divine Mother as the wealth and prosperity (Lakshmi) of the (rājya)."
+    },
+    {
+      "number": 690,
+      "name": "कोशनाथा",
+      "meaning": "She is the guardian of the treasures (wealth, kosa) of the empire."
+    },
+    {
+      "number": 691,
+      "name": "चतुरङ्गबलेश्वरी",
+      "meaning": "She is the force that protects all the four divisions of the army."
+    },
+    {
+      "number": 692,
+      "name": "साम्राज्यदायिनी",
+      "meaning": "She bestows the kingship and kingdom."
+    },
+    {
+      "number": 693,
+      "name": "सत्यसन्धा",
+      "meaning": "Her resolves all are woven around truth (satya); She is bound by truth."
+    },
+    {
+      "number": 694,
+      "name": "सागरमेखला",
+      "meaning": "Oceans that protect the earth are Her retained by Her as Her waist band."
+    },
+    {
+      "number": 695,
+      "name": "दीक्षिता",
+      "meaning": "Deekshita is She who has taken an uncompromising vow or a solemn promise. Protection of Her devotees is Her main vow."
+    },
+    {
+      "number": 696,
+      "name": "दैत्यशमनी",
+      "meaning": "She destroys all evil forces, evil thoughts and evil feelings which are demons (daitya)."
+    },
+    {
+      "number": 697,
+      "name": "सर्वलोकवशङ्करी",
+      "meaning": "She holds all the worlds (sarva-loka) under Her sway."
+    },
+    {
+      "number": 698,
+      "name": "सर्वार्थदात्री",
+      "meaning": "She who fulfils every desires of her devotees is Sarvārtha-dātrī."
+    },
+    {
+      "number": 699,
+      "name": "सावित्री",
+      "meaning": "She is the cause for the illumination of this Sun and hence is known as Savitri."
+    },
+    {
+      "number": 700,
+      "name": "सच्चिदानन्दरूपिणी",
+      "meaning": "She is the form of Sacchidānanda."
+    },
+    {
+      "number": 701,
+      "name": "देशकालापरिच्छिन्ना",
+      "meaning": "She who is not limited by time and space; She who is not"
+    },
+    {
+      "number": 702,
+      "name": "सर्वगा",
+      "meaning": "She who pervades all the worlds and all the living and"
+    },
+    {
+      "number": 703,
+      "name": "सर्वमोहिनी",
+      "meaning": "She who deludes all"
+    },
+    {
+      "number": 704,
+      "name": "सरस्वती",
+      "meaning": "She who is in the form of knowledge"
+    },
+    {
+      "number": 705,
+      "name": "शास्त्रमयी",
+      "meaning": "She who is in the form of the scriptures; She whose limbs are"
+    },
+    {
+      "number": 706,
+      "name": "गुहाम्बा",
+      "meaning": "She who is the mother of guha (subramaNya); She who dwells in"
+    },
+    {
+      "number": 707,
+      "name": "गुह्यरूपिणी",
+      "meaning": "She who has a secret form"
+    },
+    {
+      "number": 708,
+      "name": "सर्वोपाधिविनिर्मुक्ता",
+      "meaning": "She who is free from all limitations"
+    },
+    {
+      "number": 709,
+      "name": "सदाशिवपतिव्रता",
+      "meaning": "She who is sadAshiva's devoted wife"
+    },
+    {
+      "number": 710,
+      "name": "सम्प्रदायेश्वरी",
+      "meaning": "She who is the guardian of sacred traditions"
+    },
+    {
+      "number": 711,
+      "name": "साधु",
+      "meaning": "स्हे रेप्रेसेन्त्स् गोओद् अन्द् औस्पिचिओउस् त्रैत्स् (साधु)। ॐ साधुने नमह्! (She represents good and auspicious traits (sādhu). Om Sādhune namah!)"
+    },
+    {
+      "number": 712,
+      "name": "ई",
+      "meaning": "स्हे इस् अ फ़ोर्म् ओफ़् विस्ह्नु। ॐ एएयै नमह्! (She is a form of Vishnu. Om Eeyai namah!)"
+    },
+    {
+      "number": 713,
+      "name": "गुरूमण्डलरूपिणी",
+      "meaning": "She is the unbroken lineage of Gurus (Guru मन्डल)- (manḍala)-) from Sadāshiva to one’s own guru."
+    },
+    {
+      "number": 714,
+      "name": "कुलोत्तीर्णा",
+      "meaning": "She is over and above the Chakras (spiritual centers known as kula)."
+    },
+    {
+      "number": 715,
+      "name": "भगाराध्या",
+      "meaning": "Commentary:"
+    },
+    {
+      "number": 716,
+      "name": "माया",
+      "meaning": "She is the individual illusion and ignorance."
+    },
+    {
+      "number": 717,
+      "name": "मधुमती",
+      "meaning": "Every action of Hers is attractive and tempting akin to honey. She is honey (madhu)."
+    },
+    {
+      "number": 718,
+      "name": "मही",
+      "meaning": "स्हे इस् थे मोथेर् एअर्थ् (भुमी)। (She is the Mother earth (bhumī).)"
+    },
+    {
+      "number": 719,
+      "name": "गणाम्बा",
+      "meaning": "She is the mother of Ganapati. She is also the ruler of all the various ganās (troops) in this creation including Shiva’s attendants (Shiva-ganās)."
+    },
+    {
+      "number": 720,
+      "name": "गुह्यकाराध्या",
+      "meaning": "Commentary:"
+    },
+    {
+      "number": 721,
+      "name": "कोमलाङ्गी",
+      "meaning": "She has very delicate limbs."
+    },
+    {
+      "number": 722,
+      "name": "गुरुप्रिया",
+      "meaning": "To Her, the tradition of following a Guru (Guru sampradaya) is very dear. She coaxes her devotees to get on the path of the Guru."
+    },
+    {
+      "number": 723,
+      "name": "स्वतन्त्रा",
+      "meaning": "Being self-created She enjoys absolute freedom."
+    },
+    {
+      "number": 724,
+      "name": "सर्वतन्त्रेशी",
+      "meaning": "She is the composite form of all Tantras. She is the creator of all Tantras and rules them."
+    },
+    {
+      "number": 725,
+      "name": "दक्षिणामूर्तिरूपिणी",
+      "meaning": "She has manifested as Lord Dakshināmūrty to bestow knowledge (jnana)."
+    },
+    {
+      "number": 726,
+      "name": "सनकादिसमाराध्या",
+      "meaning": "She is worshipped by the 4 Maharishis- Sanaka, Sanandana, Sanatkumara and Sanatsujaata."
+    },
+    {
+      "number": 727,
+      "name": "शिवज्ञानप्रदायिनी",
+      "meaning": "She bestows the knowledge of Shiva on to Her devotees."
+    },
+    {
+      "number": 728,
+      "name": "चित्कला",
+      "meaning": "स्हे रेसिदेस् अस् चित्-कला इन् एवेर्य् बेइन्ग्। (She resides as Cit-kalā in every being.)"
+    },
+    {
+      "number": 729,
+      "name": "आनन्दकलिका",
+      "meaning": "She dwells in every being in the form of bliss (ānanda) that is in a budding/ blossoming state."
+    },
+    {
+      "number": 730,
+      "name": "प्रेमरूपा",
+      "meaning": "She is an embodiment of love."
+    },
+    {
+      "number": 731,
+      "name": "प्रियङ्करी",
+      "meaning": "प्रियंकरी (Priyaṃkarī) is the bliss that results from developing endless love (bhakti, devotion) towards the Divinity. The Divine Mother is this bliss."
+    },
+    {
+      "number": 732,
+      "name": "नामपारायणप्रीता",
+      "meaning": "She is exceedingly pleased when Divine names are recited (nama-parayana)."
+    },
+    {
+      "number": 733,
+      "name": "नन्दिविद्या",
+      "meaning": "She manifests as ‘Nandi vidya’- the scripture that deals with merger/ absorption into Her."
+    },
+    {
+      "number": 734,
+      "name": "नटेश्वरी",
+      "meaning": "She is the energy of Lord Nateshwara (Natarāja, Shiva) who is performing the dance of bliss (tāndava)."
+    },
+    {
+      "number": 735,
+      "name": "मिथ्याजगदधिष्ठाना",
+      "meaning": "She is the cause and refuge for this illusory universe (mithya-jagat)."
+    },
+    {
+      "number": 736,
+      "name": "मुक्तिदा",
+      "meaning": "She relieves the true devotee from the bondages and grants him liberation (mukti)."
+    },
+    {
+      "number": 737,
+      "name": "मुक्तिरूपिणी",
+      "meaning": "Liberation (mukti) is also Her form (roopa)."
+    },
+    {
+      "number": 738,
+      "name": "लास्यप्रिया",
+      "meaning": "She is very fond of dance. Dance performed by Divine Mother is known as lāsya."
+    },
+    {
+      "number": 739,
+      "name": "लयकरी",
+      "meaning": "Due to Her grace, the devotee is able to merge (laya) his mind into that infinite. She is the cause for it."
+    },
+    {
+      "number": 740,
+      "name": "लज्जा",
+      "meaning": "Modesty is her greatest jewel."
+    },
+    {
+      "number": 741,
+      "name": "रम्भादिवन्दिता",
+      "meaning": "Divine damsels such as Rambha ardently worship Her."
+    },
+    {
+      "number": 742,
+      "name": "भवदावसुधावृष्टिः",
+      "meaning": "She is the rain of nectar (amruta varsha) that extinguishes the forest fire (dhava) known as samsara (bhava)."
+    },
+    {
+      "number": 743,
+      "name": "पापारण्यदवानला",
+      "meaning": "She is the fire who reduces to ashes the heaps (forest) of sins of Her devotees."
+    },
+    {
+      "number": 744,
+      "name": "दौर्भाग्यतूलवातूला",
+      "meaning": "She is the huge gale that blows and shreds the misfortunes of her devotees, which can be compared to small cotton ball."
+    },
+    {
+      "number": 745,
+      "name": "जराध्वान्तरविप्रभा",
+      "meaning": "She is the bright sunlight that dispels ill-health and other problems of old age."
+    },
+    {
+      "number": 746,
+      "name": "भाग्याब्धिचन्द्रिका",
+      "meaning": "She is the moonlight that causes the ocean of good luck to swell in her devotees."
+    },
+    {
+      "number": 747,
+      "name": "भक्तचित्तकेकिघनाघना",
+      "meaning": "Just as the peacock dances in joy at the sight of the rain/clouds, She causes the minds of the devotee to dance in joy."
+    },
+    {
+      "number": 748,
+      "name": "रोगपर्वतदम्भोलिः",
+      "meaning": "She is the Vajrāyudhā (diamond weapon of Lord Indra) that can shred diseases of the body and mind which are as huge as mountains."
+    },
+    {
+      "number": 749,
+      "name": "मृत्युदारुकुठारिका",
+      "meaning": "She is the huge axe that chops the tree called death."
+    },
+    {
+      "number": 750,
+      "name": "महेश्वरी",
+      "meaning": "As She has retained the Supreme Lord Eshwara under her sway She is Māheshwarī."
+    },
+    {
+      "number": 751,
+      "name": "महाकाली",
+      "meaning": "She manifests as Mahā-kālī."
+    },
+    {
+      "number": 752,
+      "name": "महाग्रासा",
+      "meaning": "She swallows everything."
+    },
+    {
+      "number": 753,
+      "name": "महाशना",
+      "meaning": "She eats away the entire universe."
+    },
+    {
+      "number": 754,
+      "name": "अपर्णा",
+      "meaning": "Devi Parvati lived without eating even leaves when She was seeking the Lord and hence got the name Aparnā. She who relieves her devotees from runa (indebtedness) is Aparnā."
+    },
+    {
+      "number": 755,
+      "name": "चण्डिका",
+      "meaning": "She gets tremendously angry with those who entertain demonic thoughts, display evil traits and pursue bad habits."
+    },
+    {
+      "number": 756,
+      "name": "चण्डमुण्डासुरनिषूदिनी",
+      "meaning": "In Her form as Chandika, She destroyed the evil demons Chanda and Munda, and was bestowed with the name Chamundi."
+    },
+    {
+      "number": 757,
+      "name": "क्षराक्षरात्मिका",
+      "meaning": "She is both impermanent (destructible) and permanent (eternal)."
+    },
+    {
+      "number": 758,
+      "name": "सर्वलोकेशी",
+      "meaning": "She is the empress who rules all the 14-worlds (lokas, planes)."
+    },
+    {
+      "number": 759,
+      "name": "विश्वधारिणी",
+      "meaning": "She bears/ supports the entire creation. She holds all the worlds within Her womb."
+    },
+    {
+      "number": 760,
+      "name": "त्रिवर्गदात्री",
+      "meaning": "She bestows the Tri-vargas of Dharma, Artha and Kaama."
+    },
+    {
+      "number": 761,
+      "name": "सुभगा",
+      "meaning": "She grants auspiciousness to all the 3 worlds. Through devotion (bhakti) She grants liberation (mukti). Such Divine Mother is known as Subhagā. Ladies benefit through worshipping Her."
+    },
+    {
+      "number": 762,
+      "name": "त्र्यम्बका",
+      "meaning": "She is the energy of that Lord Shiva who possesses 3 eyes. It also means that She has 3 eyes."
+    },
+    {
+      "number": 763,
+      "name": "त्रिगुणात्मिका",
+      "meaning": "She is the personification of the 3 gunas."
+    },
+    {
+      "number": 764,
+      "name": "स्वर्गापवर्गदा",
+      "meaning": "Where there are comforts there can be no liberation; where the mind entertains thoughts of liberation there can be no comforts. Yet, to a person who devotedly worships the ever-beautiful Goddess, both bhoga (comforts) and liberation (Moksha) can occur in parallel."
+    },
+    {
+      "number": 765,
+      "name": "शुद्धा",
+      "meaning": "She is eternally pure."
+    },
+    {
+      "number": 766,
+      "name": "जपापुष्पनिभाकृतिः",
+      "meaning": "Commentary:"
+    },
+    {
+      "number": 767,
+      "name": "ओजोवती",
+      "meaning": "She is full of ojas."
+    },
+    {
+      "number": 768,
+      "name": "द्युतिधरा",
+      "meaning": "She emits magnificent radiance (kānti)."
+    },
+    {
+      "number": 769,
+      "name": "यज्ञरूपा",
+      "meaning": "She is the form of yagna."
+    },
+    {
+      "number": 770,
+      "name": "प्रियव्रता",
+      "meaning": "She is very fond of vows and disciplines (vrata)."
+    },
+    {
+      "number": 771,
+      "name": "दुराराध्या",
+      "meaning": "Worshipping/ reaching Her is very difficult."
+    },
+    {
+      "number": 772,
+      "name": "दुराधर्षा",
+      "meaning": "No person can hold Her under his sway. She can only be pleased but not controlled."
+    },
+    {
+      "number": 773,
+      "name": "पाटलीकुसुमप्रिया",
+      "meaning": "She loves the Bignonia Suaveolens (pātali) flowers."
+    },
+    {
+      "number": 774,
+      "name": "महती",
+      "meaning": "She is vast, immeasurable and great."
+    },
+    {
+      "number": 775,
+      "name": "मेरुनिलया",
+      "meaning": "Mountain Meru is Her residence."
+    },
+    {
+      "number": 776,
+      "name": "मन्दारकुसुमप्रिया",
+      "meaning": "She loves the hibiscus flower (mandāra) that is red in colour."
+    },
+    {
+      "number": 777,
+      "name": "वीराराध्या",
+      "meaning": "The valiant warriors (virya) devoutly worship Her."
+    },
+    {
+      "number": 778,
+      "name": "विराड्रूपा",
+      "meaning": "She is the universal form. She has manifested in the form of this entire visible world."
+    },
+    {
+      "number": 779,
+      "name": "विरजा",
+      "meaning": "She is devoid of trait of rajas (rajo guna, passion, action)."
+    },
+    {
+      "number": 780,
+      "name": "विश्वतोमुखी",
+      "meaning": "This entire visible world is Her face."
+    },
+    {
+      "number": 781,
+      "name": "प्रत्यग्रूपा",
+      "meaning": "She resides within every individual being in the form of the individual soul (jeevātma)."
+    },
+    {
+      "number": 782,
+      "name": "पराकाशा",
+      "meaning": "She pervades the most-superior space i.e. the space of the heart (hrdayākāsha)."
+    },
+    {
+      "number": 783,
+      "name": "प्राणदा",
+      "meaning": "She bestows the life force (prāna) on the individual."
+    },
+    {
+      "number": 784,
+      "name": "प्राणरूपिणी",
+      "meaning": "She resides in the form of the life force (prana) (as explained in the previous name)."
+    },
+    {
+      "number": 785,
+      "name": "मार्ताण्डभैरवाराध्या",
+      "meaning": "Commentary:"
+    },
+    {
+      "number": 786,
+      "name": "मन्त्रिणीन्यस्तराज्यधूः",
+      "meaning": "She entrusted the responsibility of ruling (kingship) to Goddess Shyamala, who is also known as Mantrini."
+    },
+    {
+      "number": 787,
+      "name": "त्रिपुरेशी",
+      "meaning": "She is the ruler of Tripura."
+    },
+    {
+      "number": 788,
+      "name": "जयत्सेना",
+      "meaning": "She leads a large army that is always victorious."
+    },
+    {
+      "number": 789,
+      "name": "निस्त्रैगुण्या",
+      "meaning": "She is devoid of the three gunas (traits)."
+    },
+    {
+      "number": 790,
+      "name": "परापरा",
+      "meaning": "Commentary:"
+    },
+    {
+      "number": 791,
+      "name": "सत्यज्ञानानन्दरूपा",
+      "meaning": "Truth (satya), knowledge/consciousness  (Jnana) and bliss (roopa) are Her forms."
+    },
+    {
+      "number": 792,
+      "name": "सामरस्यपरायणा",
+      "meaning": "She is pleased when her devotees exhibit traits of understanding and harmony with respect to other people in society."
+    },
+    {
+      "number": 793,
+      "name": "कपर्दिनी",
+      "meaning": "She is the wife (energy) of that Lord Kapardi (Shiva) who holds Ganga in his matted locks (जता)। ((jatā).)"
+    },
+    {
+      "number": 794,
+      "name": "कलामाला",
+      "meaning": "She wears the various kalās (arts, phases) as a garland around Her neck."
+    },
+    {
+      "number": 795,
+      "name": "कामधुक्",
+      "meaning": "She is Kamadhenu- the wish-fulfilling cow. She fulfills every desire of Her devotees."
+    },
+    {
+      "number": 796,
+      "name": "कामरूपिणी",
+      "meaning": "कामरूपिणी (Kāmarūpiṇī) means She can assume any form as per Her will."
+    },
+    {
+      "number": 797,
+      "name": "कलानिधिः",
+      "meaning": "She is a treasure house (nidhi) of all kalas (arts)."
+    },
+    {
+      "number": 798,
+      "name": "काव्यकला",
+      "meaning": "She is truly worthy of praise."
+    },
+    {
+      "number": 799,
+      "name": "रसज्ञा",
+      "meaning": "She is the finest amongst all the essences (rasa, flavour). Rasa is Her form."
+    },
+    {
+      "number": 800,
+      "name": "रसशेवधिः",
+      "meaning": "She is an never-ending ocean of bliss, which is the most-supreme rasa."
+    },
+    {
+      "number": 801,
+      "name": "पुष्टा",
+      "meaning": "She is a form of completeness. She grants opulence, nourishment and development to the mind and intellect so that it can achieve this completeness."
+    },
+    {
+      "number": 802,
+      "name": "पुरातना",
+      "meaning": "She is very ancient (eternal)."
+    },
+    {
+      "number": 803,
+      "name": "पूज्या",
+      "meaning": "She is most worthy of worship. She is deemed worthy of worship even by the various Gods. She accepts all the offerings of the devotees."
+    },
+    {
+      "number": 804,
+      "name": "पुष्करा",
+      "meaning": "Commentary:"
+    },
+    {
+      "number": 805,
+      "name": "पुष्करेक्षणा",
+      "meaning": "Her beautiful eyes are like lotus petals."
+    },
+    {
+      "number": 806,
+      "name": "परञ्ज्योतिः",
+      "meaning": "Illumination is of various forms- the inner light/illumination (antar jyoti), the external light (bahir jyoti) and individual illumination (pratyak jyoti). Such illumination is ageless (eternal, sanātana). It is the foundation for all other types of illumination and is self-ignited (swayam jyotih, which does not need support). Such illumination is the illumination of the self (atma-jyoti) who is none other than Shiva himself (shivosmyaham)!"
+    },
+    {
+      "number": 807,
+      "name": "परन्धाम",
+      "meaning": "It is Her effulgence that illuminates the Sun, Moon and Fire. But for this, the Sun, Moon or fire would have failed in dispersing light. Her residence is the ultimate abode; one from which there can be no return and no further upward journey."
+    },
+    {
+      "number": 808,
+      "name": "परमाणुः",
+      "meaning": "She is the sub-atomic particle. She is the most-minute and subtle element within the atom."
+    },
+    {
+      "number": 809,
+      "name": "परात्परा",
+      "meaning": "She is superior to even that which is considered the most-superior."
+    },
+    {
+      "number": 810,
+      "name": "पाशहस्ता",
+      "meaning": "She holds the pāsa (noose) in her hand."
+    },
+    {
+      "number": 811,
+      "name": "पाशहन्त्री",
+      "meaning": "She relieves the devotee from bondages (pāshas) and grants him liberation."
+    },
+    {
+      "number": 812,
+      "name": "परमन्त्रविभेदिनी",
+      "meaning": "She destroys blackmagic-mantras and other the evil energies that are directed by other people (para) towards her devotees."
+    },
+    {
+      "number": 813,
+      "name": "मूर्ता",
+      "meaning": "She is both with-form (Murta) and without-form (Amurta)."
+    },
+    {
+      "number": 814,
+      "name": "अमूर्ता",
+      "meaning": "She who has no definite form"
+    },
+    {
+      "number": 815,
+      "name": "अनित्यतृप्ता",
+      "meaning": "Any offering, however trivial it may be, is accepted by Me joyfully when offered with total devotion. The offering could be a mere leaf, flower or just water."
+    },
+    {
+      "number": 816,
+      "name": "मुनिमानसहंसिका",
+      "meaning": "She is the swan (hamsa) who swims in the mind (manas sarovar) of the great munis (Maharishis)."
+    },
+    {
+      "number": 817,
+      "name": "सत्यव्रता",
+      "meaning": "To abide by truth (satya) is Her vow (vrata). Truth is dearest to Her."
+    },
+    {
+      "number": 818,
+      "name": "सत्यरूपा",
+      "meaning": "She is eternal and is the form of truth."
+    },
+    {
+      "number": 819,
+      "name": "सर्वान्तर्यामिनी",
+      "meaning": "She exists within every being (soul). She flows within the heart and mind of every being."
+    },
+    {
+      "number": 820,
+      "name": "सती",
+      "meaning": "Commentary:"
+    },
+    {
+      "number": 821,
+      "name": "ब्रह्माणी",
+      "meaning": "She is the mother of all Vedas. Here Vedas are being referred to as Brahma."
+    },
+    {
+      "number": 822,
+      "name": "ब्रह्म",
+      "meaning": "She who is brahman"
+    },
+    {
+      "number": 823,
+      "name": "जननी",
+      "meaning": "She who is the mother"
+    },
+    {
+      "number": 824,
+      "name": "बहुरूपा",
+      "meaning": "She manifests in innumerable forms."
+    },
+    {
+      "number": 825,
+      "name": "बुधार्चिता",
+      "meaning": "The wise, greatly-learned, knowledgeable persons (jnani, budha) worship Her."
+    },
+    {
+      "number": 826,
+      "name": "प्रसवित्री",
+      "meaning": "This entire universe emerged from Her womb."
+    },
+    {
+      "number": 827,
+      "name": "प्रचण्डा",
+      "meaning": "She takes on a ferocious angry form. Even deities are terrified of her ferocious form."
+    },
+    {
+      "number": 828,
+      "name": "आज्ञा",
+      "meaning": "Her command (ājñā) is the ultimate law."
+    },
+    {
+      "number": 829,
+      "name": "प्रतिष्ठा",
+      "meaning": "She is steadfast and firm. Only Paramatma can entertain an steadfast immobile mind and remain firmly in that manner."
+    },
+    {
+      "number": 830,
+      "name": "प्रकटाकृतिः",
+      "meaning": "Although being inherently in an unmanifest state, She takes on a clear and evident form (आकृति) ((ākṛti)) so that She can be easily reached by Her devotees."
+    },
+    {
+      "number": 831,
+      "name": "प्राणेश्वरी",
+      "meaning": "A mortal does not depend on the Prāna nor on the Apāna for his life; there is some other force on which these two (prāna and apāna) depend; the being thus depends on this supreme force for its life."
+    },
+    {
+      "number": 832,
+      "name": "प्राणदात्री",
+      "meaning": "She bestows prana (life) upon the being."
+    },
+    {
+      "number": 833,
+      "name": "पञ्चाशत्पीठरूपिणी",
+      "meaning": "She is the form of the 51 shakti peethas."
+    },
+    {
+      "number": 834,
+      "name": "विश‍ृङ्खला",
+      "meaning": "As Shrunkala Devi She unties the knots of the bondages of Her devotees. She is not bound by any bondages. She unties the granthis (Brahma, Vishnu and Rudra granthis, discussed earlier)."
+    },
+    {
+      "number": 835,
+      "name": "विविक्तस्था",
+      "meaning": "She enjoys being all alone (ekanta/ exclusiveness). She loves ekanta puja offered by her devotees."
+    },
+    {
+      "number": 836,
+      "name": "वीरमाता",
+      "meaning": "She is the Mother of heroic and valorous sons. Lord Ganapati, Lord Subrahmanya, Veerabhadra and many eminent yogis are referred to as Veera."
+    },
+    {
+      "number": 837,
+      "name": "वियत्प्रसूः",
+      "meaning": "She has given birth to this vast space (akasha, viyat). She is the mother to the entire vast limitless sky."
+    },
+    {
+      "number": 838,
+      "name": "मुकुन्दा",
+      "meaning": "Commentary:"
+    },
+    {
+      "number": 839,
+      "name": "मुक्तिनिलया",
+      "meaning": "Liberation (mukti) is Her residence (nilaya)."
+    },
+    {
+      "number": 840,
+      "name": "मूलविग्रहरूपिणी",
+      "meaning": "Commentary:"
+    },
+    {
+      "number": 841,
+      "name": "भावज्ञा",
+      "meaning": "She knows our inner most thoughts and intent. One who is aware of our thought (bhava or intent) is Bhāvajñā."
+    },
+    {
+      "number": 842,
+      "name": "भवरोगघ्नी",
+      "meaning": "She burns away the diseases (roga) of this samsara (bhava)."
+    },
+    {
+      "number": 843,
+      "name": "भवचक्रप्रवर्तिनी",
+      "meaning": "She is the cause of this bhava chakra (cycle of births and deaths, samsara)."
+    },
+    {
+      "number": 844,
+      "name": "छन्दःसारा",
+      "meaning": "All the Vedas speak about ‘Me’ alone. I am its author."
+    },
+    {
+      "number": 845,
+      "name": "शास्त्रसारा",
+      "meaning": "‘Shastra’ means that which teaches the pravritti dharma (duty in the worldly/ external life), the nivritti dharma (duty in spiritual life, inward path), the knowledge about that which is permanent and true (nitya), and that which adopts fictitious examples (krtaka) for our understanding of the supreme truth."
+    },
+    {
+      "number": 846,
+      "name": "मन्त्रसारा",
+      "meaning": "In the word ‘Mantra, the alphabet ‘ma’ stands for manana (recitation, repetition); ‘tra’ refers to the protection that is offered to such person."
+    },
+    {
+      "number": 847,
+      "name": "तलोदरी",
+      "meaning": "a)\tShe possesses very good health.b)\t She retains all the Vedas in Her stomach (udara)."
+    },
+    {
+      "number": 848,
+      "name": "उदारकीर्तिः",
+      "meaning": "Her reputation and fame are infinite and vast."
+    },
+    {
+      "number": 849,
+      "name": "उद्दामवैभवा",
+      "meaning": "She cannot be measured. She cannot be bound."
+    },
+    {
+      "number": 850,
+      "name": "वर्णरूपिणी",
+      "meaning": "All the alphabets (varna, akshara) are Her forms."
+    },
+    {
+      "number": 851,
+      "name": "जन्ममृत्युजरातप्तजनविश्रान्तिदायिनी",
+      "meaning": "She washes away the suffering/ afflictions of birth (janma), death (mrtyu) and old age (जरा) ((jarā)) and thus provides rest/relief to her devotees."
+    },
+    {
+      "number": 852,
+      "name": "सर्वोपनिषदुद्घुष्टा",
+      "meaning": "All the Upanishads proclaim or speak about Her only. They sing Her glories."
+    },
+    {
+      "number": 853,
+      "name": "शान्त्यतीतकलात्मिका",
+      "meaning": "She is the form of the kala (art, specialization) that exists over and above the state of complete peace."
+    },
+    {
+      "number": 854,
+      "name": "गम्भीरा",
+      "meaning": "She is like a complete, deep ocean whose end/depth cannot be fathomed."
+    },
+    {
+      "number": 855,
+      "name": "गगनान्तस्था",
+      "meaning": "She fills the entire space (gagana)."
+    },
+    {
+      "number": 856,
+      "name": "गर्विता",
+      "meaning": "One who has the pride of being the creator is Garvita."
+    },
+    {
+      "number": 857,
+      "name": "गानलोलुपा",
+      "meaning": "She is immersed in music and is enraptured by good music."
+    },
+    {
+      "number": 858,
+      "name": "कल्पनारहिता",
+      "meaning": "She is beyond imagination (kalpana) and cannot be achieved through kalpana."
+    },
+    {
+      "number": 859,
+      "name": "काष्ठा",
+      "meaning": "She is the ultimate and final goal- sa kāsthā sa परा (parā) gatih."
+    },
+    {
+      "number": 860,
+      "name": "अकान्ता",
+      "meaning": "She destroys sin."
+    },
+    {
+      "number": 861,
+      "name": "कान्तार्धविग्रहा",
+      "meaning": "She is the other half in Shiva’s Ardhanareeshwara form (half male- half female)."
+    },
+    {
+      "number": 862,
+      "name": "कार्यकारणनिर्मुक्ता",
+      "meaning": "She is beyond all cause and action (kārana and kārya). Her existence is not based on them."
+    },
+    {
+      "number": 863,
+      "name": "कामकेलितरङ्गिता",
+      "meaning": "She is the continuous flow of intentions (taranga) behind this play (creation) of Shiva (kāma)."
+    },
+    {
+      "number": 864,
+      "name": "कनत्कनकताटङ्का",
+      "meaning": "Her earrings made of gold glitter."
+    },
+    {
+      "number": 865,
+      "name": "लीलाविग्रहधारिणी",
+      "meaning": "She who is omni present, playfully assumes as many forms as She wills."
+    },
+    {
+      "number": 866,
+      "name": "अजा",
+      "meaning": "I was never born before nor will I be ever be born. I am eternal."
+    },
+    {
+      "number": 867,
+      "name": "क्षयविनिर्मुक्ता",
+      "meaning": "She can never shrink nor decay. She is eternal."
+    },
+    {
+      "number": 868,
+      "name": "मुग्धा",
+      "meaning": "She is lovely attractive and tender young girl."
+    },
+    {
+      "number": 869,
+      "name": "क्षिप्रप्रसादिनी",
+      "meaning": "She showers Her grace/ blessings instantly on Her devotees."
+    },
+    {
+      "number": 870,
+      "name": "अन्तर्मुखसमाराध्या",
+      "meaning": "She can be reached purely through inner vision and inner practices (antar yāga or antar yoga)."
+    },
+    {
+      "number": 871,
+      "name": "बहिर्मुखसुदुर्लभा",
+      "meaning": "It is very difficult to attain Her through pure external worship that is devoid of faith."
+    },
+    {
+      "number": 872,
+      "name": "त्रयी",
+      "meaning": "She appears as the 3 Vedas."
+    },
+    {
+      "number": 873,
+      "name": "त्रिवर्गनिलया",
+      "meaning": "There are only 3 main planes of existence (lokas, worlds). They are the Bhu loka, Bhuvar loka and Suvar loka. All other planes merge into them. All the planes below the earth (bhu) merge into the Bhu loka (earth plane). All the planes above merge into the Bhuvar loka. The entire space (antareeksha) merges into the Suvar loka."
+    },
+    {
+      "number": 874,
+      "name": "त्रिस्था",
+      "meaning": "She resides within the tri (three) states of existence (avastha)."
+    },
+    {
+      "number": 875,
+      "name": "त्रिपुरमालिनी",
+      "meaning": "Commentary:"
+    },
+    {
+      "number": 876,
+      "name": "निरामया",
+      "meaning": "No disease ever troubles Her. She also relieves her devotees from suffering due to the diseases."
+    },
+    {
+      "number": 877,
+      "name": "निरालम्बा",
+      "meaning": "She is the support for the entire creation and does not lean on any support for Her sustenance."
+    },
+    {
+      "number": 878,
+      "name": "स्वात्मारामा",
+      "meaning": "She enjoys being all by herself (ekānta)."
+    },
+    {
+      "number": 879,
+      "name": "सुधास्रुतिः / सृतिः",
+      "meaning": "She is the perennial flow of bliss (nectar, sudha, amrita). This is the state of endless bliss."
+    },
+    {
+      "number": 880,
+      "name": "संसारपङ्कनिर्मग्नसमुद्धरणपण्डिता",
+      "meaning": "You appear like sunlight to those who are drowned in ignorance (ajnana) that is like a fearful darkness (timira). You make the minds of the dull witted (जदा) ((jadā)) grow fertile and turn it eligible to receive the knowledge of the self. You are the Cintāmani gem (wish fulfilling gem) to those who are sunk in poverty (daridra). You are Vāhari Devi (boar faced) and using your tusks you pull up those who are deeply sunk (nimagna) in this samsāra."
+    },
+    {
+      "number": 881,
+      "name": "यज्ञप्रिया",
+      "meaning": "She cherishes yajña and offerings made through yagna."
+    },
+    {
+      "number": 882,
+      "name": "यज्ञकर्त्री",
+      "meaning": "She is the energy that propels us to perform yagna."
+    },
+    {
+      "number": 883,
+      "name": "यजमानस्वरूपिणी",
+      "meaning": "She is seated in her position of yajamāna (the person performing the yagna)."
+    },
+    {
+      "number": 884,
+      "name": "धर्माधारा",
+      "meaning": "She is the support (ādhara) for all the dharmās."
+    },
+    {
+      "number": 885,
+      "name": "धनाध्यक्षा",
+      "meaning": "She assumes authority over money (dhana)."
+    },
+    {
+      "number": 886,
+      "name": "धनधान्यविवर्धिनी",
+      "meaning": "She causes opulence in wealth (dhana) and food grains (dhānya)."
+    },
+    {
+      "number": 887,
+      "name": "विप्रप्रिया",
+      "meaning": "Exponents of Vedas are very dear to Her."
+    },
+    {
+      "number": 888,
+      "name": "विप्ररूपा",
+      "meaning": "She manifests in the form of vipras."
+    },
+    {
+      "number": 889,
+      "name": "विश्वभ्रमणकारिणी",
+      "meaning": "She puts the world under Her spell of illusion (maya, brama). She causes the rotation of the worldly cycle (vishwa Yantra)."
+    },
+    {
+      "number": 890,
+      "name": "विश्वग्रासा",
+      "meaning": "She swallows the entire universe. The universe is Her food."
+    },
+    {
+      "number": 891,
+      "name": "विद्रुमाभा",
+      "meaning": "She glows like the coral."
+    },
+    {
+      "number": 892,
+      "name": "वैष्णवी",
+      "meaning": "As Vishnu’s energy, She is Vaishnavi. She is the power of sustenance."
+    },
+    {
+      "number": 893,
+      "name": "विष्णुरूपिणी",
+      "meaning": "She manifests as Lord Vishnu."
+    },
+    {
+      "number": 894,
+      "name": "अयोनिः",
+      "meaning": "She is without birth."
+    },
+    {
+      "number": 895,
+      "name": "योनिनिलया",
+      "meaning": "The Trikona (triangle) is being called the yoni. This is Her residence. In the Srichakra, after the Trikona is the top-most dot (bindu)."
+    },
+    {
+      "number": 896,
+      "name": "कूटस्था",
+      "meaning": "She is firm and remains immobile. She is the cause for all the movement in this universe and in all the beings while herself remaining immobile. She is a witness for all the actions."
+    },
+    {
+      "number": 897,
+      "name": "कुलरूपिणी",
+      "meaning": "She is the form of Mooladhara Chakra, which is the Kula. (Refer Nama ९०-कुलाम्र्तैक-रसिका (90-Kulāmrtaika-rasikā) and nama 93 – Kulāntasthā for meaning of Kula)"
+    },
+    {
+      "number": 898,
+      "name": "वीरगोष्ठीप्रिया",
+      "meaning": "She enjoys the teachings of the great saints."
+    },
+    {
+      "number": 899,
+      "name": "वीरा",
+      "meaning": "a) She is valourous. She is the destroyer of demons."
+    },
+    {
+      "number": 900,
+      "name": "नैष्कर्म्या",
+      "meaning": "She rewards her disciple with the ability to perform nishkaama karma (performance of selfless/ desireless action)."
+    },
+    {
+      "number": 901,
+      "name": "नादरूपिणी",
+      "meaning": "She is in the form of nāda (sound) (refer nāma 299, nāda-rūpā)"
+    },
+    {
+      "number": 902,
+      "name": "विज्ञानकलना",
+      "meaning": "She can be reached purely through Vijñāna."
+    },
+    {
+      "number": 903,
+      "name": "कल्या",
+      "meaning": "Only She is worthy of being thought about. Other thoughts are all un-worthy."
+    },
+    {
+      "number": 904,
+      "name": "विदग्धा",
+      "meaning": "She is the powerhouse of intelligence and cleverness. She is the supreme effulgence (chaitanya)."
+    },
+    {
+      "number": 905,
+      "name": "बैन्दवासना",
+      "meaning": "She is seated in the asana (pose) that is best suited for the bindu (dot) position."
+    },
+    {
+      "number": 906,
+      "name": "तत्त्वाधिका",
+      "meaning": "She is the eternal force which is over and above all the tattvas (principles)."
+    },
+    {
+      "number": 907,
+      "name": "तत्त्वमयी",
+      "meaning": "She is an embodiment of all the principles (tattvas). All the tattvas are contained within her."
+    },
+    {
+      "number": 908,
+      "name": "तत्त्वमर्थस्वरूपिणी",
+      "meaning": "She is the essence of great statement- Tattvamasi."
+    },
+    {
+      "number": 909,
+      "name": "सामगानप्रिया",
+      "meaning": "She loves the rendition of the Sāma Veda and also Sama rāga (note)."
+    },
+    {
+      "number": 910,
+      "name": "सौम्या",
+      "meaning": "Commentary:"
+    },
+    {
+      "number": 911,
+      "name": "सदाशिवकुटुम्बिनी",
+      "meaning": "She is the wife/ energy of Sadāshiva."
+    },
+    {
+      "number": 912,
+      "name": "सव्यापसव्यमार्गस्था",
+      "meaning": "She exists in both Savya and Apasavya paths (mārgas)."
+    },
+    {
+      "number": 913,
+      "name": "सर्वापद्विनिवारिणी",
+      "meaning": "She dispels every form of obstacle (sarva+āpad) that appears in the path of the devotee."
+    },
+    {
+      "number": 914,
+      "name": "स्वस्था",
+      "meaning": "She resides in Swarga (heaven) and bestows those planes to her devotees."
+    },
+    {
+      "number": 915,
+      "name": "स्वभावमधुरा",
+      "meaning": "Absolute Bliss is Her natural state."
+    },
+    {
+      "number": 916,
+      "name": "धीरा",
+      "meaning": "She is exceptionally brave."
+    },
+    {
+      "number": 917,
+      "name": "धीरसमर्चिता",
+      "meaning": "She accepts the worship that is offered by such dheeras (explained above)."
+    },
+    {
+      "number": 918,
+      "name": "चैतन्यार्घ्यसमाराध्या",
+      "meaning": "Chaitanya (Jnana or effulgence) is offered to Her as अर्घ्या। (arghyā.) Arghya is the offering of water during the worship."
+    },
+    {
+      "number": 919,
+      "name": "चैतन्यकुसुमप्रिया",
+      "meaning": "Commentary:"
+    },
+    {
+      "number": 920,
+      "name": "सदोदिता",
+      "meaning": "One who eternally (सदा) ((sadā)) rises like the Sun is सदोदिता। (sadoditā.) She shines eternally."
+    },
+    {
+      "number": 921,
+      "name": "सदातुष्टा",
+      "meaning": "She is ever contented."
+    },
+    {
+      "number": 922,
+      "name": "तरुणादित्यपाटला",
+      "meaning": "She is crimson red in colour- the colour of the just emerging sun."
+    },
+    {
+      "number": 923,
+      "name": "दक्षिणादक्षिणाराध्या",
+      "meaning": "She accepts the worship offered by both the knowledgeable and capable persons (jnanis) as well as the ignorant (ajnani)."
+    },
+    {
+      "number": 924,
+      "name": "दरस्मेरमुखाम्बुजा",
+      "meaning": "She is eternally joyful and is laughing all the time. Her face is comparable to the blooming lotus- a stage wherein it is not a bud but that which has not fully bloomed yet."
+    },
+    {
+      "number": 925,
+      "name": "कौलिनी केवला",
+      "meaning": "She resides purely as the form of Kundalini."
+    },
+    {
+      "number": 926,
+      "name": "अनर्घ्यकैवल्यपददायिनी",
+      "meaning": "She bestows Anarghya-kaivalya (supreme or ultimate liberation the value of which cannot be estimated) on to Her devotees."
+    },
+    {
+      "number": 927,
+      "name": "स्तोत्रप्रिया",
+      "meaning": "She loves to hear the hymns (stotras) recited by Her devotees."
+    },
+    {
+      "number": 928,
+      "name": "स्तुतिमती",
+      "meaning": "Her attention (mati) is focused on the stotras (hymns, stuti) being recited."
+    },
+    {
+      "number": 929,
+      "name": "श्रुतिसंस्तुतवैभवा",
+      "meaning": "Commentary:"
+    },
+    {
+      "number": 930,
+      "name": "मनस्विनी",
+      "meaning": "She is the controller (moola sutra) for all individual minds (manas). She is also the Manasvini yoga."
+    },
+    {
+      "number": 931,
+      "name": "मानवती",
+      "meaning": "She is the form of Jnana and she showers it upon the beings."
+    },
+    {
+      "number": 932,
+      "name": "महेशी",
+      "meaning": "She is the energy (wife) of Lord Mahesha (Shiva)."
+    },
+    {
+      "number": 933,
+      "name": "मङ्गलाकृतिः",
+      "meaning": "Her form is very auspicious. She grants auspiciousness to that which is already auspicious."
+    },
+    {
+      "number": 934,
+      "name": "विश्वमाता",
+      "meaning": "She is mother for this entire creation (Vishwa). She is the mother for the waking state, which is also known as Vishwa."
+    },
+    {
+      "number": 935,
+      "name": "जगद्धात्री",
+      "meaning": "She is the ruler for the entire creation. She holds the creation."
+    },
+    {
+      "number": 936,
+      "name": "विशालाक्षी",
+      "meaning": "She is wide-eyed. She is the presiding deity at Varanasi which is one of the eighteen main shakti peethas (18 sacred places of Devi)."
+    },
+    {
+      "number": 937,
+      "name": "विरागिणी",
+      "meaning": "She is devoid of all ragas (passions). She takes her children to this state of dispassion."
+    },
+    {
+      "number": 938,
+      "name": "प्रगल्भा",
+      "meaning": "She possesses great expertise, intelligence and power to run this entire creation."
+    },
+    {
+      "number": 939,
+      "name": "परमोदारा",
+      "meaning": "She is extremely generous in nature (udāra). Such generosity is a trait, which is greater than traits such as compassion (daya), forgiveness (kshama) etc."
+    },
+    {
+      "number": 940,
+      "name": "परामोदा",
+      "meaning": "She enjoys the ultimate bliss and bestows this bliss upon us."
+    },
+    {
+      "number": 941,
+      "name": "मनोमयी",
+      "meaning": "Commentary:"
+    },
+    {
+      "number": 942,
+      "name": "व्योमकेशी",
+      "meaning": "The infinite space (vyoma, ākasha, sky) is Her hair (kesha)."
+    },
+    {
+      "number": 943,
+      "name": "विमानस्था",
+      "meaning": "She is located in the Srichakra. This is the point of liberation (nivritti pada/ moksha sthāna)."
+    },
+    {
+      "number": 944,
+      "name": "वज्रिणी",
+      "meaning": "Commentary:"
+    },
+    {
+      "number": 945,
+      "name": "वामकेश्वरी",
+      "meaning": "Commentary:"
+    },
+    {
+      "number": 946,
+      "name": "पञ्चयज्ञप्रिया",
+      "meaning": "She loves the offerings through the five sacrifices/ rituals (yagnas) –Deva- yagna, Pitr-yagna, Brahma-yagna, Bhuta-yagna, Manushya-yagna."
+    },
+    {
+      "number": 947,
+      "name": "पञ्चप्रेतमञ्चाधिशायिनी",
+      "meaning": "She is seated on the cot that is made up of the Pancha-pretas."
+    },
+    {
+      "number": 948,
+      "name": "पञ्चमी",
+      "meaning": "Commentary:"
+    },
+    {
+      "number": 949,
+      "name": "पञ्चभूतेशी",
+      "meaning": "She assumes authority over the five basic elements (pancha bhootas). She is the power within these elements."
+    },
+    {
+      "number": 950,
+      "name": "पञ्चसङ्ख्योपचारिणी",
+      "meaning": "She is worshipped with the following five offerings."
+    },
+    {
+      "number": 951,
+      "name": "शाश्वती",
+      "meaning": "She is eternal."
+    },
+    {
+      "number": 952,
+      "name": "शाश्वतैश्वर्या",
+      "meaning": "She grants every-lasting prosperity (aishwarya) which is the showering of supreme knowledge (Jnana) upon Her devotee."
+    },
+    {
+      "number": 953,
+      "name": "शर्मदा",
+      "meaning": "She who causes auspiciousness is Śarmadā."
+    },
+    {
+      "number": 954,
+      "name": "शम्भुमोहिनी",
+      "meaning": "Hari (Vishnu) was once able to become a charming female (mohini) and stir waves of passion in the mind of the most impassioned Shiva who had earlier destroyed the three cities and was the enemy of the Lord of desire."
+    },
+    {
+      "number": 955,
+      "name": "धरा",
+      "meaning": "She is Mother Earth that supports all the beings on it."
+    },
+    {
+      "number": 956,
+      "name": "धरसुता",
+      "meaning": "She is the daughter of the Lord of the mountains (Himavan, Dhara). She is Parvati."
+    },
+    {
+      "number": 957,
+      "name": "धन्या",
+      "meaning": "She takes even ordinary beings to that state of being dhanya. She manifests in the form of holy-beings (sat-purushas)."
+    },
+    {
+      "number": 958,
+      "name": "धर्मिणी",
+      "meaning": "She is the energy/wife of dharma (righteousness). She possesses the traits of dharmi and hence is Dharmini."
+    },
+    {
+      "number": 959,
+      "name": "धर्मवर्धिनी",
+      "meaning": "Controlling the indriyas, maintaining cleanliness, entertaining only good thoughts and developing/ promoting bhakti are all acts of human dharma.The 10 qualities of dharma are-"
+    },
+    {
+      "number": 960,
+      "name": "लोकातीता",
+      "meaning": "She is over and above all planes of existence (lokas, worlds)."
+    },
+    {
+      "number": 961,
+      "name": "गुणातीता",
+      "meaning": "Maintaining equanimity (neutrality) in situations of both praise (honour) and ill treatment (apamana); maintaining equality/ neutrality towards friends and foes is advisable. Such a person is गुणातीता। (Guṇātītā.)"
+    },
+    {
+      "number": 962,
+      "name": "सर्वातीता",
+      "meaning": "She transcends everything in this creation. She is beyond sound, space, time, traits, planes and every other aspect of creation."
+    },
+    {
+      "number": 963,
+      "name": "शमात्मिका",
+      "meaning": "She is of peaceful and calm appearance."
+    },
+    {
+      "number": 964,
+      "name": "बन्धूककुसुमप्रख्या",
+      "meaning": "The Bandhuka flowers are very dear to Her."
+    },
+    {
+      "number": 965,
+      "name": "बाला",
+      "meaning": "She emerged as a 9-year-old girl (Bālā). In Srividya worship, Bālā mantra is of immense significance. As She grants good health and increases the longevity She is addressed as Bālā. She is Bāla-Tripura-Sundari."
+    },
+    {
+      "number": 966,
+      "name": "लीलाविनोदिनी",
+      "meaning": "She takes great pleasure in the plays/acts (lilās) of her devotees."
+    },
+    {
+      "number": 967,
+      "name": "सुमङ्गली",
+      "meaning": "That which is good (auspiciousness, prashastha) should be endlessly adhered to. Under no circumstances, even for a brief period should negatives be entertained. That which is inauspicious should be discarded. Time should never be wasted."
+    },
+    {
+      "number": 968,
+      "name": "सुखकरी",
+      "meaning": "She grants happiness (sukha)."
+    },
+    {
+      "number": 969,
+      "name": "सुवेषाढ्या",
+      "meaning": "She looks graceful and auspicious in every form of attire."
+    },
+    {
+      "number": 970,
+      "name": "सुवासिनी",
+      "meaning": "She is the eternal suvasini (married woman) who is filled with divine traits."
+    },
+    {
+      "number": 971,
+      "name": "सुवासिन्यर्चनप्रीता",
+      "meaning": "She loves when worship is offered to Suvasini (married) women."
+    },
+    {
+      "number": 972,
+      "name": "आशोभना",
+      "meaning": "Āshobhanā stands for ‘āsamantāt Shobhana’i.e. the state of incomparable bliss (Brahmānandā)."
+    },
+    {
+      "number": 973,
+      "name": "शुद्धमानसा",
+      "meaning": "She has a pure untainted mind and She blesses us with a pure mind and good thoughts."
+    },
+    {
+      "number": 974,
+      "name": "बिन्दुतर्पणसन्तुष्टा",
+      "meaning": "Commentary:"
+    },
+    {
+      "number": 975,
+      "name": "पूर्वजा",
+      "meaning": "She exists even before the creation of the Trinity; She is Purvaja (ancient)."
+    },
+    {
+      "number": 976,
+      "name": "त्रिपुराम्बिका",
+      "meaning": "She is Mother Tripura."
+    },
+    {
+      "number": 977,
+      "name": "दशमुद्रासमाराध्या",
+      "meaning": "She is worshipped with the 10 mudras that are offered to Her at the end of the worship."
+    },
+    {
+      "number": 978,
+      "name": "त्रिपुराश्रीवशङ्करी",
+      "meaning": "She has kept the Goddess Tripura-Sri under Her sway (Vasha), hence She is Tripura-Srivashamkari."
+    },
+    {
+      "number": 979,
+      "name": "ज्ञानमुद्रा",
+      "meaning": "She is the Jnana Mudra, also known as chin mudra."
+    },
+    {
+      "number": 980,
+      "name": "ज्ञानगम्या",
+      "meaning": "She can be achieved purely through knowledge (Jnana)."
+    },
+    {
+      "number": 981,
+      "name": "ज्ञानज्ञेयस्वरूपिणी",
+      "meaning": "She is both Jnana (the knowledge) and jñeya (the object which is to be known)."
+    },
+    {
+      "number": 982,
+      "name": "योनिमुद्रा",
+      "meaning": "She is the Yoni mudra also known as namaskara mudra."
+    },
+    {
+      "number": 983,
+      "name": "त्रिखण्डेशी",
+      "meaning": "She is the mother of the three gunas (traits of Sattva, Rajas and Tamas)."
+    },
+    {
+      "number": 984,
+      "name": "त्रिगुणा",
+      "meaning": "She who is endowed with the three guNas of sattva, rajas and tamas"
+    },
+    {
+      "number": 985,
+      "name": "अम्बा",
+      "meaning": "She who is mother of all beings; mother of the universe"
+    },
+    {
+      "number": 986,
+      "name": "त्रिकोणगा",
+      "meaning": "She resides within the Trikona (triangle)."
+    },
+    {
+      "number": 987,
+      "name": "अनघा",
+      "meaning": "She is pure and sinless."
+    },
+    {
+      "number": 988,
+      "name": "अद्भुतचारित्रा",
+      "meaning": "Her history (story) is marvelous."
+    },
+    {
+      "number": 989,
+      "name": "वाञ्छितार्थप्रदायिनी",
+      "meaning": "She bestows on Her devotees all that they seek."
+    },
+    {
+      "number": 990,
+      "name": "अभ्यासातिशयज्ञाता",
+      "meaning": "She can be known only through constant practice and constant worship."
+    },
+    {
+      "number": 991,
+      "name": "षडध्वातीतरूपिणी",
+      "meaning": "Commentary:"
+    },
+    {
+      "number": 992,
+      "name": "अव्याजकरुणामूर्तिः",
+      "meaning": "She is a form of limitless true love and compassion."
+    },
+    {
+      "number": 993,
+      "name": "अज्ञानध्वान्तदीपिका",
+      "meaning": "Out of my causeless mercy for them, I dwelling in their hearts, destroy their darkness born of ignorance, with the lamp of pure knowledge."
+    },
+    {
+      "number": 994,
+      "name": "आबालगोपविदिता",
+      "meaning": "Everybody beginning from a small child right up to the cowherd knows about this energy. The knowing here is in the form of ‘I’ and ‘mine’."
+    },
+    {
+      "number": 995,
+      "name": "सर्वानुल्लङ्घ्यशासना",
+      "meaning": "No one in this entire creation, not even the deities can disobey/overrule Her dictates."
+    },
+    {
+      "number": 996,
+      "name": "श्रीचक्रराजनिलया",
+      "meaning": "She resides in the Srichakra which is the most-supreme Chakra."
+    },
+    {
+      "number": 997,
+      "name": "श्रीमत्त्रिपुरसुन्दरी",
+      "meaning": "She, who resides within the tripuras (three cities) takes on the name Tripura-sundari."
+    },
+    {
+      "number": 998,
+      "name": "श्रीशिवा",
+      "meaning": "Just as wind and its motion (spandana) are the same; just as fire and its heat are identical, even so, the Supreme Consciousness and His energy are identical. Such an attitude should be developed."
+    },
+    {
+      "number": 999,
+      "name": "शिवशक्तैक्यरूपिणी",
+      "meaning": "She is the combined aspect or the united force of Shiva and Shakti. This is the ultimate state."
+    },
+    {
+      "number": 1000,
+      "name": "ललिताम्बिका",
+      "meaning": "Such a supreme force is worshipped as Mother Goddess Lalita Devi."
+    }
+  ]
+}

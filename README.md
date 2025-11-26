@@ -10,10 +10,10 @@ We are working to compile traditional Sanskrit commentaries by renowned scholars
 
 ## Contents
 
-- **[Naamavali](Naamavali/)** - The 1000 names in Devanagari (individual text files)
-- **[SoubhagyaBhaskara](SoubhagyaBhaskara/)** - Markdown files for each name's commentary
-- **[DattaCommentary](DattaCommentary/)** - English commentary from DattaPeeta (JSON files)
-- **[Code](Code/)** - Web viewer with multilingual support
+- **[Naamavali](Data/Naamavali/)** - The 1000 names in Devanagari (individual text files)
+- **[SoubhagyaBhaskara](Data/SoubhagyaBhaskara/)** - Markdown files for each name's commentary
+- **[DattaCommentary](Data/DattaCommentary/)** - English commentary from DattaPeeta (JSON files)
+- **[Jayamangala](Data/Jayamangala/)** - Jayamangala commentary (JSON files)
 
 ## How to View
 
@@ -24,8 +24,7 @@ We are working to compile traditional Sanskrit commentaries by renowned scholars
 **Quick Access:**
 - 🏠 [Home Page](https://adarshtadwai.github.io/LalitaSahastranaamaCommentaries/home/) - Start here
 - 📋 [Browse All Names](https://adarshtadwai.github.io/LalitaSahastranaamaCommentaries/names/) - Searchable grid/list view with filters and sort options
-- 📖 [Interactive Viewer](https://adarshtadwai.github.io/LalitaSahastranaamaCommentaries/viewer.html) - Navigate sequentially with ← → arrow keys
-- 🔍 [Individual Name View](https://adarshtadwai.github.io/LalitaSahastranaamaCommentaries/name/1/) - Direct access to any name (e.g., `/name/1/`, `/name/118/`)
+- 🔍 [Individual Name View](https://adarshtadwai.github.io/LalitaSahastranaamaCommentaries/name/1/) - Direct access to any name (e.g., `/name/1/`, `/name/118/`) - Navigate with ← → arrow keys
 
 ### 💻 Local Viewing
 1. Clone this repository:
