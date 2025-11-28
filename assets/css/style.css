@@ -75,27 +75,20 @@ h4 {
 
 /* Sanskrit Quotes/Shlokas */
 blockquote {
-    background: linear-gradient(135deg, #fff8dc 0%, #fef5e7 100%);
-    border-left: 6px solid #DAA520;
-    border-radius: 0 8px 8px 0;
-    padding: 20px 25px;
-    margin: 25px 0;
-    font-size: 1.15em;
-    line-height: 1.9;
-    color: #8B0000;
-    font-weight: 500;
-    box-shadow: 3px 3px 10px rgba(0,0,0,0.08);
+    background: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1em;
+    line-height: 1.8;
+    color: #333;
+    font-weight: normal;
+    box-shadow: none;
     position: relative;
 }
 
 blockquote::before {
-    content: '॥';
-    position: absolute;
-    left: -3px;
-    top: 10px;
-    font-size: 2em;
-    color: #DAA520;
-    opacity: 0.3;
+    content: none;
 }
 
 /* Horizontal Rules */
@@ -138,6 +131,29 @@ ul, ol {
 li {
     margin: 8px 0;
     line-height: 1.6;
+}
+
+/* Commentary Continuous Text */
+.commentary-text p {
+    display: inline !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    background: transparent !important;
+}
+
+.commentary-text p + p::before {
+    content: ' ';
+}
+
+.commentary-text blockquote {
+    display: inline !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    background: transparent !important;
+    border-left: none !important;
+    border-right: none !important;
 }
 
 /* Links */
@@ -208,7 +224,7 @@ tr:hover {
     }
 
     blockquote {
-        padding: 15px 20px;
+        padding: 0;
         font-size: 1em;
     }
 }
