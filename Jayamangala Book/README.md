@@ -14,7 +14,7 @@ This creates: `page_001.png`, `page_002.png`, etc.
 ## Step 2: OCR Pages (whenever you want)
 
 ```bash
-python3 ocr_pages.py --api-key AIzaSyCxq9qwifKxmuDW9UoTJm8KiDrfR0PtqAw
+python3 ocr_pages.py --api-key YOUR_API_KEY_HERE
 ```
 
 Output in `../Jayamangala Text/`: `1.txt`, `2.txt`, `3.txt`, etc.
@@ -23,10 +23,10 @@ Output in `../Jayamangala Text/`: `1.txt`, `2.txt`, `3.txt`, etc.
 
 ```bash
 # Pages 1-20
-python3 ocr_pages.py --api-key AIzaSyCxq9qwifKxmuDW9UoTJm8KiDrfR0PtqAw --start-page 1 --end-page 20
+python3 ocr_pages.py --api-key YOUR_API_KEY_HERE --start-page 1 --end-page 20
 
 # Resume (skips already processed pages)
-python3 ocr_pages.py --api-key AIzaSyCxq9qwifKxmuDW9UoTJm8KiDrfR0PtqAw
+python3 ocr_pages.py --api-key YOUR_API_KEY_HERE
 ```
 
 ## Folder Structure

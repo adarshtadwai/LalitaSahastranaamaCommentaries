@@ -2,8 +2,10 @@
 
 ## 🎯 Your API Key
 ```
-AIzaSyCxq9qwifKxmuDW9UoTJm8KiDrfR0PtqAw
+YOUR_API_KEY_HERE
 ```
+
+Get your API key from: https://aistudio.google.com/apikey
 
 ## 📦 One-Time Setup
 
@@ -21,7 +23,7 @@ pip3 install --user google-generativeai pdf2image pillow
 
 ```bash
 python3 ocr/gemini_ocr.py ~/Desktop/JayaMangala.pdf \
-    --api-key AIzaSyCxq9qwifKxmuDW9UoTJm8KiDrfR0PtqAw \
+    --api-key YOUR_API_KEY_HERE \
     --start-page 8 --end-page 8 \
     --output-dir test_page8 \
     --model gemini-2.5-flash
@@ -38,7 +40,7 @@ Once you're happy with quality:
 
 ```bash
 python3 ocr/gemini_ocr.py ~/Desktop/JayaMangala.pdf \
-    --api-key AIzaSyCxq9qwifKxmuDW9UoTJm8KiDrfR0PtqAw \
+    --api-key YOUR_API_KEY_HERE \
     --output-dir jayamangala_full \
     --model gemini-2.5-flash
 ```

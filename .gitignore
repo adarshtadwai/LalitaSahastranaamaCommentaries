@@ -12,3 +12,9 @@ __pycache__/
 *~
 .vscode/
 editor/
+
+# OCR outputs and temporary files
+Jayamangala Book/*.png
+Jayamangala Text/*.txt
+ocr_test/
+ocr_output/
