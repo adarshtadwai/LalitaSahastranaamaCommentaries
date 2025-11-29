@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="sa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>उमासहस्रनाम - शतकः ५ स्तबकः ४ श्लोकः २२</title>
+    <link href="https://fonts.googleapis.com/css2?family=Annapurna+SIL:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Annapurna SIL', serif;
+            background: linear-gradient(to bottom, #fdfbf7, #fff);
+            color: #333;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .navigation {
+            position: sticky;
+            top: 0;
+            background: linear-gradient(135deg, #8B0000, #8B4513);
+            padding: 15px 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            z-index: 100;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .nav-button {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1em;
+            font-family: 'Annapurna SIL', serif;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
+            min-width: 60px;
+            text-align: center;
+        }
+
+        .nav-button:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+        }
+
+        .nav-button.disabled {
+            background: rgba(255, 255, 255, 0.1);
+            cursor: not-allowed;
+            opacity: 0.5;
+            pointer-events: none;
+        }
+
+        .nav-center {
+            flex: 1;
+            text-align: center;
+            color: white;
+            cursor: pointer;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: block;
+        }
+
+        .nav-center:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .nav-center .breadcrumb {
+            font-size: 0.9em;
+            margin-bottom: 3px;
+            opacity: 0.9;
+        }
+
+        .nav-center .chapter-sloka {
+            font-size: 1.1em;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 30px 20px;
+            flex: 1;
+        }
+
+        .chapter-title {
+            text-align: center;
+            color: #8B0000;
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .stabaka-title {
+            text-align: center;
+            color: #8B4513;
+            font-size: 1.4em;
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #DAA520;
+        }
+
+        .sloka-section {
+            background: #fff8dc;
+            padding: 35px;
+            margin: 20px 0;
+            border: 3px solid #DAA520;
+            border-radius: 8px;
+            font-size: 1.6em;
+            line-height: 2.2;
+            color: #2c1810;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .commentary-section {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            margin: 30px 0;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            position: relative;
+        }
+
+        .commentary-section h2 {
+            color: #8B0000;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #DAA520;
+        }
+
+        .commentary-content {
+            font-size: 1.2em;
+            line-height: 1.8;
+            color: #333;
+            min-height: 100px;
+            padding: 20px;
+            background: #fef9f3;
+            border-radius: 8px;
+            white-space: pre-wrap;
+        }
+
+        .commentary-content.empty {
+            color: #999;
+            font-style: italic;
+            text-align: center;
+        }
+
+        .edit-btn {
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            opacity: 0.6;
+            transition: all 0.2s;
+            padding: 4px;
+        }
+
+        .edit-btn:hover {
+            opacity: 1;
+            transform: scale(1.15);
+        }
+
+        footer {
+            margin-top: auto;
+            background: linear-gradient(135deg, #8B0000, #8B4513);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 1.2em;
+        }
+
+        @media (max-width: 768px) {
+            .navigation {
+                padding: 10px;
+            }
+
+            .nav-button {
+                padding: 8px 12px;
+                font-size: 0.95em;
+                min-width: 50px;
+            }
+
+            .nav-center .breadcrumb {
+                font-size: 0.8em;
+            }
+
+            .nav-center .chapter-sloka {
+                font-size: 0.9em;
+            }
+
+            .chapter-title {
+                font-size: 1.5em;
+            }
+
+            .stabaka-title {
+                font-size: 1.1em;
+            }
+
+            .sloka-section {
+                padding: 25px;
+                font-size: 1.3em;
+            }
+
+            .commentary-content {
+                font-size: 1.1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navigation">
+        <a href="../21/" class="nav-button">←</a>
+        <a href="../" class="nav-center">
+            <div class="breadcrumb">शतकः ५ / स्तबकः ४</div>
+            <div class="chapter-sloka">श्लोकः २२</div>
+        </a>
+        <a href="../23/" class="nav-button">→</a>
+    </nav>
+
+    <div class="container">
+        <div class="chapter-title">पञ्चमं शतकम्</div>
+        <div class="stabaka-title">विंशः स्तबकः - सर्वसारमयी</div>
+
+        <div class="sloka-section">
+            दीधितिरूपा चित्तमयी प्राणशरीराऽप्यद्वितयी ।<br>
+            ब्रह्मशरीरं ब्रह्मविभा ब्रह्मविभूतिर्ब्रह्मपरम् ॥
+        </div>
+
+        <div class="commentary-section">
+            <h2>टीका</h2>
+            
+            <div class="commentary-content empty" id="commentary-content">
+टीका उपलब्धः नास्ति। कृपया सम्पादनं कुर्वन्तु।
+</div>
+        </div>
+    </div>
+
+    <footer>
+        पञ्चमं शतकम् - विंशः स्तबकः
+    </footer>
+
+    <script>
+        const shatakaNum = 5;
+        const stabakaNum = 4;
+        const slokaNum = 22;
+
+        async function loadCommentary() {
+            try {
+                const response = await fetch(`../../../../Data/UmaSahasranamaTeeka/shataka-${String(shatakaNum).padStart(2, '0')}/stabaka-${String(stabakaNum).padStart(2, '0')}/${String(slokaNum).padStart(4, '0')}.txt`);
+                if (!response.ok) throw new Error('Commentary not found');
+                
+                const text = await response.text();
+                const contentDiv = document.getElementById('commentary-content');
+                
+                if (text.trim()) {
+                    contentDiv.innerHTML = text.trim()
+                        .split('\n\n')
+                        .map(para => `<p>${para.replace(/\n/g, '<br>')}</p>`)
+                        .join('');
+                    contentDiv.classList.remove('empty');
+                } else {
+                    contentDiv.textContent = 'टीका उपलब्धः नास्ति। कृपया सम्पादनं कुर्वन्तु।';
+                    contentDiv.classList.add('empty');
+                }
+            } catch (error) {
+                // Commentary file doesn't exist yet - leave empty message
+                const contentDiv = document.getElementById('commentary-content');
+                contentDiv.textContent = 'टीका उपलब्धः नास्ति। कृपया सम्पादनं कुर्वन्तु।';
+                contentDiv.classList.add('empty');
+            }
+        }
+
+        window.addEventListener('load', loadCommentary);
+    </script>
+    <script src="../../../../editor/edit-module-umasahasranama.js"></script>
+
+</body>
+</html>

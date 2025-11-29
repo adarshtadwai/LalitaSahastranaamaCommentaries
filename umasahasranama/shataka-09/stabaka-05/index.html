@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="sa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>सप्तत्रिंशः स्तबकः - तत्त्वविचारः</title>
+    <link href="https://fonts.googleapis.com/css2?family=Annapurna+SIL:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Annapurna SIL', serif;
+            background: linear-gradient(to bottom, #fdfbf7, #fff);
+            color: #333;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #8B0000, #8B4513);
+            color: white;
+            padding: 15px 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .header h1 {
+            font-size: 1.8em;
+            margin: 0;
+            text-align: center;
+        }
+
+        .header .subtitle {
+            font-size: 0.8em;
+            opacity: 0.9;
+            margin-top: 5px;
+        }
+
+        .header .home-button {
+            position: absolute;
+            right: 20px;
+        }
+
+        .home-button {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1.2em;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            transition: all 0.3s;
+        }
+
+        .home-button:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+        }
+
+        .search-container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .search-box {
+            width: 100%;
+            padding: 15px 20px;
+            font-size: 1.2em;
+            font-family: 'Annapurna SIL', serif;
+            border: 2px solid #DAA520;
+            border-radius: 8px;
+            background: white;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: all 0.3s;
+        }
+
+        .search-box:focus {
+            outline: none;
+            border-color: #8B0000;
+            box-shadow: 0 4px 12px rgba(139, 0, 0, 0.2);
+        }
+
+        .search-info {
+            margin-top: 10px;
+            font-size: 0.95em;
+            color: #666;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px 20px 40px;
+        }
+
+        .slokas-list {
+            margin-top: 10px;
+        }
+
+        .sloka-item {
+            background: white;
+            border-radius: 8px;
+            padding: 18px 30px;
+            margin-bottom: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: all 0.3s;
+            cursor: pointer;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            border-left: 4px solid #DAA520;
+        }
+
+        .sloka-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 4px 15px rgba(139, 0, 0, 0.2);
+            border-left-color: #8B0000;
+        }
+
+        .sloka-item.hidden {
+            display: none;
+        }
+
+        .sloka-item.highlight {
+            background: #fff8dc;
+        }
+
+        .sloka-content {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .sloka-number {
+            background: #8B4513;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 5px;
+            font-weight: bold;
+            min-width: 80px;
+            text-align: center;
+            font-size: 0.9em;
+        }
+
+        .sloka-text {
+            font-size: 1.3em;
+            color: #333;
+            flex: 1;
+            line-height: 1.8;
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                gap: 10px;
+                padding: 15px;
+            }
+
+            .header h1 {
+                font-size: 1.4em;
+            }
+
+            .sloka-item {
+                padding: 15px 20px;
+            }
+
+            .sloka-content {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+
+            .sloka-text {
+                font-size: 1.1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div>
+            <h1>सप्तत्रिंशः स्तबकः</h1>
+            <div class="subtitle">तत्त्वविचारः</div>
+        </div>
+        <a href="../" class="home-button">↑</a>
+    </div>
+
+    <div class="search-container">
+        <input type="text" id="searchBox" class="search-box" placeholder="Search slokas...">
+        <div class="search-info" id="searchInfo">Showing all 25 slokas</div>
+    </div>
+
+    <div class="container">
+        <div class="slokas-list" id="slokas-list">
+            <!-- Slokas will be dynamically loaded -->
+        </div>
+    </div>
+
+    <script>
+        const slokas = [
+{
+"number": 1,
+"text": "दशमं शतकम् तत्त्वविचारः (अनुष्टुब्वृत्तम्) उद्दीपयतु नश्शक्तिमादिशक्तेर्दरस्मितम् । तत्त्वं यस्य महस्सूक्ष्ममानन्दो वेति संशयः ॥"
+},
+{
+"number": 2,
+"text": "पूर्णं प्रज्ञातृ सद्ब्रह्म तस्य ज्ञानं महेश्वरी । महिमा तेज आहोस्विच्छक्तिर्वा प्राण एव वा ॥"
+},
+{
+"number": 3,
+"text": "प्रचक्षते चिदात्मत्वं ज्ञातुर्ज्ञानस्य चोभयोः । प्रदीपस्य प्रभायाश्च ज्योतिराकृतितां यथा ॥"
+},
+{
+"number": 4,
+"text": "चित एकपदार्थत्वाच्चिच्चिता न विशिष्यते । तस्माद् गुणत्वं ज्ञानस्य शङ्करेण निराकृतम् ॥"
+},
+{
+"number": 5,
+"text": "ज्ञातुर्ज्ञानं स्वरूपं स्यान्न गुणो नापि च क्रिया । यदि स्वस्य स्वरूपेण वैशिष्ट्यमनवस्थितिः ॥"
+},
+{
+"number": 6,
+"text": "वाचैव शक्यते कर्तुं विभागस्स्वस्वरूपयोः । नानुभूत्या ततो द्वैतं सच्छक्त्योर्व्यावहारिकम् ॥"
+},
+{
+"number": 7,
+"text": "ब्रह्मज्ञानस्य पूर्णस्य विषयो द्यौरुदीर्यते । सा ब्रह्मणो व्यापकत्वाद्वस्तुतो नातिरिच्यते ॥"
+},
+{
+"number": 8,
+"text": "विकासादपि सङ्कोचात् सर्गप्रलययोर्द्वयोः । प्रज्ञानस्य बुधैरुक्तौ जन्मनाशावुभौ दिवः ॥"
+},
+{
+"number": 9,
+"text": "धर्मभूतं परस्येदं न कार्यं परमं नभः । अखण्डत्वान्न विकृतिर्विश्वस्मिन्नप्रकृतित्वतः ॥"
+},
+{
+"number": 10,
+"text": "आकाशे परमे दीप्यत् प्रज्ञानं परमात्मनः । एकाग्रत्वात्प्रवृद्धोष्मगभीरमभवन्महः ॥"
+},
+{
+"number": 11,
+"text": "त्रिधैवं धर्मभूतस्य ज्ञानस्य विकृतिं विना । शुद्धत्वविषयत्वाभ्यां महस्त्वाच्च दशात्रयम् ॥"
+},
+{
+"number": 12,
+"text": "विज्ञाने भाति ये भान्ति भावा द्रव्यगुणादयः । न किञ्चिदनुभूयन्ते विज्ञानोपरमे तु ते ॥"
+},
+{
+"number": 13,
+"text": "एवं स्वतः प्रकाशत्वं विषयाणां न दृश्यते । सिद्धिश्च परतो न स्यात् सम्बन्धं कञ्चिदन्तरा ॥"
+},
+{
+"number": 14,
+"text": "दृश्यते विषयाकारा ग्रहणे स्मरणे च धीः । प्रज्ञाविषयतादात्म्यमेवं साक्षात्प्रदृश्यते ॥"
+},
+{
+"number": 15,
+"text": "न चेत्समष्टिविज्ञानविभूतिरखिलं जगत् । विषयव्यष्टिविज्ञानतादात्म्यं नोपपद्यते ॥"
+},
+{
+"number": 16,
+"text": "यथाऽस्मदादिविज्ञाने ध्येयं बुद्धिरिति द्वयम् । पूर्णे समष्टिविज्ञाने विकृतिः प्रकृतिस्तथा ॥"
+},
+{
+"number": 17,
+"text": "परिणामो यथा स्वप्नः सूक्ष्मस्य स्थूलरूपतः । जाग्रत्प्रपञ्च एष स्यात्तथेश्वरमहाचितः ॥"
+},
+{
+"number": 18,
+"text": "विकृतिस्सर्वभूतानि प्रकृतिः परदेवता । सतः पादस्तयोराद्या त्रिपादी गीयते परा ॥"
+},
+{
+"number": 19,
+"text": "कबलीकृत्य सङ्कल्पानेकाऽपि स्याद्यथा मतिः । भूतानि कबलीकृत्य देवताऽपि तथा परा ॥"
+},
+{
+"number": 20,
+"text": "भूतानामात्मानस्सर्गे संहृतौ च तथाऽऽत्मनि । प्रभवेद्देवता श्रेष्ठा सङ्कल्पानां यथा मतिः ॥"
+},
+{
+"number": 21,
+"text": "अनुभूत्यात्मिका सेयमीशशक्तिः परात्परा । आधारचक्रे पिण्डेषु विराजति विभिन्नवत् ॥"
+},
+{
+"number": 22,
+"text": "सूक्ष्मस्थूले ततः शाखे विद्युच्छक्तिसमीरवत् । तत्राद्या ज्ञानशक्तिस्स्यात् क्रियाशक्तिरनन्तरा ॥"
+},
+{
+"number": 23,
+"text": "ज्ञानेन्द्रियाणि प्रथमा विभूतिर्मनसा सह । कर्मेन्द्रियाणि त्वपरा विभूतिस्सहसा सह ॥"
+},
+{
+"number": 24,
+"text": "क्रियामूलमुत ज्ञानमूलं किमिति चिन्तयन् । आत्मशक्तिमितो विद्वानमृतत्वाय कल्पते ॥"
+},
+{
+"number": 25,
+"text": "गभीरास्सुतरामेताः कालिकातत्त्वकारिकाः । धियो भासो गणपतेर्भवन्तु विदुषां मुदे ॥ ३७.२५॥ 925"
+}
+];
+
+        let allSlokas = [];
+
+        function toDevanagari(num) {
+            const devanagariDigits = ['०', '१', '२', '३', '४', '५', '६', '७', '८', '९'];
+            return String(num).split('').map(d => devanagariDigits[parseInt(d)]).join('');
+        }
+
+        function searchSlokas(query) {
+            const searchTerm = query.toLowerCase().trim();
+            let visibleCount = 0;
+
+            allSlokas.forEach(sloka => {
+                const slokaText = sloka.text.toLowerCase();
+                const shouldShow = !searchTerm || slokaText.includes(searchTerm);
+
+                if (shouldShow) {
+                    sloka.element.classList.remove('hidden');
+                    sloka.element.classList.toggle('highlight', searchTerm && slokaText.includes(searchTerm));
+                    visibleCount++;
+                } else {
+                    sloka.element.classList.add('hidden');
+                    sloka.element.classList.remove('highlight');
+                }
+            });
+
+            const searchInfo = document.getElementById('searchInfo');
+            if (searchTerm) {
+                searchInfo.textContent = `Found ${visibleCount} sloka${visibleCount !== 1 ? 's' : ''}`;
+            } else {
+                searchInfo.textContent = 'Showing all 25 slokas';
+            }
+        }
+
+        function loadSlokas() {
+            const list = document.getElementById('slokas-list');
+
+            slokas.forEach(sloka => {
+                const item = document.createElement('a');
+                item.className = 'sloka-item';
+                item.href = `${sloka.number}/`;
+
+                const slokaNumber = toDevanagari(sloka.number);
+                const slokaText = sloka.text.trim().replace(/\n/g, '<br>');
+
+                item.innerHTML = `
+                    <div class="sloka-content">
+                        <div class="sloka-number">${slokaNumber}</div>
+                        <div class="sloka-text">${slokaText}</div>
+                    </div>
+                `;
+
+                list.appendChild(item);
+
+                allSlokas.push({
+                    number: sloka.number,
+                    text: slokaNumber + ' ' + sloka.text,
+                    element: item
+                });
+            });
+
+            const searchBox = document.getElementById('searchBox');
+            searchBox.addEventListener('input', (e) => {
+                searchSlokas(e.target.value);
+            });
+        }
+
+        loadSlokas();
+    </script>
+</body>
+</html>

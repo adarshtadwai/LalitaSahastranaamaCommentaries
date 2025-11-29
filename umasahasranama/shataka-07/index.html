@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="sa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>सप्तमं शतकम्</title>
+    <link href="https://fonts.googleapis.com/css2?family=Annapurna+SIL:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Annapurna SIL', serif;
+            background: linear-gradient(to bottom, #fdfbf7, #fff);
+            color: #333;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #8B0000, #8B4513);
+            color: white;
+            padding: 15px 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .header h1 {
+            font-size: 2em;
+            margin: 0;
+        }
+
+        .header .home-button {
+            position: absolute;
+            right: 20px;
+        }
+
+        .home-button {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1.2em;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            transition: all 0.3s;
+        }
+
+        .home-button:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+        }
+
+        .search-container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .search-box {
+            width: 100%;
+            padding: 15px 20px;
+            font-size: 1.2em;
+            font-family: 'Annapurna SIL', serif;
+            border: 2px solid #DAA520;
+            border-radius: 8px;
+            background: white;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: all 0.3s;
+        }
+
+        .search-box:focus {
+            outline: none;
+            border-color: #8B0000;
+            box-shadow: 0 4px 12px rgba(139, 0, 0, 0.2);
+        }
+
+        .search-info {
+            margin-top: 10px;
+            font-size: 0.95em;
+            color: #666;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px 20px 40px;
+        }
+
+        .stabakas-list {
+            margin-top: 10px;
+        }
+
+        .stabaka-item {
+            background: white;
+            border-radius: 8px;
+            padding: 20px 30px;
+            margin-bottom: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: all 0.3s;
+            cursor: pointer;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            border-left: 4px solid #DAA520;
+        }
+
+        .stabaka-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 4px 15px rgba(139, 0, 0, 0.2);
+            border-left-color: #8B0000;
+        }
+
+        .stabaka-item.hidden {
+            display: none;
+        }
+
+        .stabaka-item.highlight {
+            background: #fff8dc;
+        }
+
+        .stabaka-content {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .stabaka-number {
+            background: #8B4513;
+            color: white;
+            padding: 10px 14px;
+            border-radius: 5px;
+            font-weight: bold;
+            min-width: 90px;
+            text-align: center;
+            font-size: 1em;
+        }
+
+        .stabaka-text {
+            flex: 1;
+        }
+
+        .stabaka-name {
+            font-size: 1.4em;
+            color: #333;
+            line-height: 1.6;
+            margin-bottom: 5px;
+        }
+
+        .stabaka-title {
+            font-size: 1.1em;
+            color: #666;
+            line-height: 1.4;
+        }
+
+        .stabaka-count {
+            font-size: 0.9em;
+            color: #8B4513;
+            font-weight: bold;
+            white-space: nowrap;
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                gap: 10px;
+                padding: 15px;
+            }
+
+            .header h1 {
+                font-size: 1.5em;
+            }
+
+            .stabaka-item {
+                padding: 15px 20px;
+            }
+
+            .stabaka-content {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+
+            .stabaka-name {
+                font-size: 1.2em;
+            }
+
+            .stabaka-title {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>सप्तमं शतकम्</h1>
+        <a href="../" class="home-button">⌂</a>
+    </div>
+
+    <div class="search-container">
+        <input type="text" id="searchBox" class="search-box" placeholder="Search stabakas...">
+        <div class="search-info" id="searchInfo">Showing all 4 stabakas (99 total slokas)</div>
+    </div>
+
+    <div class="container">
+        <div class="stabakas-list" id="stabakas-list">
+            <!-- Stabakas will be dynamically loaded -->
+        </div>
+    </div>
+
+    <script>
+        const stabakas = [{"number": 1, "name": "पञ्चविंशः स्तबकः", "title": "क्षेत्रमाला", "slokas": 25, "folder": "stabaka-01"}, {"number": 2, "name": "षड्विंशः स्तबकः", "title": "अपीतकुचाम्बा", "slokas": 25, "folder": "stabaka-02"}, {"number": 3, "name": "सप्तविंशः स्तबकः", "title": "प्रचण्डचण्डी", "slokas": 25, "folder": "stabaka-03"}, {"number": 4, "name": "अष्टाविंशः स्तबकः", "title": "रेणुकादिवर्णनम्", "slokas": 24, "folder": "stabaka-04"}];
+
+        let allStabakas = [];
+
+        function toDevanagari(num) {
+            const devanagariDigits = ['०', '१', '२', '३', '४', '५', '६', '७', '८', '९'];
+            return String(num).split('').map(d => devanagariDigits[parseInt(d)]).join('');
+        }
+
+        function searchStabakas(query) {
+            const searchTerm = query.toLowerCase().trim();
+            let visibleCount = 0;
+
+            allStabakas.forEach(stabaka => {
+                const stabakaText = stabaka.text.toLowerCase();
+                const shouldShow = !searchTerm || stabakaText.includes(searchTerm);
+
+                if (shouldShow) {
+                    stabaka.element.classList.remove('hidden');
+                    stabaka.element.classList.toggle('highlight', searchTerm && stabakaText.includes(searchTerm));
+                    visibleCount++;
+                } else {
+                    stabaka.element.classList.add('hidden');
+                    stabaka.element.classList.remove('highlight');
+                }
+            });
+
+            const searchInfo = document.getElementById('searchInfo');
+            if (searchTerm) {
+                searchInfo.textContent = `Found ${visibleCount} stabaka${visibleCount !== 1 ? 's' : ''}`;
+            } else {
+                searchInfo.textContent = 'Showing all 4 stabakas (99 total slokas)';
+            }
+        }
+
+        function loadStabakas() {
+            const list = document.getElementById('stabakas-list');
+
+            stabakas.forEach(stabaka => {
+                const item = document.createElement('a');
+                item.className = 'stabaka-item';
+                item.href = `${stabaka.folder}/`;
+
+                const stabakaNumber = toDevanagari(stabaka.number);
+
+                item.innerHTML = `
+                    <div class="stabaka-content">
+                        <div class="stabaka-number">${stabakaNumber}</div>
+                        <div class="stabaka-text">
+                            <div class="stabaka-name">${stabaka.name}</div>
+                            <div class="stabaka-title">${stabaka.title}</div>
+                        </div>
+                        <div class="stabaka-count">${stabaka.slokas} श्लोकाः</div>
+                    </div>
+                `;
+
+                list.appendChild(item);
+
+                allStabakas.push({
+                    number: stabaka.number,
+                    text: stabakaNumber + ' ' + stabaka.name + ' ' + stabaka.title,
+                    element: item
+                });
+            });
+
+            const searchBox = document.getElementById('searchBox');
+            searchBox.addEventListener('input', (e) => {
+                searchStabakas(e.target.value);
+            });
+        }
+
+        loadStabakas();
+    </script>
+</body>
+</html>

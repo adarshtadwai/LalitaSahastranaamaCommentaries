@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="sa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>एकोनविंशः स्तबकः - ध्येयललितारूपम्</title>
+    <link href="https://fonts.googleapis.com/css2?family=Annapurna+SIL:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Annapurna SIL', serif;
+            background: linear-gradient(to bottom, #fdfbf7, #fff);
+            color: #333;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #8B0000, #8B4513);
+            color: white;
+            padding: 15px 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .header h1 {
+            font-size: 1.8em;
+            margin: 0;
+            text-align: center;
+        }
+
+        .header .subtitle {
+            font-size: 0.8em;
+            opacity: 0.9;
+            margin-top: 5px;
+        }
+
+        .header .home-button {
+            position: absolute;
+            right: 20px;
+        }
+
+        .home-button {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1.2em;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            transition: all 0.3s;
+        }
+
+        .home-button:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+        }
+
+        .search-container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .search-box {
+            width: 100%;
+            padding: 15px 20px;
+            font-size: 1.2em;
+            font-family: 'Annapurna SIL', serif;
+            border: 2px solid #DAA520;
+            border-radius: 8px;
+            background: white;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: all 0.3s;
+        }
+
+        .search-box:focus {
+            outline: none;
+            border-color: #8B0000;
+            box-shadow: 0 4px 12px rgba(139, 0, 0, 0.2);
+        }
+
+        .search-info {
+            margin-top: 10px;
+            font-size: 0.95em;
+            color: #666;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px 20px 40px;
+        }
+
+        .slokas-list {
+            margin-top: 10px;
+        }
+
+        .sloka-item {
+            background: white;
+            border-radius: 8px;
+            padding: 18px 30px;
+            margin-bottom: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: all 0.3s;
+            cursor: pointer;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            border-left: 4px solid #DAA520;
+        }
+
+        .sloka-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 4px 15px rgba(139, 0, 0, 0.2);
+            border-left-color: #8B0000;
+        }
+
+        .sloka-item.hidden {
+            display: none;
+        }
+
+        .sloka-item.highlight {
+            background: #fff8dc;
+        }
+
+        .sloka-content {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .sloka-number {
+            background: #8B4513;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 5px;
+            font-weight: bold;
+            min-width: 80px;
+            text-align: center;
+            font-size: 0.9em;
+        }
+
+        .sloka-text {
+            font-size: 1.3em;
+            color: #333;
+            flex: 1;
+            line-height: 1.8;
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                gap: 10px;
+                padding: 15px;
+            }
+
+            .header h1 {
+                font-size: 1.4em;
+            }
+
+            .sloka-item {
+                padding: 15px 20px;
+            }
+
+            .sloka-content {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+
+            .sloka-text {
+                font-size: 1.1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div>
+            <h1>एकोनविंशः स्तबकः</h1>
+            <div class="subtitle">ध्येयललितारूपम्</div>
+        </div>
+        <a href="../" class="home-button">↑</a>
+    </div>
+
+    <div class="search-container">
+        <input type="text" id="searchBox" class="search-box" placeholder="Search slokas...">
+        <div class="search-info" id="searchInfo">Showing all 25 slokas</div>
+    </div>
+
+    <div class="container">
+        <div class="slokas-list" id="slokas-list">
+            <!-- Slokas will be dynamically loaded -->
+        </div>
+    </div>
+
+    <script>
+        const slokas = [
+{
+"number": 1,
+"text": "ध्येयललितारूपम् (प्रमाणिकावृत्तम्) प्रफुल्लकल्पपादपप्रसूनसद्यशोहरम् । महारुजं धुनोतु ते महेशसुन्दरीस्मितम् ॥"
+},
+{
+"number": 2,
+"text": "मुनीन्द्रमूलवेदिभूधनञ्जयप्रबोधनम् । यतीन्द्रहार्दपेटिका कवाटबन्धभेदनम् ॥"
+},
+{
+"number": 3,
+"text": "यथाविधिक्रियापरद्विजातिचित्तशोधनम् । ममाम्बिकास्मितं भवत्वघप्रतापरोधनम् ॥"
+},
+{
+"number": 4,
+"text": "सुवर्णसालभञ्जिका चरेव शोभयाऽधिका । अतीव मार्दवान्विता नवेव पुष्पिता लता ॥"
+},
+{
+"number": 5,
+"text": "सुपर्वमौलिरत्नभा विराजिहेमपादुका । मरालिकानिमन्त्रकप्रशस्तरत्ननूपुरा ॥"
+},
+{
+"number": 6,
+"text": "वलक्षदीधितिप्रभाविशेषहृन्नखावली । मुनीन्द्रशुद्धमानसप्रमेयपादसौष्ठवा ॥"
+},
+{
+"number": 7,
+"text": "घनीभवत्तटित्प्रभाप्रवाहकल्पजङ्घिका । मतङ्गजेन्द्रनासिका मनोज्ञसक्थिशोभिनी ॥"
+},
+{
+"number": 8,
+"text": "प्रसूनसायकागमप्रवादचुञ्चुकाञ्चिका । विशालकेशचुम्बितोल्लसन्नितम्बमण्डला ॥"
+},
+{
+"number": 9,
+"text": "अजाण्डपिण्डसंहतिप्रपूर्णकुक्षिशालिनी । अपारदिव्यकान्तिवार्निधाननाभिदीर्घिका ॥"
+},
+{
+"number": 10,
+"text": "बिसप्रसूनसायकच्छुराभरोमराजिका । जगत्त्रयीवसज्जनोपजीव्यदुग्धभृत्कुचा ॥"
+},
+{
+"number": 11,
+"text": "महेशकण्ठबन्धकप्रशस्तबाहुवल्लरी । समस्तविष्टपाभयप्रदायिपाणिपङ्कजा ॥"
+},
+{
+"number": 12,
+"text": "विलोलहारमौक्तिकप्रतानसंवदत्स्मिता । विशुद्धसुन्दरस्मितप्रकाशभासिताम्बरा ॥"
+},
+{
+"number": 13,
+"text": "सुकोमलोष्ठकम्पनप्रभीतदुर्जयासुरा । सुयुक्तकुन्दकुट्मलप्रकाशदन्तपङ्क्तिका ॥"
+},
+{
+"number": 14,
+"text": "शरत्सुधांशुमण्डलप्रभाविगर्हणानना । सुधामरन्दवज्जपासुमोपमाधराधरा ॥"
+},
+{
+"number": 15,
+"text": "तिलप्रसूनचारुताऽपहासिभासिनासिका । नवीनभाभनासिकाविलम्बिदिव्यमौक्तिका ॥"
+},
+{
+"number": 16,
+"text": "विशुद्धगण्डबिम्बितस्वरूपरत्नकुण्डला । महामहस्तरङ्गितप्रभावशालिलोचना ॥"
+},
+{
+"number": 17,
+"text": "दलान्तरस्थयामिनीप्रभुप्रभालिकस्थली । मयूरबर्हगर्हणप्रकृष्टकेशभासिनी ॥"
+},
+{
+"number": 18,
+"text": "दिवाकरायुतोज्ज्वला हिमांशुलक्षशीतला । तटित्सहस्रभासुरा निरङ्कचन्द्रशेखरा ॥"
+},
+{
+"number": 19,
+"text": "नभोन्तरालचारिणी महाविचित्रकारिणी । कुलाग्निकुण्डशायिनी जगत्कथाविधायिनी ॥"
+},
+{
+"number": 20,
+"text": "नभस्तले बलेश्वरी धरातले क्रियेश्वरी । दिवाकरे विभेश्वरी सुधाकरे रसेश्वरी ॥"
+},
+{
+"number": 21,
+"text": "महेशवेश्मदीपिका जगत्त्रयप्रमापिका । अशेषशीर्षशासिनी समस्तहृन्निवासिनी ॥"
+},
+{
+"number": 22,
+"text": "गुणस्तवे गुणस्तवे गुणप्रकर्षदायिनी । विचिन्तने विचिन्तने विशिष्टशक्तिधायिनी ॥"
+},
+{
+"number": 23,
+"text": "भ्रमाकुलेन दुस्तरा भवालसेन दुर्गमा । अमन्त्रकेण दुर्भरा जगत्त्रयेण दुर्जया ॥"
+},
+{
+"number": 24,
+"text": "सुवर्णचेलधारिणी समस्तमोदकारिणी । विलासिनी निरामया विचिन्त्यतां मनस्त्वया ॥"
+},
+{
+"number": 25,
+"text": "पदाब्जवन्दिनः कवेरियं प्रमाणिकावली । महेशमानसेश्वरी गृहे महाय कल्पताम् ॥ १९.२५॥ 475"
+}
+];
+
+        let allSlokas = [];
+
+        function toDevanagari(num) {
+            const devanagariDigits = ['०', '१', '२', '३', '४', '५', '६', '७', '८', '९'];
+            return String(num).split('').map(d => devanagariDigits[parseInt(d)]).join('');
+        }
+
+        function searchSlokas(query) {
+            const searchTerm = query.toLowerCase().trim();
+            let visibleCount = 0;
+
+            allSlokas.forEach(sloka => {
+                const slokaText = sloka.text.toLowerCase();
+                const shouldShow = !searchTerm || slokaText.includes(searchTerm);
+
+                if (shouldShow) {
+                    sloka.element.classList.remove('hidden');
+                    sloka.element.classList.toggle('highlight', searchTerm && slokaText.includes(searchTerm));
+                    visibleCount++;
+                } else {
+                    sloka.element.classList.add('hidden');
+                    sloka.element.classList.remove('highlight');
+                }
+            });
+
+            const searchInfo = document.getElementById('searchInfo');
+            if (searchTerm) {
+                searchInfo.textContent = `Found ${visibleCount} sloka${visibleCount !== 1 ? 's' : ''}`;
+            } else {
+                searchInfo.textContent = 'Showing all 25 slokas';
+            }
+        }
+
+        function loadSlokas() {
+            const list = document.getElementById('slokas-list');
+
+            slokas.forEach(sloka => {
+                const item = document.createElement('a');
+                item.className = 'sloka-item';
+                item.href = `${sloka.number}/`;
+
+                const slokaNumber = toDevanagari(sloka.number);
+                const slokaText = sloka.text.trim().replace(/\n/g, '<br>');
+
+                item.innerHTML = `
+                    <div class="sloka-content">
+                        <div class="sloka-number">${slokaNumber}</div>
+                        <div class="sloka-text">${slokaText}</div>
+                    </div>
+                `;
+
+                list.appendChild(item);
+
+                allSlokas.push({
+                    number: sloka.number,
+                    text: slokaNumber + ' ' + sloka.text,
+                    element: item
+                });
+            });
+
+            const searchBox = document.getElementById('searchBox');
+            searchBox.addEventListener('input', (e) => {
+                searchSlokas(e.target.value);
+            });
+        }
+
+        loadSlokas();
+    </script>
+</body>
+</html>
