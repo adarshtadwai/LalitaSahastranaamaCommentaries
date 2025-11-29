@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="sa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>श्रीललितास्तवरत्नम् - All Slokas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Annapurna+SIL:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Annapurna SIL', serif;
+            background: linear-gradient(to bottom, #fdfbf7, #fff);
+            color: #333;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, #8B0000, #8B4513);
+            color: white;
+            padding: 15px 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .header h1 {
+            font-size: 2em;
+            margin: 0;
+        }
+
+        .header .home-button {
+            position: absolute;
+            right: 20px;
+        }
+
+        .home-button {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1.2em;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            transition: all 0.3s;
+        }
+
+        .home-button:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+        }
+
+        /* Search Container */
+        .search-container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .search-box {
+            width: 100%;
+            padding: 15px 20px;
+            font-size: 1.2em;
+            font-family: 'Annapurna SIL', serif;
+            border: 2px solid #DAA520;
+            border-radius: 8px;
+            background: white;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: all 0.3s;
+        }
+
+        .search-box:focus {
+            outline: none;
+            border-color: #8B0000;
+            box-shadow: 0 4px 12px rgba(139, 0, 0, 0.2);
+        }
+
+        .search-info {
+            margin-top: 10px;
+            font-size: 0.95em;
+            color: #666;
+            text-align: center;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px 20px 40px;
+        }
+
+        /* List */
+        .slokas-list {
+            margin-top: 10px;
+        }
+
+        .sloka-item {
+            background: white;
+            border-radius: 8px;
+            padding: 18px 30px;
+            margin-bottom: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: all 0.3s;
+            cursor: pointer;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            border-left: 4px solid #DAA520;
+        }
+
+        .sloka-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 4px 15px rgba(139, 0, 0, 0.2);
+            border-left-color: #8B0000;
+        }
+
+        .sloka-item.hidden {
+            display: none;
+        }
+
+        .sloka-item.highlight {
+            background: #fff8dc;
+        }
+
+        .sloka-content {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .sloka-number {
+            background: #8B4513;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 5px;
+            font-weight: bold;
+            min-width: 50px;
+            text-align: center;
+            font-size: 0.9em;
+        }
+
+        .sloka-text {
+            font-size: 1.3em;
+            color: #333;
+            flex: 1;
+            line-height: 1.8;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 50px;
+            font-size: 1.5em;
+            color: #8B4513;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                gap: 10px;
+                padding: 15px;
+            }
+
+            .header h1 {
+                font-size: 1.5em;
+            }
+
+            .sloka-item {
+                padding: 15px 20px;
+            }
+
+            .sloka-content {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+
+            .sloka-text {
+                font-size: 1.1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>श्रीललितास्तवरत्नम्</h1>
+        <a href="../" class="home-button">⌂</a>
+    </div>
+
+    <div class="search-container">
+        <input type="text" id="searchBox" class="search-box" placeholder="Search slokas...">
+        <div class="search-info" id="searchInfo">Showing all 214 slokas</div>
+    </div>
+
+    <div class="container">
+        <div id="slokas-container">
+            <div class="loading">Loading slokas...</div>
+        </div>
+    </div>
+
+    <script>
+        const totalSlokas = 214;
+        let allSlokas = [];
+
+        // Format number to 4 digits
+        function formatNumber(num) {
+            return String(num).padStart(4, '0');
+        }
+
+        // Convert to Devanagari numerals
+        function toDevanagari(num) {
+            const devanagariDigits = ['०', '१', '२', '३', '४', '५', '६', '७', '८', '९'];
+            return String(num).split('').map(d => devanagariDigits[parseInt(d)]).join('');
+        }
+
+        // Search functionality
+        function searchSlokas(query) {
+            const searchTerm = query.toLowerCase().trim();
+            let visibleCount = 0;
+
+            allSlokas.forEach(sloka => {
+                const slokaText = sloka.text.toLowerCase();
+                const shouldShow = !searchTerm || slokaText.includes(searchTerm);
+
+                if (shouldShow) {
+                    sloka.element.classList.remove('hidden');
+                    sloka.element.classList.toggle('highlight', searchTerm && slokaText.includes(searchTerm));
+                    visibleCount++;
+                } else {
+                    sloka.element.classList.add('hidden');
+                    sloka.element.classList.remove('highlight');
+                }
+            });
+
+            const searchInfo = document.getElementById('searchInfo');
+            if (searchTerm) {
+                searchInfo.textContent = `Found ${visibleCount} sloka${visibleCount !== 1 ? 's' : ''}`;
+            } else {
+                searchInfo.textContent = 'Showing all 214 slokas';
+            }
+        }
+
+        // Load all slokas
+        async function loadSlokas() {
+            const container = document.getElementById('slokas-container');
+            container.innerHTML = '<div class="slokas-list" id="list"></div>';
+            const list = document.getElementById('list');
+
+            for (let i = 1; i <= totalSlokas; i++) {
+                try {
+                    const response = await fetch(`../lalitastavaratnam/${formatNumber(i)}.txt`);
+                    const text = await response.text();
+
+                    // Join all lines into single line
+                    const slokaText = text.trim().replace(/\n/g, ' ');
+
+                    const item = document.createElement('a');
+                    item.className = 'sloka-item';
+                    item.href = `${i}/`;
+
+                    item.innerHTML = `
+                        <div class="sloka-content">
+                            <div class="sloka-number">${toDevanagari(i)}</div>
+                            <div class="sloka-text">${slokaText}</div>
+                        </div>
+                    `;
+
+                    list.appendChild(item);
+
+                    // Store sloka data for searching
+                    allSlokas.push({
+                        number: i,
+                        text: slokaText,
+                        element: item
+                    });
+                } catch (error) {
+                    console.error(`Error loading sloka ${i}:`, error);
+                }
+            }
+
+            // Setup search
+            const searchBox = document.getElementById('searchBox');
+            searchBox.addEventListener('input', (e) => {
+                searchSlokas(e.target.value);
+            });
+        }
+
+        // Initialize
+        loadSlokas();
+    </script>
+</body>
+</html>

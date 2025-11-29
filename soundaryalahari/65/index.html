@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="sa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>सौन्दर्यलहरी - श्लोकः 65</title>
+    <link href="https://fonts.googleapis.com/css2?family=Annapurna+SIL:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Annapurna SIL', sans-serif;
+            background: #fdfbf7;
+        }
+
+        /* Navigation Bar */
+        .navigation {
+            position: sticky;
+            top: 0;
+            background: linear-gradient(135deg, #8B0000, #8B4513);
+            padding: 15px 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            z-index: 100;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 2px;
+        }
+
+        .nav-button {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            padding: 8px 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.95em;
+            font-family: 'Annapurna SIL', sans-serif;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .nav-button:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+        }
+
+        .nav-button:disabled {
+            background: rgba(255, 255, 255, 0.1);
+            cursor: not-allowed;
+            opacity: 0.5;
+        }
+
+        .nav-center {
+            flex: 1;
+            text-align: center;
+            color: white;
+            padding: 0 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .nav-center .number-row {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 0.9em;
+            background: rgba(255, 255, 255, 0.2);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .nav-center .number-row:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+
+        .nav-center .sloka-title {
+            font-size: 1.8em;
+            font-weight: bold;
+        }
+
+        /* Content Area */
+        .content {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Sloka Section */
+        .sloka-section {
+            background: #fff8dc;
+            padding: 30px;
+            margin: 20px 0;
+            border-left: 6px solid #DAA520;
+            border-radius: 8px;
+            font-size: 1.4em;
+            line-height: 2;
+            color: #333;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        /* Commentary Section */
+        .commentary-section {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            margin: 30px 0;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+
+        .commentary-section h2 {
+            color: #8B0000;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #DAA520;
+        }
+
+        /* Commentary Tabs */
+        .commentary-tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #DAA520;
+            flex-wrap: wrap;
+        }
+
+        .tab-button {
+            background: transparent;
+            border: none;
+            padding: 15px 25px;
+            font-size: 1.1em;
+            font-family: 'Annapurna SIL', sans-serif;
+            color: #8B4513;
+            cursor: pointer;
+            border-bottom: 3px solid transparent;
+            margin-bottom: -3px;
+            transition: all 0.3s;
+            font-weight: 600;
+        }
+
+        .tab-button:hover {
+            background: rgba(139, 0, 0, 0.05);
+            color: #8B0000;
+        }
+
+        .tab-button.active {
+            color: #8B0000;
+            border-bottom-color: #8B0000;
+            background: rgba(139, 0, 0, 0.05);
+        }
+
+        .tab-panel {
+            display: none;
+            min-height: 100px;
+            padding: 20px;
+            background: #fef9f3;
+            border-radius: 8px;
+            font-size: 1.2em;
+            line-height: 1.8;
+            color: #333;
+        }
+
+        .tab-panel.active {
+            display: block;
+            animation: fadeIn 0.3s;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .edit-btn {
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            opacity: 0.6;
+            transition: all 0.2s;
+            padding: 4px;
+        }
+
+        .edit-btn:hover {
+            opacity: 1;
+            transform: scale(1.15);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .navigation {
+                flex-wrap: wrap;
+            }
+
+            .nav-center {
+                width: 100%;
+                order: -1;
+                font-size: 1em;
+            }
+
+            .nav-center .sloka-title {
+                font-size: 1.3em;
+            }
+
+            .sloka-section {
+                font-size: 1.2em;
+                padding: 20px;
+            }
+
+            .content {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navigation">
+        <button class="nav-button" id="prevBtn" onclick="navigate(-1)">&lt;</button>
+
+        <div class="nav-center">
+            <div class="number-row" onclick="window.location.href='../';" title="Go to sloka list">
+                <span>&uarr;</span>
+                <span id="slokaNumber">६५</span>
+            </div>
+            <span class="sloka-title">श्लोकः</span>
+        </div>
+
+        <button class="nav-button" id="nextBtn" onclick="navigate(1)">&gt;</button>
+    </div>
+
+    <div class="content">
+        <!-- Sloka Text -->
+        <div class="sloka-section" id="sloka-text">
+            Loading...
+        </div>
+
+        <!-- Commentary Section -->
+        <div class="commentary-section">
+            <h2>व्याख्यानम्</h2>
+            
+            <div class="commentary-tabs">
+                <button class="tab-button active" onclick="switchTab(event, 'lakshmidhara')">लक्ष्मीधरः</button>
+                <button class="tab-button" onclick="switchTab(event, 'kaivalyashrama')">कैवल्याश्रमः</button>
+            </div>
+
+            <div id="lakshmidhara" class="tab-panel active">
+                <div id="lakshmidhara-content">Loading...</div>
+            </div>
+
+            <div id="kaivalyashrama" class="tab-panel">
+                <div id="kaivalyashrama-content">Loading...</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const currentNumber = 65;
+        const totalSlokas = 100;
+
+        // Format number to 4 digits
+        function formatNumber(num) {
+            return String(num).padStart(4, '0');
+        }
+
+        // Load sloka text
+        async function loadSloka() {
+            try {
+                const response = await fetch(`../../soundaryalahari/${formatNumber(currentNumber)}.txt`);
+                const text = await response.text();
+                document.getElementById('sloka-text').innerHTML = text.trim().replace(/\n/g, '<br>');
+            } catch (error) {
+                document.getElementById('sloka-text').innerHTML = 'Error loading sloka';
+                console.error('Error loading sloka:', error);
+            }
+        }
+
+        // Load commentary
+        async function loadCommentary(type) {
+            try {
+                const folder = type === 'lakshmidhara' ? 'LakshmidharaSoundaryaLahari' : 'KaivalyaSoundaryaLahari';
+                const response = await fetch(`../../Data/${folder}/${formatNumber(currentNumber)}.txt`);
+                const text = await response.text();
+                const contentDiv = document.getElementById(`${type}-content`);
+                
+                if (text.trim()) {
+                    contentDiv.innerHTML = text.trim()
+                        .split('\n\n')
+                        .map(para => `<p>${para.replace(/\n/g, '<br>')}</p>`)
+                        .join('');
+                } else {
+                    contentDiv.innerHTML = '<p style="color: #999; font-style: italic;">Commentary is not available</p>';
+                }
+            } catch (error) {
+                document.getElementById(`${type}-content`).innerHTML = '<p style="color: #999; font-style: italic;">Commentary is not available</p>';
+                console.error(`Error loading ${type} commentary:`, error);
+            }
+        }
+
+        // Switch tabs
+        function switchTab(event, tabName) {
+            // Hide all tab panels
+            document.querySelectorAll('.tab-panel').forEach(panel => {
+                panel.classList.remove('active');
+            });
+
+            // Remove active class from all buttons
+            document.querySelectorAll('.tab-button').forEach(btn => {
+                btn.classList.remove('active');
+            });
+
+            // Show selected tab panel
+            document.getElementById(tabName).classList.add('active');
+            event.target.classList.add('active');
+        }
+
+        // Navigate between slokas
+        function navigate(direction) {
+            const newNumber = currentNumber + direction;
+            if (newNumber >= 1 && newNumber <= totalSlokas) {
+                window.location.href = `../${newNumber}/`;
+            }
+        }
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.target.tagName === 'TEXTAREA' || e.target.tagName === 'INPUT') {
+                return;
+            }
+            if (e.key === 'ArrowLeft') navigate(-1);
+            if (e.key === 'ArrowRight') navigate(1);
+        });
+
+        // Update button states
+        document.getElementById('prevBtn').disabled = (currentNumber === 1);
+        document.getElementById('nextBtn').disabled = (currentNumber === totalSlokas);
+
+        // Initialize
+        loadSloka();
+        loadCommentary('lakshmidhara');
+        loadCommentary('kaivalyashrama');
+    </script>
+
+    <!-- Edit Module (optional - only loads if edit server is running) -->
+    <script src="../../editor/edit-module-soundaryalahari.js"></script>
+</body>
+</html>
