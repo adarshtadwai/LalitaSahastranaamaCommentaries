@@ -1,0 +1,72 @@
+Lalitopakhyanam - Extraction Summary
+================================================================================
+
+Source: https://sanskritdocuments.org/doc_devii/lalitopAkhyAnam.html
+Extraction Date: 2025-11-29
+
+CHAPTER LIST:
+--------------------------------------------------------------------------------
+
+Chapter  5:  42 slokas
+Sanskrit Title: अगस्त्ययात्राजनार्दनाविर्भावो
+Directory: adhyaya-05/
+
+Chapter  6:  78 slokas
+Sanskrit Title: हिंसाद्यस्वरूपकथनं
+Directory: adhyaya-06/
+
+Chapter  7:  86 slokas
+Sanskrit Title: स्तेयपानकथनं
+Directory: adhyaya-07/
+
+Chapter  9: 156 slokas
+Sanskrit Title: अमृतमन्थनं
+Directory: adhyaya-09/
+
+Chapter 10:  95 slokas
+Sanskrit Title: मोहिनीप्रादुर्भावमलकासुरवधो
+Directory: adhyaya-10/
+
+Chapter 12: 129 slokas
+Sanskrit Title: ललिताप्रादुर्भावो
+Directory: adhyaya-12/
+
+Chapter 13:  38 slokas
+Sanskrit Title: ललितास्तवराजो
+Directory: adhyaya-13/
+
+Chapter 14:  33 slokas
+Sanskrit Title: मदनकामेश्वरप्रादुर्भावो
+Directory: adhyaya-14/
+
+Chapter 15:  65 slokas
+Sanskrit Title: वैवाहिकोत्सवो
+Directory: adhyaya-15/
+
+Chapter 16:  37 slokas
+Sanskrit Title: ससेनविजययात्रा
+Directory: adhyaya-16/
+
+Chapter 17:  55 slokas
+Sanskrit Title: दण्डनाथाश्यामलासेनायात्रा
+Directory: adhyaya-17/
+
+Chapter 20: 230 slokas
+Sanskrit Title: किरिचक्ररथदेवताप्रकाशनं
+Directory: adhyaya-20/
+
+
+================================================================================
+TOTAL SLOKAS EXTRACTED: 1044
+TOTAL CHAPTERS EXTRACTED: 12
+================================================================================
+
+NOTES:
+--------------------------------------------------------------------------------
+1. Source document contains chapters: 5, 6, 7, 9, 10, 12-17, and 20
+2. Missing chapters (not in source): 8, 11, 18, 19, and 21
+3. Each sloka is formatted as 2 lines:
+   - Line 1 ends with single danda (।)
+   - Line 2 ends with double danda (॥)
+4. All hyphens removed, English text removed
+5. Sloka numbering starts from 0001 in each chapter
